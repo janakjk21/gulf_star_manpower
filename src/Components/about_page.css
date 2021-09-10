@@ -1,0 +1,36 @@
+p:first-of-type:first-letter {
+	font-size: 4em;
+	font-weight: bold;
+	float: left;
+	padding-right: 3px;
+}
+p:first-of-type:first-line {
+	line-height: 1;
+}
+.post > p {
+	padding: 10px 0px 10px 40px;
+}
+
+blockquote {
+	background-color: #eaeaea;
+	font-family: "Merriweather", serif;
+	font-style: italic;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin: 12px 0 12px 40px;
+	text-align: center;
+}
+
+figure {
+	margin: 20px 0px;
+}
+figcaption {
+	padding-left: 10px;
+}
+.pic-medium {
+	max-width: 120%;
+}
+.thanks {
+	margin-top: 80px;
+	text-align: center;
+}
