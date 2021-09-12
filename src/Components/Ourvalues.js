@@ -61,7 +61,7 @@ export default function Ourvalues() {
 								style={{
 									backgroundColor: "#FF9671",
 									color: "#000",
-									borderRadius: "30%",
+									borderRadius: "25%",
 								}}>
 								<div className='icon'>
 									<img
@@ -88,7 +88,7 @@ export default function Ourvalues() {
 								style={{
 									backgroundColor: "#845EC2",
 									color: "#000",
-									borderRadius: "30%",
+									borderRadius: "25%",
 								}}>
 								<div className='icon'>
 									<img
@@ -115,7 +115,7 @@ export default function Ourvalues() {
 								style={{
 									backgroundColor: "#F9F871",
 									color: "#000",
-									borderRadius: "30%",
+									borderRadius: "25%",
 								}}>
 								<div className='icon'>
 									<img

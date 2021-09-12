@@ -1,0 +1,62 @@
+#titlebar.single.submit-page {
+	padding: 52px 0;
+}
+
+#titlebar.single.submit-page h2,
+.submit-page {
+	padding: 0 9%;
+}
+
+#titlebar.single.submit-page h2 {
+	font-size: 32px;
+}
+
+.submit-page h5 {
+	margin-bottom: 9px;
+}
+.submit-page h5 span {
+	color: #888;
+}
+
+.submit-page .form {
+	margin-bottom: 34px;
+}
+
+.submit-page .form .note {
+	margin-top: 9px;
+	color: #808080;
+}
+
+textarea.WYSIWYG {
+	min-height: 300px;
+}
+
+.submit-page .divider {
+	border-bottom: 1px solid #e0e0e0;
+	padding-bottom: 15px;
+	margin: 50px 0 35px 0;
+}
+
+.submit-page .button.linkedin-btn {
+	background-color: #0077b5;
+}
+
+.formline {
+	border-top: 1px solid #e0e0e0;
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
+
+.form.with-line h5 {
+	margin-bottom: 12px;
+}
+
+.container1 {
+	padding-left: 10%;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+		rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	margin: 50px;
+	margin-top: 150px;
+	border-radius: 20px;
+}

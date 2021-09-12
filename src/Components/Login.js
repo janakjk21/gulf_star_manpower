@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button, Input, TextField } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { useState } from "react";
@@ -6,6 +6,8 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { db } from "./fire";
 import { collection, addDoc } from "firebase/firestore";
 import { doc, getDoc, getDocs } from "firebase/firestore";
+import { signOut } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -20,7 +22,7 @@ export default function Login() {
 	const [name, setName] = useState("");
 	const [saySomething, setSaySomething] = useState("");
 	const [rollNo, set_roll_No] = useState();
-	const [user, setUser] = useState({});
+	const [user, setUser] = useState(false);
 	const [message, setMessage] = useState([]);
 
 	const auth = getAuth();
@@ -39,13 +41,38 @@ export default function Login() {
 				// ..
 			});
 	};
-
+	// useEffect(() => {
+	// 	console.log("use effect run bho ");
+	// }, [user]);
 	//sign in function
 	const signIn = (event) => {
 		event.preventDefault();
+		const auth = getAuth();
+		signInWithEmailAndPassword(auth, email, password)
+			.then((userCredential) => {
+				// Signed in
+				const user = userCredential.user;
+				console.log(user);
+				setUser(true);
+				// ...
+			})
+			.catch((error) => {
+				const errorCode = error.code;
+				const errorMessage = error.message;
+			});
 	};
 	const logout = (event) => {
 		event.preventDefault();
+		const auth = getAuth();
+		signOut(auth)
+			.then(() => {
+				// Sign-out successful.
+				console.log("loged out successful");
+				setUser(!user);
+			})
+			.catch((error) => {
+				// An error happened.
+			});
 	};
 
 	const createData = async (event) => {
@@ -78,6 +105,7 @@ export default function Login() {
 	return (
 		<div>
 			<form className={classes.root} noValidate autoComplete='off'>
+				{user ? <h1> loged in </h1> : <h1> loged out</h1>}
 				<Input
 					placeholder='email'
 					type='text'

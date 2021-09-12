@@ -6,6 +6,7 @@ import icon1 from "../Assets/icons/employee.png";
 import icon2 from "../Assets/icons/employee (1).png";
 import icon3 from "../Assets/icons/lock.png";
 import icon4 from "../Assets/icons/suitcase-black-shape.png";
+import { Link } from "react-router-dom";
 export default function Hero() {
 	AOS.init();
 	return (
@@ -37,11 +38,9 @@ export default function Hero() {
 									<img src={icon1} style={{ height: "75px" }} alt='icon1'></img>
 								</div>
 								<h4 className='title'>
-									<a
-										href='facebook.com
-									'>
-										Job Seeker Login
-									</a>
+									<Link to='jobseekerlogin'>
+										<a>Job Seeker Login</a>
+									</Link>
 								</h4>
 								<p className='description'>
 									To monitor your status, browse for jobs, set up alerts, and
@@ -78,7 +77,9 @@ export default function Hero() {
 									<img src={icon3} style={{ height: "75px" }} alt='icon'></img>
 								</div>
 								<h4 className='title'>
-									<a href='facebook.com'>Staff Login</a>
+									<a href='facebook.com'>
+										<Link to='/login'>Staff Login</Link>
+									</a>
 								</h4>
 								<p className='description'>
 									To access your account as Staff, please log in.
