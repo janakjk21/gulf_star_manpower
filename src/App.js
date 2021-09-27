@@ -1,121 +1,127 @@
 import "./App.css";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Loading from "./Components/Loading";
 
-import Nav from "./Components/Nav";
-import Hero from "./Components/Hero";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Message from "./Components/Message ";
-import Aboutus from "./Components/Aboutus";
-import Client from "./Components/Clients";
-import Job from "./Components/Job";
-import Ourvalues from "./Components/Ourvalues";
-import Apply from "./Components/Apply";
-import Footer from "./Components/Footer";
-import AboutPage from "./Components/AboutPage";
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
-	Redirect,
-} from "react-router-dom";
-import WhyUs from "./Components/WhyUs";
-import Team from "./Components/TEAM";
-import Document from "./Components/Document";
-import Login from "./Components/Login";
-import AdminLogin from "./Components/AdminLogin";
-import Adminpannel from "./Components/Adminpannel";
-import { useEffect, useState } from "react";
-import PrivateRoute from "./Components/PrivateRoute";
-import { change } from "dom7";
-import Button from "@restart/ui/esm/Button";
-import Createjob from "./Components/Createjob";
-import Jobseekerlogin from "./Components/Jobseekerlogin";
-import CreateNews from "./Components/CreateNews";
+const Nav = React.lazy(() => import("./Components/Nav"));
+const Hero = React.lazy(() => import("./Components/Hero"));
+const Message = React.lazy(() => import("./Components/Message "));
+const Aboutus = React.lazy(() => import("./Components/Aboutus"));
+const Client = React.lazy(() => import("./Components/Clients"));
+const Job = React.lazy(() => import("./Components/Job"));
+const Ourvalues = React.lazy(() => import("./Components/Ourvalues"));
+const Apply = React.lazy(() => import("./Components/Apply"));
+const Footer = React.lazy(() => import("./Components/Footer"));
+const AboutPage = React.lazy(() => import("./Components/AboutPage"));
+const WhyUs = React.lazy(() => import("./Components/WhyUs"));
+const Team = React.lazy(() => import("./Components/TEAM"));
+const Document = React.lazy(() => import("./Components/Document"));
+// const Login from "./Components/Login";
+const AdminLogin = React.lazy(() => import("./Components/AdminLogin"));
+const Adminpannel = React.lazy(() => import("./Components/Adminpannel"));
+const Createjob = React.lazy(() => import("./Components/Createjob"));
+const Jobseekerlogin = React.lazy(() => import("./Components/Jobseekerlogin"));
+const CreateNews = React.lazy(() => import("./Components/CreateNews"));
+const News = React.lazy(() => import("./Components/News"));
+const Applied = React.lazy(() => import("./Components/Applied"));
+const Applyjob = React.lazy(() => import("./Components/Applyjob"));
+
 function App() {
 	const [isAuth, setAuth] = useState(true);
 	const changeauth = () => {
 		setAuth(!isAuth);
-		console.log("i am being called");
 	};
 
 	return (
 		<Router>
-			<Switch>
-				<Route path='/aboutus'>
-					<Nav></Nav>
-					<AboutPage></AboutPage>
+			<React.Suspense fallback={<Loading></Loading>}>
+				{" "}
+				<Switch>
+					<Route path='/aboutus'>
+						<Nav></Nav>
+						<AboutPage></AboutPage>
 
-					<Footer></Footer>
-				</Route>
-				<Route path='/1'>
-					<Nav></Nav>
-					<Login></Login>
-					<Footer></Footer>
-				</Route>
-				<Route path='/login'>
-					<Nav></Nav>
+						<Footer></Footer>
+					</Route>
 
-					{isAuth ? (
-						<AdminLogin changeauth={changeauth}></AdminLogin>
-					) : (
-						<Adminpannel changeauth={changeauth}></Adminpannel>
-					)}
-					<Button
-						onClick={(e) => {
-							changeauth(e);
-						}}>
-						{" "}
-						click em{" "}
-					</Button>
-					<Footer></Footer>
-				</Route>
-				<Route path='/createjob'>
-					<Nav></Nav>
-					<Createjob></Createjob>
-				</Route>
-				<Route path='/createnews'>
-					<Nav></Nav>
-					<CreateNews></CreateNews>{" "}
-				</Route>
-				<Route path='/jobseekerlogin'>
-					<Nav></Nav>
-					<Jobseekerlogin></Jobseekerlogin>
-				</Route>
-				<Route path='/contactus'>
-					<Nav></Nav>
-					<Apply />
-					<Footer></Footer>
-				</Route>
-
-				<Route path='/whyus'>
-					<Nav></Nav>
-					<WhyUs />
-					<Footer></Footer>
-				</Route>
-
-				<Route path='/Documents'>
-					<Nav></Nav>
-					<Document />
-					<Footer></Footer>
-				</Route>
-				<Route path='/Team'>
-					<Nav></Nav>
-					<Team></Team> <Footer></Footer>
-				</Route>
-				<Route path='/'>
-					<div className='App'>
+					<Route path='/login'>
 						<Nav></Nav>
 
-						<Hero></Hero>
-						<Message></Message>
-						<Aboutus></Aboutus>
-						<Job />
-						<Client></Client>
-						<Ourvalues />
+						{isAuth ? (
+							<AdminLogin changeauth={changeauth}></AdminLogin>
+						) : (
+							<Adminpannel changeauth={changeauth}></Adminpannel>
+						)}
+
+						<Footer></Footer>
+					</Route>
+					<Route path='/createjob'>
+						<Nav></Nav>
+						<Createjob></Createjob>
+					</Route>
+					<Route path='/applied'>
+						<Nav></Nav>
+						<Applied></Applied>{" "}
+					</Route>
+
+					<Route path='/createjob'>
+						<Nav></Nav>
+						<Createjob></Createjob>
+					</Route>
+					<Route path='/createnews'>
+						<Nav></Nav>
+						<CreateNews></CreateNews>{" "}
+					</Route>
+					<Route path='/jobseekerlogin'>
+						<Nav></Nav>
+						<Jobseekerlogin></Jobseekerlogin>
+					</Route>
+					<Route path='/contactus'>
+						<Nav></Nav>
 						<Apply />
-						<Footer />
-					</div>
-				</Route>
-			</Switch>
+						<Footer></Footer>
+					</Route>
+					<Route path='/applyjob'>
+						<Nav></Nav>
+						<Applyjob />
+						<Footer></Footer>
+					</Route>
+					<Route path='/news'>
+						<Nav></Nav>
+						<News /> <Footer></Footer>
+					</Route>
+					<Route path='/whyus'>
+						<Nav></Nav>
+						<WhyUs />
+						<Footer></Footer>
+					</Route>
+
+					<Route path='/Documents'>
+						<Nav></Nav>
+						<Document />
+						<Footer></Footer>
+					</Route>
+					<Route path='/Team'>
+						<Nav></Nav>
+						<Team></Team> <Footer></Footer>
+					</Route>
+					<Route path='/'>
+						<div className='App'>
+							<Nav></Nav>
+
+							<Hero></Hero>
+							<Message></Message>
+							<Aboutus></Aboutus>
+							<Job />
+							<Client></Client>
+							<Ourvalues />
+							<Apply />
+							<Footer />
+						</div>
+					</Route>
+				</Switch>
+			</React.Suspense>
 		</Router>
 	);
 }

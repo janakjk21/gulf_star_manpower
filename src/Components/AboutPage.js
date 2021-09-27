@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 		width: "90%",
 
 		position: "relative",
-		top: "-80px",
+		top: "-117px",
 
 		backgroundColor: "#fbfbfd",
 		margin: "0 auto",

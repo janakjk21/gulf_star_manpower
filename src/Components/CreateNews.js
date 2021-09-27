@@ -15,9 +15,7 @@ const useStyles = makeStyles((theme) => ({
 		marginBottom: "30px",
 		margin: "0 190px 0 190px",
 	},
-	root: {
-		marginTop: "px",
-	},
+
 	parallaxContainer: {
 		position: "relative",
 		overflow: "hidden",
@@ -37,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
 		width: "90%",
 
 		position: "relative",
-		top: "-80px",
+		top: "-117px",
 
 		backgroundColor: "#fbfbfd",
 		margin: "0 auto",
@@ -95,7 +93,8 @@ export default function CreateNews() {
 
 		try {
 			const docRef = await addDoc(collection(db, "createnews"), {
-				first: "Ada",
+				news: news,
+				newsTitle: newsTitle,
 			});
 			console.log("Document written with ID: ", docRef.id);
 		} catch (e) {

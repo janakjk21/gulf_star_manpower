@@ -7,6 +7,7 @@ import icon3 from "../Assets/icons/international-consumer.png";
 import icon4 from "../Assets/icons/project-management.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
 	Typography: {
@@ -70,7 +71,7 @@ export default function Ourvalues() {
 										alt='Image2'></img>
 								</div>
 								<h4 className='title'>
-									<a href='facebook'>HONESTY</a>
+									<Link to='/whyus'> HONESTY</Link>
 								</h4>
 								<p className='description'>
 									We are completely transparent with clients and candidates
@@ -97,7 +98,7 @@ export default function Ourvalues() {
 										alt='Image2'></img>
 								</div>
 								<h4 className='title'>
-									<a href='facebook'>QUALITY</a>
+									<Link to='/whyus'> QUALITY</Link>
 								</h4>
 								<p className='description'>
 									We have the contacts and the network to match the industry's
@@ -124,7 +125,7 @@ export default function Ourvalues() {
 										alt='Image2'></img>
 								</div>
 								<h4 className='title'>
-									<a href='facebook'>PARTNERSHIP</a>
+									<Link to='/whyus'> PARTNERSHIP</Link>
 								</h4>
 								<p className='description'>
 									We do more than just find you a job or fill a brief, we
@@ -152,7 +153,7 @@ export default function Ourvalues() {
 										alt='Image2'></img>
 								</div>
 								<h4 className='title'>
-									<a href='facebook'>INNOVATION</a>
+									<Link to='/whyus'> INNOVATION</Link>
 								</h4>
 								<p className='description'>
 									We are the first ones to jump into new technology if it means

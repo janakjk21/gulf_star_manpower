@@ -16,10 +16,7 @@ export default function AdminLogin(props) {
 				// ...
 				props.changeauth();
 			})
-			.catch((error) => {
-				const errorCode = error.code;
-				const errorMessage = error.message;
-			});
+			.catch((error) => {});
 	};
 
 	return (
@@ -27,7 +24,7 @@ export default function AdminLogin(props) {
 			<form>
 				<h2 class='title'> Log in</h2>
 				<p class='subtitle'>
-					Don't have an account? <a href='janask'> sign Up</a>
+					Don't have an account? <a href='janask'> </a>
 				</p>
 
 				<div class='social-login'>

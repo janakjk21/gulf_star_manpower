@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import { FiPhoneCall, FiMail } from "react-icons/fi";
 import Iconbar from "./Iconbar";
 import Iframe from "react-iframe";
-import { doc, getDoc } from "firebase/firestore";
+import { doc } from "firebase/firestore";
 import { db } from "./fire";
-import { collection, addDoc, setDoc } from "firebase/firestore";
+import { collection, setDoc } from "firebase/firestore";
 
 export default function Apply() {
 	const [name, setName] = useState();
@@ -14,18 +14,18 @@ export default function Apply() {
 	const [message, setMessage] = useState();
 
 	console.log(name, email, message);
-	const GetData = async (event) => {
-		event.preventDefault();
-		const docRef = doc(db, "users325", "4M5nwp1rV6O6gM2aTUEH");
-		const docSnap = await getDoc(docRef);
+	// const GetData = async (event) => {
+	// 	event.preventDefault();
+	// 	const docRef = doc(db, "users325", "4M5nwp1rV6O6gM2aTUEH");
+	// 	const docSnap = await getDoc(docRef);
 
-		if (docSnap.exists()) {
-			console.log("Document data:", docSnap.data());
-		} else {
-			// doc.data() will be undefined in this case
-			console.log("No such document!");
-		}
-	};
+	// 	if (docSnap.exists()) {
+	// 		console.log("Document data:", docSnap.data());
+	// 	} else {
+	// 		// doc.data() will be undefined in this case
+	// 		console.log("No such document!");
+	// 	}
+	// };
 	const createData = async (event) => {
 		event.preventDefault();
 

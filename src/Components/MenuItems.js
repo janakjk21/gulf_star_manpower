@@ -118,7 +118,7 @@ export default function MenuItems() {
 				</Link>
 			</Button>
 			<Button style={{ margin: "10px" }}>
-				<Link style={{ textDecoration: "none" }}>
+				<Link style={{ textDecoration: "none" }} to='/news'>
 					<Typography className={classes.typography}> News</Typography>
 				</Link>
 			</Button>

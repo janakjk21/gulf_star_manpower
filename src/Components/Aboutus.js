@@ -2,6 +2,7 @@ import React from "react";
 import "./Aboutus.css";
 import aboutus_img from "../Assets/1-min-min_2.JPG";
 import { Typography } from "@material-ui/core";
+import AOS from "aos";
 
 export default function Aboutus() {
 	return (
@@ -17,7 +18,8 @@ export default function Aboutus() {
 								fontFamily: "Roboto, sans-serif",
 								color: "#0B0861",
 								marginBottom: "30px",
-							}}>
+							}}
+							data-aos='fade-up'>
 							{" "}
 							<span style={{ color: "#D8232D" }}> About</span>
 							Us
@@ -32,14 +34,14 @@ export default function Aboutus() {
 						</p>
 					</div>
 					<div className='row'>
-						<div className='col-lg-6'>
+						<div className='col-lg-6' data-aos='fade-up' data-aos-delay='300'>
 							<img
 								src={aboutus_img}
 								alt='about'
 								className='img-fluid'
 								width='100%'></img>
 						</div>
-						<div className='col-lg-6'>
+						<div className='col-lg-6' data-aos='fade-up' data-aos-delay='300'>
 							<h3>why choose us over our competitors? </h3>
 							<p>
 								GULF STAR was born out of the belief that recruitment could be

@@ -15,7 +15,7 @@ export default function Hero() {
 				<div
 					className='container position-relative'
 					data-aos='fade-up'
-					data-aos-delay='100'>
+					data-aos-delay='300'>
 					<div className='row justify-content-center'>
 						<div className='hero__container'>
 							<h1 className='hero__heading'>
@@ -38,9 +38,7 @@ export default function Hero() {
 									<img src={icon1} style={{ height: "75px" }} alt='icon1'></img>
 								</div>
 								<h4 className='title'>
-									<Link to='jobseekerlogin'>
-										<a>Job Seeker Login</a>
-									</Link>
+									<Link to='jobseekerlogin'>Job Seeker Login</Link>
 								</h4>
 								<p className='description'>
 									To monitor your status, browse for jobs, set up alerts, and
@@ -58,7 +56,7 @@ export default function Hero() {
 									<img src={icon2} style={{ height: "75px" }} alt='icon2'></img>
 								</div>
 								<h4 className='title'>
-									<a href='facebook.com'>Reference Login</a>
+									<Link to='jobseekerlogin'>Reference Login</Link>
 								</h4>
 								<p className='description'>
 									To monitor your candidates' status, search for jobs, set up

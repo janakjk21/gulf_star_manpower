@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Typography, makeStyles, Button } from "@material-ui/core";
-
+import { getDocs, collection } from "firebase/firestore";
+import { db } from "./fire";
 import Them from "./Them";
-import img1 from "../Assets/Apple iPhone 8 Plus 3024x4032_012374 (1).jpg";
 import "./jobseeker.scss";
+import { Link } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
 	Typography: {
 		// textAlign: "center",
@@ -26,63 +27,57 @@ const useStyles = makeStyles((theme) => ({
 export default function Jobseekerlogin() {
 	const classes = useStyles();
 
+	const [jobs, setJobs] = useState([]);
+	const getjobs = async () => {
+		let newarr = [];
+		const querySnapshot = await getDocs(collection(db, "createjobs"));
+		querySnapshot.forEach((doc) => {
+			let currentID = doc.id;
+			let appObj = { ...doc.data(), ["id"]: currentID };
+			newarr.push(appObj);
+			// doc.data() is never undefined for query doc snapshots
+			// console.log(doc.id, " => ", doc.data());
+		});
+		setJobs(newarr);
+	};
+	useEffect(() => {
+		getjobs();
+	}, []);
+	// console.log(jobs);
+	// console.log(jobs.length);
 	return (
 		<div>
 			<Them title='Jobs' title1='Available'></Them>
+			{jobs.length > 0 ? (
+				jobs.map((item, id) => {
+					return (
+						<div class='blog-card'>
+							{/* <div class='meta'></div> */}
+							<div class='description' key={item._id}>
+								<Typography className={classes.Typography}>
+									{" "}
+									Company: {item.Company}
+								</Typography>
 
-			<div class='blog-card'>
-				{/* <div class='meta'></div> */}
-				<img src={img1} style={{ height: "500px" }}></img>
+								<h1>{item.Category}</h1>
+								<h2>{item.Location}</h2>
 
-				<div class='description'>
-					<Typography className={classes.Typography}>
-						{" "}
-						Company: Janak private
-					</Typography>
+								<h2>Salary:{item.Salary}</h2>
+								<h2>Closing Date :{item.ClosingDate}</h2>
 
-					<h1>Driver</h1>
-					<h2>Duabai</h2>
-
-					<h2>Salary:rs300000</h2>
-					<h2>Closing Date :2057/04/05</h2>
-
-					<p>
-						It's full time job foor the person who need job of any kind contact
-						us for any kind of information
-					</p>
-					<p class='read-more'>
-						<Button variant='outlined' color='secondary'>
-							Apply
-						</Button>
-					</p>
-				</div>
-			</div>
-			<div class='blog-card'>
-				{/* <div class='meta'></div> */}
-
-				<div class='description'>
-					<Typography className={classes.Typography}>
-						{" "}
-						Company: Janak private
-					</Typography>
-
-					<h1>Driver</h1>
-					<h2>Duabai</h2>
-
-					<h2>Salary:rs300000</h2>
-					<h2>Closing Date :2057/04/05</h2>
-
-					<p>
-						It's full time job foor the person who need job of any kind contact
-						us for any kind of information
-					</p>
-					<p class='read-more'>
-						<Button variant='outlined' color='secondary'>
-							Apply
-						</Button>
-					</p>
-				</div>
-			</div>
+								<p>{item.details}</p>
+								<p class='read-more'>
+									<Button variant='outlined' color='secondary'>
+										<Link to='/applyjob'> Apply</Link>
+									</Button>
+								</p>
+							</div>
+						</div>
+					);
+				})
+			) : (
+				<Typography className={classes.Typography}>No Jobs yet</Typography>
+			)}
 		</div>
 	);
 }

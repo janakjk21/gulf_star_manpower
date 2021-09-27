@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./createjob.css";
 import { makeStyles } from "@material-ui/core";
 import Them from "./Them";
 import { db } from "./fire";
@@ -31,16 +30,18 @@ const useStyles = makeStyles((theme) => ({
 
 		// backgroundImage: `url(${img})`,
 		backgroundSize: "cover",
+		borderRadius: "35px",
 	},
 	container1: {
 		width: "90%",
+		borderRadius: "35px",
 
 		position: "relative",
 		top: "-112px",
 
 		backgroundColor: "#fbfbfd",
 		margin: "0 auto",
-		borderRadius: "25px",
+		borderRadius: "10px",
 		padding: "50px",
 		boxShadow:
 			"rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
@@ -55,7 +56,6 @@ const useStyles = makeStyles((theme) => ({
 
 			position: "relative",
 			top: "-220px",
-
 			backgroundColor: "#F8FBFE",
 			margin: "0 auto",
 
@@ -83,29 +83,31 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function Createjob() {
+export default function Applyjob() {
 	const classes = useStyles();
-	const [JobTitle, setJobTitle] = useState();
+	const [yourName, setyourName] = useState();
 	const [Location, setLocation] = useState();
-	const [Company, setCompany] = useState();
-	const [Category, setCategory] = useState();
-	const [Salary, setSalary] = useState();
+	const [passsword, setpasssword] = useState();
+	const [yourAgent, setyourAgent] = useState();
+	const [father, setfather] = useState();
 	const [details, setdetails] = useState();
 
-	const [ClosingDate, setClosingDate] = useState();
+	const [email, setemail] = useState();
+	const [phoneno, setphoneno] = useState();
 
 	const createData = async (event) => {
 		event.preventDefault();
 
 		try {
-			const docRef = await addDoc(collection(db, "createjobs"), {
-				JobTitle: JobTitle,
+			const docRef = await addDoc(collection(db, "apllyjobs"), {
+				yourName: yourName,
 				Location: Location,
-				Company: Company,
-				Category: Category,
-				Salary: Salary,
-				ClosingDate: ClosingDate,
+				passsword: passsword,
+				yourAgent: yourAgent,
+				father: father,
+				phoneno: phoneno,
 				details: details,
+				email: email,
 			});
 			console.log("Document written with ID: ", docRef.id);
 		} catch (e) {
@@ -126,15 +128,15 @@ export default function Createjob() {
 							<div class='col-md-6' className={classes.divstyle}>
 								<div class='form-group'>
 									<label for='first' className={classes.label}>
-										Job Title
+										Your name
 									</label>
 									<input
 										type='text'
 										class='form-control'
-										placeholder=''
+										placeholder='your name'
 										id='first'
-										value={JobTitle}
-										onChange={(e) => setJobTitle(e.target.value)}
+										value={yourName}
+										onChange={(e) => setyourName(e.target.value)}
 									/>
 								</div>
 							</div>
@@ -142,12 +144,12 @@ export default function Createjob() {
 							<div class='col-md-6' className={classes.divstyle}>
 								<div class='form-group'>
 									<label for='last' className={classes.label}>
-										Location (optional)
+										Your Address
 									</label>
 									<input
 										type='text'
 										class='form-control'
-										placeholder=''
+										placeholder='your address'
 										value={Location}
 										id='last'
 										onChange={(e) => setLocation(e.target.value)}
@@ -159,16 +161,16 @@ export default function Createjob() {
 						<div class='row'>
 							<div class='col-md-6' className={classes.divstyle}>
 								<div class='form-group'>
-									<label for='company' className={classes.label}>
-										Company
+									<label for='passsword' className={classes.label}>
+										Password No
 									</label>
 									<input
 										type='text'
 										class='form-control'
-										placeholder=''
-										id='company'
-										value={Company}
-										onChange={(e) => setCompany(e.target.value)}
+										placeholder='password no'
+										id='passsword'
+										value={passsword}
+										onChange={(e) => setpasssword(e.target.value)}
 									/>
 								</div>
 							</div>
@@ -176,37 +178,37 @@ export default function Createjob() {
 							<div class='col-md-6' className={classes.divstyle}>
 								<div class='form-group'>
 									<label for='phone' className={classes.label}>
-										Category
+										your agent
 									</label>
 									<input
 										type='text'
 										class='form-control'
 										id='phone'
-										placeholder='Category'
-										value={Category}
-										onChange={(e) => setCategory(e.target.value)}
+										placeholder='your agent'
+										value={yourAgent}
+										onChange={(e) => setyourAgent(e.target.value)}
 									/>
 								</div>
 							</div>
 							<div class='col-md-6' className={classes.divstyle}>
 								<div class='form-group'>
 									<label for='phone' className={classes.label}>
-										Salary
+										father name
 									</label>
 									<input
 										type='text'
 										class='form-control'
 										id='phone'
-										placeholder='Salary'
-										value={Salary}
-										onChange={(e) => setSalary(e.target.value)}
+										placeholder='father name'
+										value={father}
+										onChange={(e) => setfather(e.target.value)}
 									/>
 								</div>
 							</div>
 							<div class='col-md-6' className={classes.divstyle}>
 								<div class='form-group'>
 									<label for='phone' className={classes.label}>
-										Details
+										describe your self
 									</label>
 									<input
 										type='text'
@@ -218,19 +220,34 @@ export default function Createjob() {
 									/>
 								</div>
 							</div>
+							<div class='col-md-6' className={classes.divstyle}>
+								<div class='form-group'>
+									<label for='phone' className={classes.label}>
+										email address
+									</label>
+									<input
+										type='email'
+										class='form-control'
+										id='phone'
+										placeholder='email'
+										value={email}
+										onChange={(e) => setemail(e.target.value)}
+									/>
+								</div>
+							</div>
 
 							<div class='col-md-6' className={classes.divstyle}>
 								<div class='form-group'>
 									<label for='phone' className={classes.label}>
-										Closing Date (optional){" "}
+										phone no
 									</label>
 									<input
-										type='date'
+										type='tel'
 										class='form-control'
 										id='phone'
-										placeholder='yyyy-mm-dd'
-										value={ClosingDate}
-										onChange={(e) => setClosingDate(e.target.value)}
+										placeholder='phone no '
+										value={phoneno}
+										onChange={(e) => setphoneno(e.target.value)}
 									/>
 								</div>
 							</div>
