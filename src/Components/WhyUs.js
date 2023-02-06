@@ -18,11 +18,11 @@ export default function WhyUs() {
 					fontSize: '55px',
 					fontWeight: '900',
 					fontFamily: 'Roboto, sans-serif',
-					color: '#0B0861',
+					color: '#000000',
 					marginBottom: '30px',
 				}}>
 				{' '}
-				<span style={{ color: '#D8232D' }}> Why </span>
+				<span style={{ color: '#000000' }}> Why </span>
 				Us
 			</Typography>
 			<div className='root2'>

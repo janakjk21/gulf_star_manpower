@@ -8,7 +8,7 @@
 # Normalize
 --------------------------------------------------------------*/
 :root {
-  --main-color-one: #764AF1;
+  --main-color-one: #000000;
   --heading-color: #1E1926;
   --paragraph-color: #6B6B6B;
   --heading-font: "Sora", sans-serif;
@@ -45,7 +45,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(125deg, #FFC44E 0%, #764AF1 100%);
+  background-image: linear-gradient(125deg, #FFC44E 0%, #000000 100%);
   border-radius: 10px;
 }
 
@@ -2814,8 +2814,8 @@ blockquote:not(.has-light-gray-color):not(.has-very-dark-gray-color):not(.is-sty
   top: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(83.41%, rgba(118, 74, 241, 0.8)), to(#764AF1));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(118, 74, 241, 0.8) 83.41%, #764AF1 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(83.41%, rgba(118, 74, 241, 0.8)), to(#000000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(118, 74, 241, 0.8) 83.41%, #000000 100%);
   border-radius: 20px;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
@@ -3662,7 +3662,7 @@ blockquote:not(.has-light-gray-color):not(.has-very-dark-gray-color):not(.is-sty
   border-radius: 50%;
   line-height: 40px;
   background: rgba(119, 74, 241, 0.1058823529);
-  color: #764AF1;
+  color: #000000;
   text-align: center;
   font-size: 16px;
   margin-right: 20px;
@@ -3760,7 +3760,7 @@ blockquote:not(.has-light-gray-color):not(.has-very-dark-gray-color):not(.is-sty
 }
 
 .contact-address .contact-address-list .single-address-item .icon-wrap.color-01 .icon {
-  color: #764AF1;
+  color: #000000;
 }
 
 .contact-address .contact-address-list .single-address-item .icon-wrap.color-02 {
@@ -3882,11 +3882,11 @@ blockquote:not(.has-light-gray-color):not(.has-very-dark-gray-color):not(.is-sty
 }
 
 .apply-form-inner .selection-list li input:checked::after {
-  border-color: #764AF1;
+  border-color: #000000;
 }
 
 .apply-form-inner .selection-list li:hover input::after {
-  border-color: #764AF1;
+  border-color: #000000;
 }
 
 .apply-form-inner .form-submit {
@@ -6673,7 +6673,7 @@ blockquote:not(.has-light-gray-color):not(.has-very-dark-gray-color):not(.is-sty
 }
 
 .single-course-item ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(125deg, #FFC44E 0%, #764AF1 100%);
+  background-image: linear-gradient(125deg, #FFC44E 0%, #000000 100%);
   border-radius: 10px;
 }
 

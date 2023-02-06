@@ -179,7 +179,9 @@ export default function Nav() {
 	};
 	const displayDesktop = () => {
 		return (
-			<AppBar position='fixed' color='none'>
+			<AppBar
+				position='fixed'
+				style={{ background: 'transparent', boxShadow: 'none' }}>
 				<Toolbar color='none'>
 					<Grid container>
 						<Grid item lg={3}>
@@ -208,7 +210,7 @@ export default function Nav() {
 								variant='contained'
 								style={{
 									padding: '3px',
-									background: 'linear-gradient(to bottom, #D8232D, #D8232D)',
+									// background: 'linear-gradient(to bottom, #000000, #000000)',
 								}}>
 								<FiPhoneCall fontSize='small' />
 								<a
@@ -226,7 +228,7 @@ export default function Nav() {
 								variant='contained'
 								style={{
 									padding: '3px',
-									background: 'linear-gradient(to bottom, #D8232D, #D8232D)',
+									// background: 'linear-gradient(to bottom, #000000, #000000)',
 								}}>
 								<FiPhoneCall fontSize='small' />
 								<a

@@ -9,14 +9,16 @@ import aboutus_img from '../Assets/1-min-min_2.JPG';
 import employe_1 from '../Assets/img/sections/client/customer-care.png';
 import Employe from './Allemployes';
 import Why_us from './WhyUs';
+import employe_2 from '../Assets/img/team-details/01.jpg';
 export default function AboutPage() {
 	return (
 		<div class='about-page-area-wrapper single-page-section-top-space single-page-section-bottom-space'>
 			{/* <Them title='About' title1='Us'></Them> */}
 			<div style={{ marginTop: '200px' }}></div>
 			<Headercomponent></Headercomponent>
+			<SecondItem></SecondItem>
 			<Lastcomponent />
-			<Employe></Employe>
+		
 			{/* <Testimonial /> */}
 			<Why_us></Why_us>
 		</div>
@@ -106,7 +108,401 @@ const Headercomponent = () => {
 };
 
 const SecondItem = () => {
-	return <div>janak</div>;
+	return (
+		<div>
+			<section className='our-team-area-wrapper section-top-space section-bottom-space'>
+				<div className='our-team-inner'>
+					<div className='container custom-container-01'>
+						<div className='row justify-content-center'>
+							<div className='col-lg-6'>
+								<div className='section-title-wrapper text-center'>
+									<h1 className='section-title'>Meet Experts</h1>
+									<p className='description'>
+										87% of people learning for professional development report
+										career benefits
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className='row column-gap-50'>
+							<div className='col-md-6 col-lg-4'>
+								<div className='single-team-item style-02'>
+									<div className='thumbnail'>
+										<img src={employe_2} alt='team image' />
+									</div>
+									<div className='content'>
+										<h4 className='title'>
+											<a href='#' tabIndex={-1}>
+												Arlene McCoy
+											</a>
+										</h4>
+										<p className='designation'>Consultants, Eduplan</p>
+										<p className='email'>
+											<span className='icon-wrap'>
+												<i className='fa-regular fa-envelope icon' />
+											</span>
+											<span className='text'>
+												<a
+													href='https://themeim.com/cdn-cgi/l/email-protection'
+													className='__cf_email__'
+													data-cfemail='751e101b0f1c5b191402061a1b35100d14180519105b161a18'>
+													[email&nbsp;protected]
+												</a>
+											</span>
+										</p>
+									</div>
+									<div className='hover-content'>
+										<h4 className='title'>
+											<a href='#' tabIndex={-1}>
+												Arlene McCoy
+											</a>
+										</h4>
+										<p className='designation'>Consultants, Eduplan</p>
+										<p className='paragraph'>
+											I’m Esther Howard working as a senior consultant on
+											Eduplan. Helped many student to keep touch their dream to
+										</p>
+										<ul className='ul social-media-list style-01 color-02'>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-instagram icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-facebook-f icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-youtube icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-linkedin-in icon' />
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div className='col-md-6 col-lg-4'>
+								<div className='single-team-item style-02'>
+									<div className='thumbnail'>
+										<img src={employe_2} alt='team image' />
+									</div>
+									<div className='content'>
+										<h4 className='title'>
+											<a href='#' tabIndex={-1}>
+												Esther Howard
+											</a>
+										</h4>
+										<p className='designation'>Consultants, Eduplan</p>
+										<p className='email'>
+											<span className='icon-wrap'>
+												<i className='fa-regular fa-envelope icon' />
+											</span>
+											<span className='text'>
+												<a
+													href='https://themeim.com/cdn-cgi/l/email-protection'
+													className='__cf_email__'
+													data-cfemail='6a010f04100344060b1d1905042a0f120b071a060f44090507'>
+													[email&nbsp;protected]
+												</a>
+											</span>
+										</p>
+									</div>
+									<div className='hover-content'>
+										<h4 className='title'>
+											<a href='#' tabIndex={-1}>
+												Esther Howard
+											</a>
+										</h4>
+										<p className='designation'>Consultants, Eduplan</p>
+										<p className='paragraph'>
+											I’m Esther Howard working as a senior consultant on
+											Eduplan. Helped many student to keep touch their dream to
+										</p>
+										<ul className='ul social-media-list style-01 color-02'>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-instagram icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-facebook-f icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-youtube icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-linkedin-in icon' />
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div className='col-md-6 col-lg-4'>
+								<div className='single-team-item style-02'>
+									<div className='thumbnail'>
+										<img src={employe_2} alt='team image' />
+									</div>
+									<div className='content'>
+										<h4 className='title'>
+											<a href='#' tabIndex={-1}>
+												Robert Fox
+											</a>
+										</h4>
+										<p className='designation'>Consultants, Eduplan</p>
+										<p className='email'>
+											<span className='icon-wrap'>
+												<i className='fa-regular fa-envelope icon' />
+											</span>
+											<span className='text'>
+												<a
+													href='https://themeim.com/cdn-cgi/l/email-protection'
+													className='__cf_email__'
+													data-cfemail='69020c0713004705081e1a0607290c11080419050c470a0604'>
+													[email&nbsp;protected]
+												</a>
+											</span>
+										</p>
+									</div>
+									<div className='hover-content'>
+										<h4 className='title'>
+											<a href='#' tabIndex={-1}>
+												Robert Fox
+											</a>
+										</h4>
+										<p className='designation'>Consultants, Eduplan</p>
+										<p className='paragraph'>
+											I’m Esther Howard working as a senior consultant on
+											Eduplan. Helped many student to keep touch their dream to
+										</p>
+										<ul className='ul social-media-list style-01 color-02'>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-instagram icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-facebook-f icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-youtube icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-linkedin-in icon' />
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div className='col-md-6 col-lg-4'>
+								<div className='single-team-item style-02'>
+									<div className='thumbnail'>
+										<img src={employe_2} alt='team image' />
+									</div>
+									<div className='content'>
+										<h4 className='title'>
+											<a href='#' tabIndex={-1}>
+												Devon Lane
+											</a>
+										</h4>
+										<p className='designation'>Consultants, Eduplan</p>
+										<p className='email'>
+											<span className='icon-wrap'>
+												<i className='fa-regular fa-envelope icon' />
+											</span>
+											<span className='text'>
+												<a
+													href='https://themeim.com/cdn-cgi/l/email-protection'
+													className='__cf_email__'
+													data-cfemail='ef848a819586c1838e989c8081af8a978e829f838ac18c8082'>
+													[email&nbsp;protected]
+												</a>
+											</span>
+										</p>
+									</div>
+									<div className='hover-content'>
+										<h4 className='title'>
+											<a href='#' tabIndex={-1}>
+												Devon Lane
+											</a>
+										</h4>
+										<p className='designation'>Consultants, Eduplan</p>
+										<p className='paragraph'>
+											I’m Esther Howard working as a senior consultant on
+											Eduplan. Helped many student to keep touch their dream to
+										</p>
+										<ul className='ul social-media-list style-01 color-02'>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-instagram icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-facebook-f icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-youtube icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-linkedin-in icon' />
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div className='col-md-6 col-lg-4'>
+								<div className='single-team-item style-02'>
+									<div className='thumbnail'>
+										<img src={employe_2} alt='team image' />
+									</div>
+									<div className='content'>
+										<h4 className='title'>
+											<a href='#' tabIndex={-1}>
+												Wade Warren
+											</a>
+										</h4>
+										<p className='designation'>Consultants, Eduplan</p>
+										<p className='email'>
+											<span className='icon-wrap'>
+												<i className='fa-regular fa-envelope icon' />
+											</span>
+											<span className='text'>
+												<a
+													href='https://themeim.com/cdn-cgi/l/email-protection'
+													className='__cf_email__'
+													data-cfemail='0368666d796a2d6f6274706c6d43667b626e736f662d606c6e'>
+													[email&nbsp;protected]
+												</a>
+											</span>
+										</p>
+									</div>
+									<div className='hover-content'>
+										<h4 className='title'>
+											<a href='#' tabIndex={-1}>
+												Wade Warren
+											</a>
+										</h4>
+										<p className='designation'>Consultants, Eduplan</p>
+										<p className='paragraph'>
+											I’m Esther Howard working as a senior consultant on
+											Eduplan. Helped many student to keep touch their dream to
+										</p>
+										<ul className='ul social-media-list style-01 color-02'>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-instagram icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-facebook-f icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-youtube icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-linkedin-in icon' />
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div className='col-md-6 col-lg-4'>
+								<div className='single-team-item style-02'>
+									<div className='thumbnail'>
+										<img src={employe_2} alt='team image' />
+									</div>
+									<div className='content'>
+										<h4 className='title'>
+											<a href='#' tabIndex={-1}>
+												Esther Howard
+											</a>
+										</h4>
+										<p className='designation'>Consultants, Eduplan</p>
+										<p className='email'>
+											<span className='icon-wrap'>
+												<i className='fa-regular fa-envelope icon' />
+											</span>
+											<span className='text'>
+												<a
+													href='https://themeim.com/cdn-cgi/l/email-protection'
+													className='__cf_email__'
+													data-cfemail='94fff1faeefdbaf8f5e3e7fbfad4f1ecf5f9e4f8f1baf7fbf9'>
+													[email&nbsp;protected]
+												</a>
+											</span>
+										</p>
+									</div>
+									<div className='hover-content'>
+										<h4 className='title'>
+											<a href='#' tabIndex={-1}>
+												Esther Howard
+											</a>
+										</h4>
+										<p className='designation'>Consultants, Eduplan</p>
+										<p className='paragraph'>
+											I’m Esther Howard working as a senior consultant on
+											Eduplan. Helped many student to keep touch their dream to
+										</p>
+										<ul className='ul social-media-list style-01 color-02'>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-instagram icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-facebook-f icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-youtube icon' />
+												</a>
+											</li>
+											<li className='single-social-item'>
+												<a href='#' tabIndex={-1}>
+													<i className='fa-brands fa-linkedin-in icon' />
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	);
 };
 
 const Lastcomponent = () => {

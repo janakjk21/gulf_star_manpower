@@ -16,67 +16,13 @@ import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
+import './style.css';
 
-import { makeStyles } from '@material-ui/core/styles';
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 // import Swiper from "react-id-swiper";
 
-const useStyles = makeStyles((theme) => ({
-	large: {
-		width: '100%',
-		height: '250px',
-		borderRadius: '10px',
-	},
-	Typography: {
-		textAlign: 'center',
-		fontSize: '55px',
-		fontWeight: '900',
-		fontFamily: 'Roboto, sans-serif',
-		color: '#0B0861',
-	},
-
-	Typography1: {
-		textAlign: 'left',
-		fontFamily: 'Roboto, sans-serif',
-		fontSize: '16px',
-	},
-	div_css: {
-		marginTop: '40px',
-
-		background:
-			'rgba(0, 0, 0, 0.25) 0px 54px 55px,rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px',
-		boxShadow: '0 13px 15px rgba(0, 0, 0, 0.3)',
-		marginBottom: '20px',
-		maxWidth: '300px',
-		width: '300px',
-		borderRadius: '10px',
-		Overflow: 'hidden',
-	},
-
-	[theme.breakpoints.down('sm')]: {
-		Typography1: {
-			fontFamily: 'Roboto, sans-serif',
-			fontSize: '17px',
-			margin: '0 0 0 0',
-		},
-		card_container: {
-			alignItems: 'center',
-		},
-		Typography: {
-			fontSize: '40px',
-		},
-		div_css: {
-			marginTop: '40px',
-			marginLeft: '7%',
-			height: '250px',
-		},
-	},
-}));
-
 export default function Clients(theme) {
-	const classes = useStyles();
-
 	return (
 		<>
 			<Typography
@@ -89,16 +35,11 @@ export default function Clients(theme) {
 					marginBottom: '30px',
 				}}>
 				{' '}
-				<span style={{ color: '#D8232D' }}> Our </span>
+				<span style={{ color: '#000000' }}> Our </span>
 				Clients
 			</Typography>
 			<Swiper
 				loop={true}
-				spaceBetween={20}
-				autoplay={{
-					delay: 1000,
-					disableOnInteraction: false,
-				}}
 				centeredSlides={true}
 				pagination={{
 					clickable: true,
@@ -119,27 +60,38 @@ export default function Clients(theme) {
 				}}
 				className='mySwiper'>
 				<SwiperSlide>
-					<div class='brand-item'>
+					<div
+						class='single-institute-item'
+						style={{ border: '1px solid #E4E4E4' }}>
+						<div class='logo-wrap'>
+							<img src={Image_2} alt='amity university' />
+						</div>
+					</div>
+				</SwiperSlide>
+				<SwiperSlide>
+					<div
+						class='single-institute-item'
+						style={{ border: '1px solid #E4E4E4' }}>
+						<div class='logo-wrap'>
+							<img src={Image_2} alt='amity university' />
+						</div>
+					</div>
+					{/* <div class='brand-item'>
+						<img src={Image_2} alt='amity university' />
+					</div> */}
+				</SwiperSlide>
+				<SwiperSlide>
+					<div class='brand-item' style={{ border: '1px solid #E4E4E4' }}>
 						<img src={Image_2} alt='amity university' />
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
-					<div class='brand-item'>
-						<img src={Image_2} alt='amity university' />
-					</div>
-				</SwiperSlide>
-				<SwiperSlide>
-					<div class='brand-item'>
-						<img src={Image_2} alt='amity university' />
-					</div>
-				</SwiperSlide>
-				<SwiperSlide>
-					<div class='brand-item'>
+					<div class='brand-item' style={{ border: '1px solid #E4E4E4' }}>
 						<img src={Image_4} alt='amity university' />
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
-					<div class='brand-item'>
+					<div class='brand-item' style={{ border: '1px solid #E4E4E4' }}>
 						<img src={Image_4} alt='amity university' />
 					</div>
 				</SwiperSlide>

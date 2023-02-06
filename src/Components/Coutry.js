@@ -1,7 +1,8 @@
 import { Typography } from '@material-ui/core';
 import React from 'react';
 import spain_img from '../Assets/span.png';
-import './coutry.css';
+import './style.css';
+import './responsive.css';
 export default function Coutry() {
 	return (
 		<div>
@@ -26,7 +27,7 @@ export default function Coutry() {
 										}}
 										data-aos='fade-up'>
 										{' '}
-										<span style={{ color: '#D8232D' }}> Top </span>
+										<span style={{ color: '#000000' }}> Top </span>
 										Destinations
 									</Typography>
 									<p>

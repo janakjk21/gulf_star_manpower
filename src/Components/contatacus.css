@@ -33,7 +33,7 @@
      border-radius: 50%;
      line-height: 40px;
      background: rgba(119, 74, 241, 0.1058823529);
-     color: #764AF1;
+     color: #000000;
      text-align: center;
      font-size: 16px;
      margin-right: 20px;
@@ -131,7 +131,7 @@
  }
 
  .contact-address .contact-address-list .single-address-item .icon-wrap.color-01 .icon {
-     color: #764AF1;
+     color: #000000;
  }
 
  .contact-address .contact-address-list .single-address-item .icon-wrap.color-02 {

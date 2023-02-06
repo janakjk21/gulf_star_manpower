@@ -91,7 +91,7 @@ export default function Allemployes(theme) {
 					marginBottom: '30px',
 				}}>
 				{' '}
-				<span style={{ color: '#D8232D' }}> Our </span>
+				<span style={{ color: '#000000' }}> Our </span>
 				Clients
 			</Typography>
 			<Swiper

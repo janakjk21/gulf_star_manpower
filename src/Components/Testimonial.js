@@ -90,16 +90,12 @@ export default function Testimonial(theme) {
 					marginBottom: '30px',
 				}}>
 				{' '}
-				<span style={{ color: '#D8232D' }}> Our </span>
+				<span style={{ color: '#000000' }}> Our </span>
 				Clients
 			</Typography>
 			<Swiper
 				loop={true}
 				spaceBetween={20}
-				autoplay={{
-					delay: 1000,
-					disableOnInteraction: false,
-				}}
 				centeredSlides={true}
 				pagination={{
 					clickable: true,
@@ -114,19 +110,13 @@ export default function Testimonial(theme) {
 						spaceBetween: 40,
 					},
 					1024: {
-						slidesPerView: 4,
+						slidesPerView: 3,
 						spaceBetween: 50,
 					},
 				}}
 				className='mySwiper'>
 				<SwiperSlide>
 					{' '}
-					<SingleItem></SingleItem>
-				</SwiperSlide>
-				<SwiperSlide>
-					<SingleItem></SingleItem>
-				</SwiperSlide>
-				<SwiperSlide>
 					<SingleItem></SingleItem>
 				</SwiperSlide>
 				<SwiperSlide>

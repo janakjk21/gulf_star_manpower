@@ -1,24 +1,22 @@
 #hero {
 	width: 100%;
-	height: 115vh;
+	height: 100vh;
 	position: relative;
-	background: url("../Assets/Webp.net-resizeimage.jpg") top center;
+	background: url("../Assets/m1.jpg") top center;
 	background-size: cover;
 	margin-top: 125px;
 }
 
 .hero__heading span {
-	background: rgb(216, 35, 45);
-	background: radial-gradient(circle,
-			rgba(216, 35, 45, 1) 0%,
-			rgba(11, 8, 97, 1) 100%);
+	background: rgb(255, 255, 255);
+
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	background-size: 100%;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-mo-text-fill-color: transparent;
-	font-family: Roboto, sans-serif;
+	font-family: 'Jost', sans-serif;
 	font-weight: 700;
 }
 

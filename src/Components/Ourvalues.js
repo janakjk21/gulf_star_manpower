@@ -1,33 +1,33 @@
-import { Typography, makeStyles } from "@material-ui/core";
-import React from "react";
-import "./Ourvalues.css";
-import icon1 from "../Assets/icons/honesty.png";
-import icon2 from "../Assets/icons/quality.png";
-import icon3 from "../Assets/icons/international-consumer.png";
-import icon4 from "../Assets/icons/project-management.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
+import { Typography, makeStyles } from '@material-ui/core';
+import React from 'react';
+import './Ourvalues.css';
+import icon1 from '../Assets/icons/honesty.png';
+import icon2 from '../Assets/icons/quality.png';
+import icon3 from '../Assets/icons/international-consumer.png';
+import icon4 from '../Assets/icons/project-management.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
 	Typography: {
-		textAlign: "center",
-		fontSize: "55px",
-		fontWeight: "900",
-		fontFamily: "Roboto, sans-serif",
-		color: "#0B0861",
-		marginBottom: "30px",
-		margin: "0 190px 0 190px",
+		textAlign: 'center',
+		fontSize: '55px',
+		fontWeight: '900',
+		fontFamily: 'Roboto, sans-serif',
+		color: '#0B0861',
+		marginBottom: '30px',
+		margin: '0 190px 0 190px',
 	},
-	[theme.breakpoints.down("sm")]: {
+	[theme.breakpoints.down('sm')]: {
 		Typography: {
-			fontSize: "40px",
-			margin: "0 0 0 0",
-			marginTop: "800px",
+			fontSize: '40px',
+			margin: '0 0 0 0',
+			marginTop: '800px',
 		},
 		root: {
-			marginBottom: "900px",
-			marginTop: "50px",
+			marginBottom: '900px',
+			marginTop: '50px',
 		},
 	},
 }));
@@ -40,15 +40,15 @@ export default function Ourvalues() {
 			<section
 				id='hero'
 				className='d-flex align-items-center'
-				style={{ marginTop: "0px", height: "90vh", background: "none" }}>
+				style={{ marginTop: '0px', height: '90vh', background: 'none' }}>
 				<div
 					className='container position-relative'
 					data-aos='fade-up'
 					data-aos-delay='100'>
 					<div className='section-title'>
 						<Typography className={classes.Typography}>
-							{" "}
-							<span style={{ color: "#D8232D" }}> Our </span>
+							{' '}
+							<span style={{ color: '#764AF1' }}> Our </span>
 							Values
 						</Typography>
 					</div>
@@ -60,14 +60,14 @@ export default function Ourvalues() {
 							<div
 								className='icon-box'
 								style={{
-									backgroundColor: "#FF9671",
-									color: "#000",
-									borderRadius: "25%",
+									backgroundColor: '#FF9671',
+									color: '#000',
+									borderRadius: '25%',
 								}}>
 								<div className='icon'>
 									<img
 										src={icon1}
-										style={{ height: "75px" }}
+										style={{ height: '75px' }}
 										alt='Image2'></img>
 								</div>
 								<h4 className='title'>
@@ -87,14 +87,14 @@ export default function Ourvalues() {
 							<div
 								className='icon-box'
 								style={{
-									backgroundColor: "#845EC2",
-									color: "#000",
-									borderRadius: "25%",
+									backgroundColor: '#845EC2',
+									color: '#000',
+									borderRadius: '25%',
 								}}>
 								<div className='icon'>
 									<img
 										src={icon2}
-										style={{ height: "75px" }}
+										style={{ height: '75px' }}
 										alt='Image2'></img>
 								</div>
 								<h4 className='title'>
@@ -114,14 +114,14 @@ export default function Ourvalues() {
 							<div
 								className='icon-box'
 								style={{
-									backgroundColor: "#F9F871",
-									color: "#000",
-									borderRadius: "25%",
+									backgroundColor: '#F9F871',
+									color: '#000',
+									borderRadius: '25%',
 								}}>
 								<div className='icon'>
 									<img
 										src={icon3}
-										style={{ height: "75px" }}
+										style={{ height: '75px' }}
 										alt='Image2'></img>
 								</div>
 								<h4 className='title'>
@@ -142,14 +142,14 @@ export default function Ourvalues() {
 							<div
 								className='icon-box'
 								style={{
-									backgroundColor: "#00934A",
-									color: "#000",
-									borderRadius: "30%",
+									backgroundColor: '#00934A',
+									color: '#000',
+									borderRadius: '30%',
 								}}>
 								<div className='icon'>
 									<img
 										src={icon4}
-										style={{ height: "75px" }}
+										style={{ height: '75px' }}
 										alt='Image2'></img>
 								</div>
 								<h4 className='title'>

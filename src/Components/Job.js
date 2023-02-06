@@ -1,27 +1,27 @@
-import React from "react";
-import "./Jobs.css";
-import img1 from "../Assets/New folder/advice-on-how-to-become-a-medical-social-worker.jpg";
-import img2 from "../Assets/New folder/Computer-Stock-Edited.jpg-pwrt3.jpg";
-import img3 from "../Assets/New folder/engineering-construction.jpg";
-import img4 from "../Assets/New folder/hotel-and-resturant-worker (1).jpg";
-import img5 from "../Assets/New folder/workshop-techniciam.jpg";
-import img6 from "../Assets/New folder/security.jpg";
-import { Typography, makeStyles } from "@material-ui/core";
+import React from 'react';
+import './Jobs.css';
+import img1 from '../Assets/8375991968-Hour-Annual-In-Service-Security-Guard-Training.jpg';
+import img2 from '../Assets/2020740560196810551blog_332_1.jpg';
+import img3 from '../Assets/2064220603312941304992346home-img-01-442-280.jpg';
+import img4 from '../Assets/126101094hotel.jpeg';
+import img5 from '../Assets/cleaning-home-table-sanitizing-kitchen-260nw-1695842029.webp';
+import img6 from '../Assets/welding-67640__340.jpg';
+import { Typography, makeStyles } from '@material-ui/core';
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const useStyles = makeStyles((theme) => ({
 	Typography: {
-		textAlign: "center",
-		fontSize: "55px",
-		fontWeight: "900",
-		fontFamily: "Roboto, sans-serif",
-		color: "#0B0861",
-		marginBottom: "30px",
+		textAlign: 'center',
+		fontSize: '55px',
+		fontWeight: '900',
+		fontFamily: 'Roboto, sans-serif',
+		color: '#0B0861',
+		marginBottom: '30px',
 	},
-	[theme.breakpoints.down("sm")]: {
+	[theme.breakpoints.down('sm')]: {
 		Typography: {
-			fontSize: "40px",
+			fontSize: '40px',
 		},
 	},
 }));
@@ -33,8 +33,8 @@ export default function Job() {
 			<div className='container' data-aos='fade-up'>
 				<div className='section-title'>
 					<Typography className={classes.Typography}>
-						{" "}
-						<span style={{ color: "#D8232D" }}> Job</span>
+						{' '}
+						<span style={{ color: '#000000' }}> Job</span>
 						Categories
 					</Typography>
 				</div>
@@ -47,7 +47,7 @@ export default function Job() {
 						<div className='portfolio-wrap'>
 							<img src={img1} className='img-fluid' alt='' />
 							<div className='portfolio-info'>
-								<h4>GENERAL MANAGEMENT</h4>
+								<h4>SECURITY INDUSTRY</h4>
 								<div className='portfolio-links'>
 									<a
 										href='assets/img/portfolio/portfolio-1.jpg'
@@ -68,7 +68,7 @@ export default function Job() {
 						<div className='portfolio-wrap'>
 							<img src={img2} className='img-fluid' alt='' />
 							<div className='portfolio-info'>
-								<h4>IT / HARDWARE / SOFTWARE</h4>
+								<h4>CARE TAKER</h4>
 								<div className='portfolio-links'>
 									<a
 										href='assets/img/portfolio/portfolio-2.jpg'
@@ -131,7 +131,7 @@ export default function Job() {
 						<div className='portfolio-wrap'>
 							<img src={img5} className='img-fluid' alt='' />
 							<div className='portfolio-info'>
-								<h4> ELECTRICAL INDUSTRY</h4>
+								<h4> CLEANING INDUSTRY</h4>
 								<div className='portfolio-links'>
 									<a
 										href='assets/img/portfolio/portfolio-5.jpg'
@@ -152,7 +152,7 @@ export default function Job() {
 						<div className='portfolio-wrap'>
 							<img src={img6} className='img-fluid' alt='' />
 							<div className='portfolio-info'>
-								<h4>SECURITY SERVICES</h4>
+								<h4>CONSTRUCTION SERVICES</h4>
 
 								<div className='portfolio-links'>
 									<a

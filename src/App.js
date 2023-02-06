@@ -32,7 +32,7 @@ const Coutry = React.lazy(() => import('./Components/Coutry'));
 const Fasterway = React.lazy(() => import('./Components/Fasterwayto'));
 const Testimonial = React.lazy(() => import('./Components/Testimonial'));
 const Contactus = React.lazy(() => import('./Components/Contactus'));
-
+const Jk = React.lazy(() => import('./Components/Jk'));
 function App() {
 	const [isAuth, setAuth] = useState(true);
 	const changeauth = () => {
@@ -118,18 +118,35 @@ function App() {
 						{/* <Team></Team> */}
 						<Footer></Footer>
 					</Route>
+					<Route path='/jk'>
+						<Nav></Nav>
+						<Jk></Jk>
+						<Coutry></Coutry>
+						<Fasterwayto></Fasterwayto>
+						{/* <Message></Message> */}
 
+						{/* <Aboutus></Aboutus> */}
+						<Job />
+						<Client></Client>
+						<Testimonial></Testimonial>
+
+						<Apply />
+						<Footer />
+					</Route>
 					<Route path='/'>
 						<div>
 							<Nav></Nav>
 							<Hero></Hero>
 							<Coutry></Coutry>
-							<Message></Message>
-							<Aboutus></Aboutus>
 							<Fasterwayto></Fasterwayto>
-							<Testimonial></Testimonial>
+
+							{/* <Message></Message> */}
 							<Job />
+							{/* <Aboutus></Aboutus> */}
 							<Client></Client>
+
+							<Testimonial></Testimonial>
+
 							<Ourvalues />
 							<Apply />
 							<Footer />

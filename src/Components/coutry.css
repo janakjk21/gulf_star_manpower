@@ -86,11 +86,11 @@ apply-form-inner {
 }
 
 .apply-form-inner .selection-list li input:checked::after {
-    border-color: #764AF1;
+    border-color: #000000;
 }
 
 .apply-form-inner .selection-list li:hover input::after {
-    border-color: #764AF1;
+    border-color: #000000;
 }
 
 .apply-form-inner .form-submit {

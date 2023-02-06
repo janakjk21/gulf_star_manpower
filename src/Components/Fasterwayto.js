@@ -1,6 +1,7 @@
 import React from 'react';
 import './Fasterwatyto.css';
-import conferance from '../Assets/conference.png';
+import conferance from '../Assets/IMG-0249.jpg';
+import img from '../Assets/IMG-0249.jpg';
 import { Typography } from '@material-ui/core';
 export default function Fasterwayto() {
 	return (
@@ -26,7 +27,7 @@ export default function Fasterwayto() {
 									}}
 									data-aos='fade-up'>
 									{' '}
-									<span style={{ color: '#D8232D' }}> Top </span>
+									<span style={{ color: '#000000' }}> Top </span>
 									Destinations
 								</Typography>
 								<span className='subtitle'>ADVANTAGE FEATURES</span>
@@ -42,13 +43,13 @@ export default function Fasterwayto() {
 										<path
 											className='path'
 											d='M351.66 12.6362C187.865 -6.32755 49.6478 6.37132 3.41142 12.6362'
-											stroke='#764AF1'
+											stroke='#000000'
 											stroke-width='3'
 											stroke-linecap='square'></path>
 										<path
 											className='path'
 											d='M351.66 13C187.865 -5.96378 49.6478 6.73509 3.41142 13'
-											stroke='#764AF1'
+											stroke='#000000'
 											stroke-width='3'
 											stroke-linecap='square'></path>
 										<path

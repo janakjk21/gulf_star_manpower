@@ -4,7 +4,7 @@
 
 .portfolio #portfolio-flters {
 	padding: 0;
-	margin: 0 auto 10px auto;
+	/* margin: 0 auto 10px auto; */
 	list-style: none;
 	text-align: center;
 }
@@ -12,12 +12,12 @@
 .portfolio #portfolio-flters li {
 	cursor: pointer;
 	display: inline-block;
-	padding: 8px 15px 10px 15px;
+	/* padding: 8px 15px 10px 15px; */
 	font-size: 14px;
 	font-weight: 600;
 	line-height: 1;
 	text-transform: uppercase;
-	color: #444444;
+	color: #110101;
 	margin-bottom: 5px;
 	transition: all 0.3s ease-in-out;
 	border-radius: 3px;
@@ -25,7 +25,7 @@
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-	color: #fff;
+	color: #0c0101;
 	background: #e03a3c;
 }
 
@@ -49,7 +49,7 @@
 	bottom: 0;
 	transition: all ease-in-out 0.3s;
 	z-index: 2;
-	opacity: 0;
+	opacity: 1;
 }
 
 .portfolio .portfolio-wrap img {
@@ -57,7 +57,7 @@
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
-	opacity: 0;
+	opacity: 1;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -73,8 +73,8 @@
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
-	font-size: 20px;
-	color: #fff;
+	font-size: 25px;
+	color: #e9e8ea;
 	font-weight: 600;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-	color: rgba(255, 255, 255, 0.4);
+	color: rgba(2, 0, 0, 0.4);
 	margin: 0 5px 0 0;
 	font-size: 28px;
 	display: inline-block;
@@ -114,26 +114,4 @@
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
 	opacity: 1;
-}
-
-body {
-	font-family: "Open Sans", sans-serif;
-}
-
-a {
-	color: #2487ce;
-}
-
-a:hover {
-	color: #469fdf;
-	text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: "Raleway", sans-serif;
 }

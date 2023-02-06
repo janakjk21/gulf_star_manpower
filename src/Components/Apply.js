@@ -1,12 +1,12 @@
-import { Button } from "@material-ui/core";
-import React, { useState } from "react";
-import { FiPhoneCall, FiMail } from "react-icons/fi";
-import Iconbar from "./Iconbar";
-import Iframe from "react-iframe";
-import { doc } from "firebase/firestore";
-import { db } from "./fire";
-import { collection, setDoc } from "firebase/firestore";
-import { FaFax } from "react-icons/fa/";
+import { Button } from '@material-ui/core';
+import React, { useState } from 'react';
+import { FiPhoneCall, FiMail } from 'react-icons/fi';
+import Iconbar from './Iconbar';
+import Iframe from 'react-iframe';
+import { doc } from 'firebase/firestore';
+import { db } from './fire';
+import { collection, setDoc } from 'firebase/firestore';
+import { FaFax } from 'react-icons/fa/';
 export default function Apply() {
 	const [name, setName] = useState();
 	const [email, setEmail] = useState();
@@ -30,16 +30,16 @@ export default function Apply() {
 		event.preventDefault();
 
 		try {
-			const docRef = collection(db, "message");
-			await setDoc(doc(docRef, "janak"), {
+			const docRef = collection(db, 'message');
+			await setDoc(doc(docRef, 'janak'), {
 				name: name,
 				email: email,
 				subject: subject,
 				message: message,
 			});
-			console.log("Document written with ID: ", docRef.id);
+			console.log('Document written with ID: ', docRef.id);
 		} catch (e) {
-			console.error("Error adding document: ", e);
+			console.error('Error adding document: ', e);
 		}
 	};
 	return (
@@ -62,7 +62,7 @@ export default function Apply() {
 				/>
 
 				<div className='container mt-5'>
-					{" "}
+					{' '}
 					<div className='row justify-content-center'>
 						<div className='col-lg-3 col-md-4'>
 							<div className='info'>
@@ -71,25 +71,25 @@ export default function Apply() {
 									<p>
 										Samakhushi 14,
 										<br />
-										Kathmandu 44600, Nepal{" "}
+										Kathmandu 44600, Nepal{' '}
 									</p>
 								</div>
 								<div>
 									<i className='bi bi-envelope'></i>
 									<p>
 										<FiMail />
-										gulfstaroverseas@gmail.com{" "}
+										gulfstaroverseas@gmail.com{' '}
 									</p>
 								</div>
 								<div>
 									<p>
-										{" "}
+										{' '}
 										<FiPhoneCall></FiPhoneCall>977-014970002
 									</p>
 								</div>
 								<div>
 									<p>
-										{" "}
+										{' '}
 										<FaFax></FaFax>977-014970003
 									</p>
 								</div>
@@ -100,7 +100,7 @@ export default function Apply() {
 						</div>
 						<div className='col-lg-5 col-md-8'>
 							<div className='form'>
-								{" "}
+								{' '}
 								<form
 									action='forms/contact.php'
 									method='post'
@@ -159,9 +159,9 @@ export default function Apply() {
 										<Button
 											style={{
 												background:
-													"linear-gradient(to bottom, #D8232D, #D8232D)",
-												marginBottom: "20px",
-												color: "#fff",
+													'linear-gradient(to bottom, #000000, #000000)',
+												marginBottom: '20px',
+												color: '#fff',
 											}}
 											onClick={(event) => createData(event)}>
 											Send Message

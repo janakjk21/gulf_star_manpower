@@ -1,7 +1,7 @@
-import React from "react";
-import "./Aboutus.css";
-import aboutus_img from "../Assets/1-min-min_2.JPG";
-import { Typography } from "@material-ui/core";
+import React from 'react';
+import './Aboutus.css';
+import aboutus_img from '../Assets/1-min-min_2.JPG';
+import { Typography } from '@material-ui/core';
 
 export default function Aboutus() {
 	return (
@@ -11,16 +11,16 @@ export default function Aboutus() {
 					<div className='heading text-center'>
 						<Typography
 							style={{
-								textAlign: "center",
-								fontSize: "55px",
-								fontWeight: "900",
-								fontFamily: "Roboto, sans-serif",
-								color: "#0B0861",
-								marginBottom: "30px",
+								textAlign: 'center',
+								fontSize: '55px',
+								fontWeight: '900',
+								fontFamily: 'Roboto, sans-serif',
+								color: '#0B0861',
+								marginBottom: '30px',
 							}}
 							data-aos='fade-up'>
-							{" "}
-							<span style={{ color: "#D8232D" }}> About</span>
+							{' '}
+							<span style={{ color: '#000000' }}> About</span>
 							Us
 						</Typography>
 						<p>
