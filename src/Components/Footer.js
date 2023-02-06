@@ -19,7 +19,7 @@ export default function Footer() {
 									Kathmandu 44600
 									<br />
 									<br />
-									<strong>Phone:</strong> +977 98484767600
+									<strong>Phone:</strong> +977 9801070016
 									<br />
 									<strong>Email:</strong> gulfstaroverseas@gmail.com
 									<br />
@@ -83,19 +83,17 @@ export default function Footer() {
 								</li>
 								<li>
 									<i className='bx bx-chevron-right'></i>
-									<Link href='#'>Training and Orientation</Link>
+									Training and Orientation
 								</li>
 								<li>
 									<i className='bx bx-chevron-right'></i>
-									<Link href='#'>Documentation </Link>
+									Documentation
 								</li>
 								<li>
-									<i className='bx bx-chevron-right'></i>{" "}
-									<Link href='#'>Overseas Recruitment</Link>
+									<i className='bx bx-chevron-right'></i> Overseas Recruitment
 								</li>
 								<li>
-									<i className='bx bx-chevron-right'></i>{" "}
-									<Link href='#'>Deployment</Link>
+									<i className='bx bx-chevron-right'></i> Deployment
 								</li>
 							</ul>
 						</div>

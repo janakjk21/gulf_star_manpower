@@ -1,65 +1,164 @@
 import React from "react";
 import "./Team.css";
-import img1 from "../Assets/234001337_4418747838170708_2346686369661221711_n.jpg";
-import img2 from "../Assets/116897155_3231190696966499_8526624389548439125_n.jpg";
+import img1 from "../Assets/krishnapandey.jpg";
+import img2 from "../Assets/New folder/employe1.jpg";
 import img3 from "../Assets/116897155_3231190696966499_8526624389548439125_n.jpg";
-import img4 from "../Assets/Apple iPhone 8 Plus 3024x4032_012374 (1).jpg";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import img4 from "../Assets/employe22.jpg";
+import img5 from "../Assets/Apple iPhone 8 Plus 3024x4032_012374 (1).jpg";
+
 import Them from "./Them";
 
 export default function TEAM() {
-	AOS.init();
 	return (
 		<div>
 			<Them title='Our' title1='Team'></Them>
-			<div className='root1'>
-				<section id='team'>
-					<div className='container' data-aos='fade-up'>
-						<div className='row'>
-							<div className='col-lg-3 col-md-6'>
-								<div className='member' data-aos='fade-up' data-aos-delay='100'>
-									<div className='pic'>
-										<img src={img1} alt='' />
+			<section id='team' className='team-area'>
+				<div className='container'>
+					<div className='row'>
+						<div className='col-md-12'>
+							<div className='site-heading text-center'>
+								<h4>Meet our awesome and expert team members</h4>
+							</div>
+						</div>
+					</div>
+					<div className='row team-items'>
+						<div className='col-md-4 single-item'>
+							<div className='item'>
+								<div className='thumb'>
+									<img src={img1} alt='' className='img-fluid' />{" "}
+									<div className='overlay'>
+										<h4>Krishna Pandey</h4>
+										<p>Chief Executive Officer</p>
 									</div>
+								</div>
+								<div className='info'>
+									<span className='message'>
+										<a href='lkjasd'>
+											<i className='fas fa-envelope-open'></i>
+										</a>
+									</span>
 									<h4>Krishna Pandey</h4>
 									<span>Chief Executive Officer</span>
 								</div>
 							</div>
-
-							<div className='col-lg-3 col-md-6'>
-								<div className='member' data-aos='fade-up' data-aos-delay='200'>
-									<div className='pic'>
-										<img src={img2} alt='' />{" "}
+						</div>
+						<div className='col-md-4 single-item'>
+							<div className='item'>
+								<div className='thumb'>
+									<img src={img3} alt='' className='img-fluid' />{" "}
+									<div className='overlay'>
+										<h4>Dinesh Chhettri</h4>
+										<p>Managing Director</p>
 									</div>
-									<h4>Dinesh Chhetri</h4>
-									<span>Product Manager</span>
+								</div>
+								<div className='info'>
+									<span className='message'>
+										<a href='#fa'>
+											<i className='fas fa-envelope-open'></i>
+										</a>
+									</span>
+									<h4>Dinesh Chhettri</h4>
+									<span>Managing Director</span>
 								</div>
 							</div>
-
-							<div className='col-lg-3 col-md-6'>
-								<div className='member' data-aos='fade-up' data-aos-delay='300'>
-									<div className='pic'>
-										<img src={img3} alt='' />{" "}
+						</div>
+						<div className='col-md-4 single-item'>
+							<div className='item'>
+								<div className='thumb'>
+									<img src={img5} alt='' className='img-fluid' />{" "}
+									<div className='overlay'>
+										<h4>Janak Sapkota</h4>
+										<p>It Officer</p>
 									</div>
-									<h4>William Anderson</h4>
-									<span>CTO</span>
 								</div>
-							</div>
-
-							<div className='col-lg-3 col-md-6'>
-								<div className='member' data-aos='fade-up' data-aos-delay='400'>
-									<div className='pic'>
-										<img src={img4} alt='' />
-									</div>
-									<h4>Janak sapkota</h4>
-									<span>Accountant</span>
+								<div className='info'>
+									<span className='message'>
+										<a href='#das'>
+											<i className='fas fa-envelope-open'></i>
+										</a>
+									</span>
+									<h4>Janak Sapkota</h4>
+									<span>It Officer</span>
 								</div>
 							</div>
 						</div>
 					</div>
-				</section>
-			</div>
+				</div>
+			</section>
+			{/* // second set of employe */}
+			<section id='team' classNameName='team-area'>
+				<div className='container'>
+					<div className='row'>
+						<div className='col-md-12'>
+							<div className='site-heading text-center'>
+								<h4>Meet our awesome and expert team members</h4>
+							</div>
+						</div>
+					</div>
+					<div className='row team-items'>
+						<div className='col-md-4 single-item'>
+							<div className='item'>
+								<div className='thumb'>
+									<img src={img1} alt='' className='img-fluid' />{" "}
+									<div className='overlay'>
+										<h4>Krishna Pandey</h4>
+										<p>Chief Executive Officer</p>
+									</div>
+								</div>
+								<div className='info'>
+									<span className='message'>
+										<a href='#da'>
+											<i className='fas fa-envelope-open'></i>
+										</a>
+									</span>
+									<h4>Krishna Pandey</h4>
+									<span>Chief Executive Officer</span>
+								</div>
+							</div>
+						</div>
+						<div className='col-md-4 single-item'>
+							<div className='item'>
+								<div className='thumb'>
+									<img src={img3} alt='' className='img-fluid' />{" "}
+									<div className='overlay'>
+										<h4>Dinesh Chhettri</h4>
+										<p>Managing Director</p>
+									</div>
+								</div>
+								<div className='info'>
+									<span className='message'>
+										<a href='#sa'>
+											<i className='fas fa-envelope-open'></i>
+										</a>
+									</span>
+									<h4>Dinesh Chhettri</h4>
+									<span>Managing Director</span>
+								</div>
+							</div>
+						</div>
+						<div className='col-md-4 single-item'>
+							<div className='item'>
+								<div className='thumb'>
+									<img src={img3} alt='' className='img-fluid' />{" "}
+									<div className='overlay'>
+										<h4>Janak Sapkota</h4>
+										<p>It Officer</p>
+									</div>
+								</div>
+								<div className='info'>
+									<span className='message'>
+										<a href='#da'>
+											<i className='fas fa-envelope-open'></i>
+										</a>
+									</span>
+									<h4>Janak Sapkota</h4>
+									<span>It Officer</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 	);
 }

@@ -1,10 +1,10 @@
 import React from "react";
 import "./HeroSection.css";
 
-// import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
-import img from "../Assets/116897155_3231190696966499_8526624389548439125_n.jpg";
+import img from "../Assets/IMG-0249.jpg";
 import AOS from "aos";
+import { Link } from "react-router-dom";
 
 function Message({
 	lightBg,
@@ -36,30 +36,39 @@ function Message({
 								<h1
 									className={lightText ? "heading" : "heading dark"}
 									data-aos='fade-up'>
-									Message from Board of Directors
+									<span style={{ color: "rgb(216,35,45)" }}> Message</span>
+									from Board of Directors
 								</h1>
 								<p
 									className={"home__hero-subtitle dark"}
 									data-aos='fade-up'
-									data-aos-delay='300'>
+									data-aos-delay='300'
+									style={{ color: "#000000" }}>
 									The Gulf Star Overseas Pvt. Ltd. feels happy to bring out this
 									booklet for the use of our clients around the world to source
 									manpower from Nepal. Today writing this message gives me
 									immense pleasure. With hard work dedication, sense of selfless
-									services and high spirits team..
+									services and high spirits team.. The Gulf Star Overseas Pvt.
+									Ltd. feels happy to bring out this booklet for the use of our
+									clients around the world to source manpower from Nepal. Today
+									writing this message gives me immense pleasure. With hard work
+									dedication, sense of selfless services and high spirits team..
 								</p>
 
 								<Button
 									style={{
-										color: "#fff",
+										color: "#fffff",
 										background: "linear-gradient(to bottom, #D8232D, #D8232D)",
 										borderRadius: "2em",
 										padding: ".6em 1.5em",
 										fontFamily: "Roboto, sans-serif",
-										marginTop: "20px",
 									}}
 									variant='contained'>
-									About us
+									<Link
+										to='/aboutus'
+										style={{ textDecoration: "none", color: "white" }}>
+										About us
+									</Link>
 								</Button>
 							</div>
 						</div>

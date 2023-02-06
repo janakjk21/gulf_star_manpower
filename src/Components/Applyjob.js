@@ -41,7 +41,6 @@ const useStyles = makeStyles((theme) => ({
 
 		backgroundColor: "#fbfbfd",
 		margin: "0 auto",
-		borderRadius: "10px",
 		padding: "50px",
 		boxShadow:
 			"rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
@@ -116,7 +115,7 @@ export default function Applyjob() {
 	};
 	return (
 		<div>
-			<Them title='Create' title1='Jobs'></Them>
+			<Them title='Apply for ' title1='Jobs'></Them>
 			<div className={classes.parallaxContainer}>
 				<div className={classes.parallax} speed='1.5'></div>
 			</div>
@@ -162,7 +161,7 @@ export default function Applyjob() {
 							<div class='col-md-6' className={classes.divstyle}>
 								<div class='form-group'>
 									<label for='passsword' className={classes.label}>
-										Password No
+										passport No
 									</label>
 									<input
 										type='text'
@@ -175,21 +174,6 @@ export default function Applyjob() {
 								</div>
 							</div>
 
-							<div class='col-md-6' className={classes.divstyle}>
-								<div class='form-group'>
-									<label for='phone' className={classes.label}>
-										your agent
-									</label>
-									<input
-										type='text'
-										class='form-control'
-										id='phone'
-										placeholder='your agent'
-										value={yourAgent}
-										onChange={(e) => setyourAgent(e.target.value)}
-									/>
-								</div>
-							</div>
 							<div class='col-md-6' className={classes.divstyle}>
 								<div class='form-group'>
 									<label for='phone' className={classes.label}>

@@ -1,73 +1,75 @@
-import { Avatar, Typography } from "@material-ui/core";
-import Image_1 from "../Assets/compressjpeg/1 abm.jpg";
-import Image_2 from "../Assets/compressjpeg/2 al baz.jpg";
-import Image_3 from "../Assets/compressjpeg/3 al haider.jpg";
-import Image_4 from "../Assets/compressjpeg/4 Hond tat.jpg";
+import { Avatar, Typography } from '@material-ui/core';
+import Image_1 from '../Assets/compressjpeg/PENTAGON ENGINEERING TRADING AND CONTRACTING.jpg';
+import Image_2 from '../Assets/compressjpeg/2 al baz.jpg';
+import Image_3 from '../Assets/compressjpeg/MATNA FLEX.jpg';
+import Image_4 from '../Assets/compressjpeg/PEOPLE OUTSOURCE TRADING AND CONTRACTING.jpg';
+import Image_5 from '../Assets/compressjpeg/7 quadrant.jpg';
+import Image_6 from '../Assets/compressjpeg/8 srr.jpg';
+import Image_7 from '../Assets/compressjpeg/season engineering group.jpg';
+import React from 'react';
+import SwiperCore, { Pagination, Autoplay, Navigation } from 'swiper/core';
 
-import React from "react";
-import SwiperCore, { Pagination, Autoplay, Navigation } from "swiper/core";
-
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import "swiper/swiper.scss";
-import "swiper/components/navigation/navigation.scss";
-import "swiper/components/pagination/pagination.scss";
-import "swiper/components/scrollbar/scrollbar.scss";
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/scrollbar/scrollbar.scss';
 
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@material-ui/core/styles';
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 // import Swiper from "react-id-swiper";
 
 const useStyles = makeStyles((theme) => ({
 	large: {
-		width: "100%",
-		height: "250px",
-		borderRadius: "10px",
+		width: '100%',
+		height: '250px',
+		borderRadius: '10px',
 	},
 	Typography: {
-		textAlign: "center",
-		fontSize: "55px",
-		fontWeight: "900",
-		fontFamily: "Roboto, sans-serif",
-		color: "#0B0861",
+		textAlign: 'center',
+		fontSize: '55px',
+		fontWeight: '900',
+		fontFamily: 'Roboto, sans-serif',
+		color: '#0B0861',
 	},
 
 	Typography1: {
-		textAlign: "left",
-		fontFamily: "Roboto, sans-serif",
-		fontSize: "16px",
+		textAlign: 'left',
+		fontFamily: 'Roboto, sans-serif',
+		fontSize: '16px',
 	},
 	div_css: {
-		marginTop: "40px",
+		marginTop: '40px',
 
 		background:
-			"rgba(0, 0, 0, 0.25) 0px 54px 55px,rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-		boxShadow: "0 13px 15px rgba(0, 0, 0, 0.3)",
-		marginBottom: "20px",
-		maxWidth: "300px",
-		width: "300px",
-		borderRadius: "10px",
-		Overflow: "hidden",
+			'rgba(0, 0, 0, 0.25) 0px 54px 55px,rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px',
+		boxShadow: '0 13px 15px rgba(0, 0, 0, 0.3)',
+		marginBottom: '20px',
+		maxWidth: '300px',
+		width: '300px',
+		borderRadius: '10px',
+		Overflow: 'hidden',
 	},
 
-	[theme.breakpoints.down("sm")]: {
+	[theme.breakpoints.down('sm')]: {
 		Typography1: {
-			fontFamily: "Roboto, sans-serif",
-			fontSize: "17px",
-			margin: "0 0 0 0",
+			fontFamily: 'Roboto, sans-serif',
+			fontSize: '17px',
+			margin: '0 0 0 0',
 		},
 		card_container: {
-			alignItems: "center",
+			alignItems: 'center',
 		},
 		Typography: {
-			fontSize: "40px",
+			fontSize: '40px',
 		},
 		div_css: {
-			marginTop: "40px",
-			marginLeft: "7%",
-			height: "250px",
+			marginTop: '40px',
+			marginLeft: '7%',
+			height: '250px',
 		},
 	},
 }));
@@ -79,15 +81,15 @@ export default function Clients(theme) {
 		<>
 			<Typography
 				style={{
-					textAlign: "center",
-					fontSize: "55px",
-					fontWeight: "900",
-					fontFamily: "Roboto, sans-serif",
-					color: "#0B0861",
-					marginBottom: "30px",
+					textAlign: 'center',
+					fontSize: '55px',
+					fontWeight: '900',
+					fontFamily: 'Roboto, sans-serif',
+					color: '#0B0861',
+					marginBottom: '30px',
 				}}>
-				{" "}
-				<span style={{ color: "#D8232D" }}> Our </span>
+				{' '}
+				<span style={{ color: '#D8232D' }}> Our </span>
 				Clients
 			</Typography>
 			<Swiper
@@ -117,39 +119,28 @@ export default function Clients(theme) {
 				}}
 				className='mySwiper'>
 				<SwiperSlide>
-					<div className={classes.div_css}>
-						<Avatar
-							alt='Remy Sharp'
-							variant='square'
-							src={Image_1}
-							className={classes.large}></Avatar>
+					<div class='brand-item'>
+						<img src={Image_2} alt='amity university' />
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
-					<div className={classes.div_css}>
-						<Avatar
-							alt='Remy Sharp'
-							variant='square'
-							src={Image_2}
-							className={classes.large}></Avatar>
+					<div class='brand-item'>
+						<img src={Image_2} alt='amity university' />
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
-					<div className={classes.div_css}>
-						<Avatar
-							alt='Remy Sharp'
-							variant='square'
-							src={Image_3}
-							className={classes.large}></Avatar>
+					<div class='brand-item'>
+						<img src={Image_2} alt='amity university' />
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
-					<div className={classes.div_css}>
-						<Avatar
-							alt='Remy Sharp'
-							variant='square'
-							src={Image_4}
-							className={classes.large}></Avatar>
+					<div class='brand-item'>
+						<img src={Image_4} alt='amity university' />
+					</div>
+				</SwiperSlide>
+				<SwiperSlide>
+					<div class='brand-item'>
+						<img src={Image_4} alt='amity university' />
 					</div>
 				</SwiperSlide>
 			</Swiper>

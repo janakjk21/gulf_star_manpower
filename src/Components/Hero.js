@@ -94,7 +94,7 @@ export default function Hero() {
 									<img src={icon4} style={{ height: "75px" }} alt='icon'></img>
 								</div>
 								<h4 className='title'>
-									<a href='facebook.com'>Contact us</a>
+									<Link to='/contactus'>Contact us</Link>
 								</h4>
 								<p className='description'>
 									Please log in and contact us if you have any questions.

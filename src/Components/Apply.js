@@ -6,7 +6,7 @@ import Iframe from "react-iframe";
 import { doc } from "firebase/firestore";
 import { db } from "./fire";
 import { collection, setDoc } from "firebase/firestore";
-
+import { FaFax } from "react-icons/fa/";
 export default function Apply() {
 	const [name, setName] = useState();
 	const [email, setEmail] = useState();
@@ -69,22 +69,28 @@ export default function Apply() {
 								<div>
 									<i className='bi bi-geo-alt'></i>
 									<p>
-										A108 madanchock
+										Samakhushi 14,
 										<br />
-										Nepal, koholpur
+										Kathmandu 44600, Nepal{" "}
 									</p>
 								</div>
 								<div>
 									<i className='bi bi-envelope'></i>
 									<p>
 										<FiMail />
-										info@example.com
+										gulfstaroverseas@gmail.com{" "}
 									</p>
 								</div>
 								<div>
 									<p>
 										{" "}
-										<FiPhoneCall></FiPhoneCall>9848767600
+										<FiPhoneCall></FiPhoneCall>977-014970002
+									</p>
+								</div>
+								<div>
+									<p>
+										{" "}
+										<FaFax></FaFax>977-014970003
 									</p>
 								</div>
 							</div>

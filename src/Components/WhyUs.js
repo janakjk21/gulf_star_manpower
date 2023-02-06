@@ -1,16 +1,30 @@
-import React from "react";
-import "./whyus.css";
-import img1 from "../Assets/icons/honesty.png";
-import img2 from "../Assets/icons/international-consumer.png";
-import img3 from "../Assets/icons/quality.png";
-import img4 from "../Assets/icons/suitcase-black-shape.png";
-import img5 from "../Assets/icons/project-management.png";
-import Them from "./Them";
+import React from 'react';
+import './whyus.css';
+import img1 from '../Assets/icons/honesty.png';
+import img2 from '../Assets/icons/international-consumer.png';
+import img3 from '../Assets/icons/quality.png';
+import img4 from '../Assets/icons/suitcase-black-shape.png';
+import img5 from '../Assets/icons/project-management.png';
+import Them from './Them';
+import { Typography } from '@material-ui/core';
 
 export default function WhyUs() {
 	return (
 		<div>
-			<Them title=' Why' title1='Us'></Them>
+			{/* <Them title=' Why' title1='Us'></Them> */}
+			<Typography
+				style={{
+					textAlign: 'center',
+					fontSize: '55px',
+					fontWeight: '900',
+					fontFamily: 'Roboto, sans-serif',
+					color: '#0B0861',
+					marginBottom: '30px',
+				}}>
+				{' '}
+				<span style={{ color: '#D8232D' }}> Why </span>
+				Us
+			</Typography>
 			<div className='root2'>
 				<section>
 					<div className='container py-5'>
@@ -69,7 +83,7 @@ export default function WhyUs() {
 										<div className='timeline-content'>
 											<div className='circle'>
 												<span className='homebox'>
-													<img src={img3} className='img' alt='img1' />{" "}
+													<img src={img3} className='img' alt='img1' />{' '}
 												</span>
 											</div>
 											<div className='content'>
@@ -93,7 +107,7 @@ export default function WhyUs() {
 										<div className='timeline-content'>
 											<div className='circle'>
 												<span className='homebox'>
-													<img src={img4} className='img' alt='img1' />{" "}
+													<img src={img4} className='img' alt='img1' />{' '}
 												</span>
 											</div>
 											<div className='content'>
@@ -117,7 +131,7 @@ export default function WhyUs() {
 										<div className='timeline-content'>
 											<div className='circle'>
 												<span className='homebox'>
-													<img src={img5} className='img' alt='img1' />{" "}
+													<img src={img5} className='img' alt='img1' />{' '}
 												</span>
 											</div>
 											<div className='content'>

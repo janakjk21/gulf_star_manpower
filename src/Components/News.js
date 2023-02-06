@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Typography, makeStyles } from "@material-ui/core";
-
+import Loading from "./Loading";
 import Them from "./Them";
-import img1 from "../Assets/Emblem_of_Nepal_(2020).svg";
+import img1 from "../Assets/239-2396321_government-logo-of-nepal.png";
 import "./jobseeker.scss";
 import { getDocs, collection } from "firebase/firestore";
 import { db } from "./fire";
@@ -33,8 +33,7 @@ export default function News() {
 		let newarr = [];
 		const querySnapshot = await getDocs(collection(db, "createnews"));
 		querySnapshot.forEach((doc) => {
-			let currentID = doc.id;
-			let appObj = { ...doc.data(), ["id"]: currentID };
+			let appObj = { ...doc.data() };
 			newarr.push(appObj);
 		});
 		setNews(newarr);
@@ -50,7 +49,7 @@ export default function News() {
 			{news.length > 0 ? (
 				news.map((item) => {
 					return (
-						<div class='blog-card'>
+						<div class='blog-card' style={{ maxWidth: "70%" }}>
 							<img
 								src={img1}
 								style={{
@@ -74,7 +73,7 @@ export default function News() {
 					);
 				})
 			) : (
-				<h1> no news found</h1>
+				<Loading />
 			)}
 		</div>
 	);

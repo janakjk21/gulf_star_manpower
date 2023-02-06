@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./AdimnLogin.css";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import "./adminpannel.css";
 
 export default function AdminLogin(props) {
 	const [email, setEmail] = useState("");

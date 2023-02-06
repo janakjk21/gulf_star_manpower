@@ -81,9 +81,7 @@ export default function MenuItems() {
 				aria-controls='fade-menu'
 				aria-haspopup='true'
 				onClick={handleClick1}>
-				<Link style={{ textDecoration: "none" }}>
-					<Typography className={classes.typography}>Documents</Typography>{" "}
-				</Link>
+				<Typography className={classes.typography}>Documents</Typography>{" "}
 				<IoIosArrowDown />
 			</Button>
 			<Menu
@@ -101,9 +99,11 @@ export default function MenuItems() {
 					</Link>
 				</MenuItem>
 				<MenuItem onClick={handleClose}>
-					<Typography className={classes.typography}>
-						Demand Documents{" "}
-					</Typography>{" "}
+					<Link to='/demand' style={{ textDecoration: "none" }}>
+						<Typography className={classes.typography}>
+							Demand Documents{" "}
+						</Typography>{" "}
+					</Link>
 				</MenuItem>
 				<MenuItem onClick={handleClose}>
 					<Typography className={classes.typography}>

@@ -9,11 +9,10 @@
 
 .hero__heading span {
 	background: rgb(216, 35, 45);
-	background: radial-gradient(
-		circle,
-		rgba(216, 35, 45, 1) 0%,
-		rgba(11, 8, 97, 1) 100%
-	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: radial-gradient(circle,
+			rgba(216, 35, 45, 1) 0%,
+			rgba(11, 8, 97, 1) 100%);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	background-size: 100%;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
@@ -131,17 +130,21 @@
 	#hero {
 		height: auto;
 	}
+
 	#hero h1 {
 		font-size: 28px;
 		line-height: 36px;
 	}
+
 	#hero h2 {
 		font-size: 18px;
 		line-height: 24px;
 	}
+
 	.hero__description {
 		font-size: 30px;
 	}
+
 	.hero__heading span {
 		font-size: 55px;
 		line-height: 1.4;

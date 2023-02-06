@@ -2,7 +2,6 @@ import React from "react";
 import "./Aboutus.css";
 import aboutus_img from "../Assets/1-min-min_2.JPG";
 import { Typography } from "@material-ui/core";
-import AOS from "aos";
 
 export default function Aboutus() {
 	return (

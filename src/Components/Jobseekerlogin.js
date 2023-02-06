@@ -5,6 +5,7 @@ import { db } from "./fire";
 import Them from "./Them";
 import "./jobseeker.scss";
 import { Link } from "react-router-dom";
+import Loading from "./Loading";
 const useStyles = makeStyles((theme) => ({
 	Typography: {
 		// textAlign: "center",
@@ -32,8 +33,7 @@ export default function Jobseekerlogin() {
 		let newarr = [];
 		const querySnapshot = await getDocs(collection(db, "createjobs"));
 		querySnapshot.forEach((doc) => {
-			let currentID = doc.id;
-			let appObj = { ...doc.data(), ["id"]: currentID };
+			let appObj = { ...doc.data() };
 			newarr.push(appObj);
 			// doc.data() is never undefined for query doc snapshots
 			// console.log(doc.id, " => ", doc.data());
@@ -76,7 +76,7 @@ export default function Jobseekerlogin() {
 					);
 				})
 			) : (
-				<Typography className={classes.Typography}>No Jobs yet</Typography>
+				<Loading />
 			)}
 		</div>
 	);
