@@ -9,9 +9,9 @@ export default function Jk() {
 					<div className='row flex-lg-nowrap align-items-center g-5'>
 						<div className='order-lg-1 w-100'>
 							<img
-								// style={{
-								// 	clipPath: 'polygon(25% 0%, 100% 0%, 100% 99%, 0% 100%)',
-								// }}
+								style={{
+									clipPath: 'polygon(25% 0%, 100% 0%, 100% 99%, 0% 100%)',
+								}}
 								className='d-block mx-lg-auto img-fluid'
 								src={quti}
 								alt='Milad Fakurian'
@@ -24,7 +24,12 @@ export default function Jk() {
 						<div className='col-lg-6 col-xl-5 text-center text-lg-start pt-lg-5 mt-xl-4'>
 							<div className='lc-block mb-4'>
 								<div editable='rich'>
-									<h1 className='hero__heading'>Gulf Star over seas</h1>
+									<h1
+										className='hero__heading'
+										style={{ backgroundColor: '#000000' }}>
+										{' '}
+										<span>Gulf Star over seas</span>
+									</h1>
 								</div>
 							</div>
 							<div className='lc-block mb-5'>

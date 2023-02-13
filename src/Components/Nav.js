@@ -78,7 +78,7 @@ export default function Nav() {
 	};
 	const displayMobile = () => {
 		return (
-			<AppBar style={{ backgroundColor: '#ffffff' }}>
+			<AppBar style={{ background: 'transparent', boxShadow: 'none' }}>
 				<Grid container style={{ paddingLeft: '10px' }}>
 					<Grid item xs={12} md={4}>
 						<img src={logo_png} alt='logo' className={classes.logo} />
@@ -199,7 +199,13 @@ export default function Nav() {
 					</Grid>
 				</Toolbar>
 
-				<Grid style={{ position: 'relative', left: '70%' }}>
+				<Grid
+					style={{
+						background: 'transparent',
+						boxShadow: 'none',
+						position: 'relative',
+						left: '70%',
+					}}>
 					{' '}
 					<Grid container direction='row'>
 						<Typography>WhatsApp/Viber/WeChat :</Typography>

@@ -33,6 +33,8 @@ const Fasterway = React.lazy(() => import('./Components/Fasterwayto'));
 const Testimonial = React.lazy(() => import('./Components/Testimonial'));
 const Contactus = React.lazy(() => import('./Components/Contactus'));
 const Jk = React.lazy(() => import('./Components/Jk'));
+const Hero3 = React.lazy(() => import('./Components/Herosection/Hero3'));
+
 function App() {
 	const [isAuth, setAuth] = useState(true);
 	const changeauth = () => {
@@ -120,18 +122,21 @@ function App() {
 					</Route>
 					<Route path='/jk'>
 						<Nav></Nav>
-						<Jk></Jk>
-						<Coutry></Coutry>
-						<Fasterwayto></Fasterwayto>
+						<Hero3 />
+
+						{/* <Jk></Jk> */}
+						{/* <Coutry></Coutry> */}
+						{/* <Fasterwayto></Fasterwayto> */}
 						{/* <Message></Message> */}
 
 						{/* <Aboutus></Aboutus> */}
+						{/* <Client></Client>
 						<Job />
-						<Client></Client>
+
 						<Testimonial></Testimonial>
 
 						<Apply />
-						<Footer />
+						<Footer /> */}
 					</Route>
 					<Route path='/'>
 						<div>

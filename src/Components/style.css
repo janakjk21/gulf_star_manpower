@@ -2134,7 +2134,7 @@ blockquote:not(.has-light-gray-color):not(.has-very-dark-gray-color):not(.is-sty
 .blog-details-footer .tags li a {
   display: inline-block;
   padding: 10px 15px;
-  border: 1px solid #F3F3F3;
+  border: 1px solid #FAEDE3;
   margin: 5px 5px 5px 0;
   color: var(--paragraph-color);
   -webkit-transition: all 0.3s ease-in;
@@ -9895,7 +9895,7 @@ label[for=wp-comment-cookies-consent] {
 .page-wrapper {
   position: relative;
   z-index: 0;
-  background-image: url(../Assets/img/bg/01.jpg);
+  /* background-image: url(../Assets/img/bg/01.jpg); */
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;

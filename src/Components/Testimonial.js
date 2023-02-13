@@ -1,11 +1,6 @@
 import { Avatar, Typography } from '@material-ui/core';
-import Image_1 from '../Assets/compressjpeg/PENTAGON ENGINEERING TRADING AND CONTRACTING.jpg';
-import Image_2 from '../Assets/compressjpeg/2 al baz.jpg';
-import Image_3 from '../Assets/compressjpeg/MATNA FLEX.jpg';
-import Image_4 from '../Assets/compressjpeg/PEOPLE OUTSOURCE TRADING AND CONTRACTING.jpg';
-import Image_5 from '../Assets/compressjpeg/7 quadrant.jpg';
-import Image_6 from '../Assets/compressjpeg/8 srr.jpg';
-import Image_7 from '../Assets/compressjpeg/season engineering group.jpg';
+import Image_1 from '../Assets/img/sections/testimonial/tesi-01.png';
+
 import React from 'react';
 import SwiperCore, { Pagination, Autoplay, Navigation } from 'swiper/core';
 
@@ -79,7 +74,14 @@ export default function Testimonial(theme) {
 	const classes = useStyles();
 
 	return (
-		<>
+		<div
+			style={{
+				backgroundColor: '#ffffff',
+				marginTop: '4vh',
+				marginBottom: '5vh',
+				height: '80vh',
+			}}
+			className='destination-section'>
 			<Typography
 				style={{
 					textAlign: 'center',
@@ -88,10 +90,11 @@ export default function Testimonial(theme) {
 					fontFamily: 'Roboto, sans-serif',
 					color: '#0B0861',
 					marginBottom: '30px',
+					paddingBottom: '5vh',
 				}}>
 				{' '}
-				<span style={{ color: '#000000' }}> Our </span>
-				Clients
+				<span style={{ color: '#000000' }}> Testimonial </span>
+				From clients
 			</Typography>
 			<Swiper
 				loop={true}
@@ -129,13 +132,13 @@ export default function Testimonial(theme) {
 					<SingleItem></SingleItem>
 				</SwiperSlide>
 			</Swiper>
-		</>
+		</div>
 	);
 }
 
 const SingleItem = () => {
 	return (
-		<div class='slick-item'>
+		<div class='slick-item' style={{ backgroundColor: '#FAEDE3' }}>
 			<div class='testimonial-single-items style-01 v-02'>
 				<div class='feedback-wrap'>
 					<ul class='ul feedback-icon-list'>
@@ -168,7 +171,7 @@ const SingleItem = () => {
 				<div class='client-and-quote'>
 					<div class='client-details'>
 						<div class='thumb'>
-							<img src='assets/img/sections/testimonial/tesi-01.png' alt='' />
+							<img src={Image_1} alt='' />
 						</div>
 						<div class='content'>
 							<p class='client-name'>Savannah Nguyen</p>

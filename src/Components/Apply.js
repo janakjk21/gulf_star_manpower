@@ -1,4 +1,4 @@
-import { Button } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
 import React, { useState } from 'react';
 import { FiPhoneCall, FiMail } from 'react-icons/fi';
 import Iconbar from './Iconbar';
@@ -44,13 +44,20 @@ export default function Apply() {
 	};
 	return (
 		<div>
+			<Typography
+				style={{
+					textAlign: 'center',
+					fontSize: '55px',
+					fontWeight: '900',
+					fontFamily: 'Roboto, sans-serif',
+					color: '#0B0861',
+					marginBottom: '30px',
+				}}>
+				{' '}
+				<span style={{ color: '#000000' }}> Get </span>
+				Your Free Consultation
+			</Typography>
 			<section id='contact'>
-				<div className='container'>
-					<div className='section-header'>
-						<h3 className='section-title'>Get Your Free Consultation</h3>
-						<p className='section-description'>If any queres contact us</p>
-					</div>
-				</div>
 				<Iframe
 					url='https://maps.google.com/maps?q=gulfstar%20overseas&t=&z=13&ie=UTF8&iwloc=&output=embed'
 					width='100%'

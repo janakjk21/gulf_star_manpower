@@ -5,7 +5,7 @@ import img2 from '../Assets/2020740560196810551blog_332_1.jpg';
 import img3 from '../Assets/2064220603312941304992346home-img-01-442-280.jpg';
 import img4 from '../Assets/126101094hotel.jpeg';
 import img5 from '../Assets/cleaning-home-table-sanitizing-kitchen-260nw-1695842029.webp';
-import img6 from '../Assets/welding-67640__340.jpg';
+import img6 from '../Assets/istockphoto-157435516-612x612.jpg';
 import { Typography, makeStyles } from '@material-ui/core';
 
 import AOS from 'aos';

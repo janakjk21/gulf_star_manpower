@@ -1,4 +1,4 @@
-import { Avatar, Typography } from '@material-ui/core';
+import { Avatar, Box, Typography } from '@material-ui/core';
 import Image_1 from '../Assets/compressjpeg/PENTAGON ENGINEERING TRADING AND CONTRACTING.jpg';
 import Image_2 from '../Assets/compressjpeg/2 al baz.jpg';
 import Image_3 from '../Assets/compressjpeg/MATNA FLEX.jpg';
@@ -24,7 +24,13 @@ SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 export default function Clients(theme) {
 	return (
-		<>
+		<Box
+			style={{
+				backgroundColor: '#FAEDE3',
+				marginTop: '6vh',
+				marginBottom: '5vh',
+				height: '60vh',
+			}}>
 			<Typography
 				style={{
 					textAlign: 'center',
@@ -33,6 +39,7 @@ export default function Clients(theme) {
 					fontFamily: 'Roboto, sans-serif',
 					color: '#0B0861',
 					marginBottom: '30px',
+					paddingBottom: '40px',
 				}}>
 				{' '}
 				<span style={{ color: '#000000' }}> Our </span>
@@ -96,6 +103,6 @@ export default function Clients(theme) {
 					</div>
 				</SwiperSlide>
 			</Swiper>
-		</>
+		</Box>
 	);
 }
