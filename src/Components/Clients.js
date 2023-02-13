@@ -26,7 +26,7 @@ export default function Clients(theme) {
 	return (
 		<Box
 			style={{
-				backgroundColor: '#FAEDE3',
+				backgroundColor: '#FFFFFF',
 				marginTop: '6vh',
 				marginBottom: '5vh',
 				height: '60vh',
@@ -67,18 +67,14 @@ export default function Clients(theme) {
 				}}
 				className='mySwiper'>
 				<SwiperSlide>
-					<div
-						class='single-institute-item'
-						style={{ border: '1px solid #E4E4E4' }}>
+					<div class='single-institute-item'>
 						<div class='logo-wrap'>
 							<img src={Image_2} alt='amity university' />
 						</div>
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
-					<div
-						class='single-institute-item'
-						style={{ border: '1px solid #E4E4E4' }}>
+					<div class='single-institute-item'>
 						<div class='logo-wrap'>
 							<img src={Image_2} alt='amity university' />
 						</div>
@@ -88,18 +84,18 @@ export default function Clients(theme) {
 					</div> */}
 				</SwiperSlide>
 				<SwiperSlide>
-					<div class='brand-item' style={{ border: '1px solid #E4E4E4' }}>
+					<div class='brand-item'>
 						<img src={Image_2} alt='amity university' />
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
-					<div class='brand-item' style={{ border: '1px solid #E4E4E4' }}>
-						<img src={Image_4} alt='amity university' />
+					<div class='brand-item'>
+						<img src={Image_2} alt='amity university' />
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
-					<div class='brand-item' style={{ border: '1px solid #E4E4E4' }}>
-						<img src={Image_4} alt='amity university' />
+					<div class='brand-item'>
+						<img src={Image_2} alt='amity university' />
 					</div>
 				</SwiperSlide>
 			</Swiper>

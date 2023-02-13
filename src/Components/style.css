@@ -1410,7 +1410,7 @@ ul {
 
 /*Wp  BlockQuote */
 blockquote:not(.has-light-gray-color):not(.has-very-dark-gray-color):not(.is-style-large):not(.is-style-large) {
-  background-color: rgba(82, 95, 225, 0.1);
+  background-color: #ffffff;
   border-radius: 8px;
   padding: 45px 50px 50px 100px;
   margin-top: 30px;

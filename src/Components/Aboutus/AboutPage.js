@@ -1,15 +1,15 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core';
-import img from '../Assets/DINESH PAUDEL CHHETRI MBC CARD.jpg';
-import Them from './Them';
-import Testimonial from './Testimonial';
-import './style.css';
-import './responsive.css';
-import aboutus_img from '../Assets/1-min-min_2.JPG';
-import employe_1 from '../Assets/img/sections/client/customer-care.png';
-import Employe from './Allemployes';
-import Why_us from './WhyUs';
-import employe_2 from '../Assets/img/team-details/01.jpg';
+import img from '../../Assets/DINESH PAUDEL CHHETRI MBC CARD.jpg';
+import Them from '../Them';
+import Testimonial from '../Testimonial';
+import '../style.css';
+import '../responsive.css';
+import aboutus_img from '../../Assets/1-min-min_2.JPG';
+import employe_1 from '../../Assets/img/sections/client/customer-care.png';
+import Employe from '../Allemployes';
+import Why_us from '../WhyUs';
+import employe_2 from '../../Assets/img/team-details/01.jpg';
 export default function AboutPage() {
 	return (
 		<div class='about-page-area-wrapper single-page-section-top-space single-page-section-bottom-space'>
@@ -18,7 +18,7 @@ export default function AboutPage() {
 			<Headercomponent></Headercomponent>
 			<SecondItem></SecondItem>
 			<Lastcomponent />
-		
+
 			{/* <Testimonial /> */}
 			<Why_us></Why_us>
 		</div>

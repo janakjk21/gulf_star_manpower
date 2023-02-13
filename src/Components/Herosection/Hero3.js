@@ -2,7 +2,17 @@ import React from 'react';
 import './theme.min.css';
 import img1 from '../../Assets/hero-img.jpg';
 import Loginitem from './Loginitem';
+import Coutry from '../Coutry';
 import img2 from '../../Assets/1-min-min_2.JPG';
+import Director from './Director';
+import Message from '../Message ';
+import Fasterwayto from '../Fasterwayto';
+import Testimonial from './Testimonial';
+import Clients from '../Clients';
+import Footer from '../Footer';
+import Contactus from '../contactus/Contactus';
+import Job from '../Job';
+import Apply from '../Apply';
 export default function Hero3() {
 	return (
 		<div>
@@ -161,7 +171,16 @@ export default function Hero3() {
 				</section>
 				{/* <Smallcomponent /> */}
 			</main>
+			<Coutry />
 			<Loginitem />
+			<Fasterwayto />
+
+			{/* <Message /> */}
+			<Clients />
+			<Job />
+			<Testimonial />
+			<Apply />
+			<Footer />
 		</div>
 	);
 }

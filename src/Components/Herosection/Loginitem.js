@@ -10,7 +10,11 @@ export default function Loginitem() {
 	return (
 		<div>
 			<section id='hero' className='d-flex align-items-center'>
-				<div className='container' data-aos='fade-up' data-aos-delay='300'>
+				<div
+					className='container'
+					data-aos='fade-up'
+					data-aos-delay='300'
+					style={{ borderRadius: '52px' }}>
 					<div className='row icon-boxes'>
 						<div
 							className='col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0'
