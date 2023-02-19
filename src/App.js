@@ -142,20 +142,21 @@ function App() {
 					<Route path='/'>
 						<div>
 							<Nav></Nav>
-							<Hero></Hero>
+							<Hero3 />
+							{/* <Hero></Hero>
 							<Coutry></Coutry>
-							<Fasterwayto></Fasterwayto>
+							<Fasterwayto></Fasterwayto> */}
 
 							{/* <Message></Message> */}
-							<Job />
+							{/* <Job /> */}
 							{/* <Aboutus></Aboutus> */}
-							<Client></Client>
+							{/* <Client></Client>
 
 							<Testimonial></Testimonial>
 
 							<Ourvalues />
 							<Apply />
-							<Footer />
+							<Footer /> */}
 						</div>
 					</Route>
 				</Switch>

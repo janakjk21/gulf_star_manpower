@@ -171,7 +171,7 @@ export default function Hero3() {
 				</section>
 				{/* <Smallcomponent /> */}
 			</main>
-			<Coutry />
+			{/* <Coutry /> */}
 			<Loginitem />
 			<Fasterwayto />
 
