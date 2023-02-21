@@ -10250,13 +10250,16 @@ label[for=wp-comment-cookies-consent] {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+
 }
 
 .brand-item img {
   display: inline-block;
+  object-fit: cover;
   width: auto;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  max-height: 300px;
 }
 
 .courses-section-area {

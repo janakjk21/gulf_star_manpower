@@ -13,12 +13,13 @@ import Footer from '../Footer';
 import Contactus from '../contactus/Contactus';
 import Job from '../Job';
 import Apply from '../Apply';
+import Blogs from '../Blog/Blogs';
 export default function Hero3() {
 	return (
 		<div>
 			<main
 				className='page-wrapper'
-				style={{ backgroundColor: '#fffff', marginTop: '128px' }}>
+				style={{ backgroundColor: '/fffff', marginTop: '60px' }}>
 				<section className='container py-5 mt-5 mb-lg-3'>
 					<div className='row align-items-center mt-md-2'>
 						<div className='col-lg-7 order-lg-2 mb-lg-0 mb-4 pb-2 pb-lg-0'>
@@ -26,51 +27,32 @@ export default function Hero3() {
 								className='d-block mx-auto'
 								src={img1}
 								width={746}
-								alt='Hero image'
+								alt='Hero'
 							/>
 						</div>
 						<div className='col-lg-5 order-lg-1 pe-lg-0'>
 							<h1 className='display-5 mb-4 me-lg-n5 text-lg-start text-center mb-4'>
-								Start exploring{' '}
+								Gulf Star
 								<span className='dropdown d-inline-block'>
 									<a
-										className='dropdown-toggle text-decoration-none'
-										href='#'
-										role='button'
-										data-bs-toggle='dropdown'
-										aria-haspopup='true'
+										className=' text-decoration-none'
+										href='/'
 										aria-expanded='false'>
-										Berlin
+										overseas
 									</a>
-									<span className='dropdown-menu dropdown-menu-end my-1'>
-										<a className='dropdown-item fs-base fw-bold' href='#'>
-											Hamburg
-										</a>
-										<a className='dropdown-item fs-base fw-bold' href='#'>
-											Munich
-										</a>
-										<a className='dropdown-item fs-base fw-bold' href='#'>
-											Frankfurt am Main
-										</a>
-										<a className='dropdown-item fs-base fw-bold' href='#'>
-											Stuttgart
-										</a>
-										<a className='dropdown-item fs-base fw-bold' href='#'>
-											Cologne
-										</a>
-									</span>
 								</span>
 							</h1>
 							<p className='text-lg-start text-center mb-4 mb-lg-5 fs-lg'>
-								Find great places to stay, eat, shop, or visit from our partners
-								and local experts.
+								Rely on a trusted manpower agency with a proven track record of
+								delivering top-notch employees from Nepal to Gulf, Malaysia, and
+								other parts of the world
 							</p>
 							{/* Search form*/}
 							<div className='me-lg-n5'>
 								<form className='form-group d-block d-md-flex position-relative rounded-md-pill me-lg-n5'>
 									<div className='input-group input-group-lg border-end-md'>
 										<span className='input-group-text text-muted rounded-pill ps-3'>
-											<i className='fi-search' />
+											{/* <i className='fi-search' /> */}
 										</span>
 										<input
 											className='form-control'
@@ -81,29 +63,18 @@ export default function Hero3() {
 									<hr className='d-md-none my-2' />
 									<div className='d-sm-flex'>
 										<div
-											className='dropdown w-100 mb-sm-0 mb-3'
+											className=' w-100 mb-sm-0 mb-3'
 											data-bs-toggle='select'>
 											<button
-												className='btn btn-link btn-lg dropdown-toggle ps-2 ps-sm-3'
-												type='button'
-												data-bs-toggle='dropdown'>
+												className='btn btn-link btn-lg ps-2 ps-sm-3'
+												type='button'>
 												<i className='fi-list me-2' />
-												<span className='dropdown-toggle-label'>
-													All categories
-												</span>
+												<span className='dropdown-toggle-label'></span>
 											</button>
 											<input type='hidden' />
 											<ul className='dropdown-menu'>
 												<li>
-													<a className='dropdown-item' href='#'>
-														<i className='fi-bed fs-lg opacity-60 me-2' />
-														<span className='dropdown-item-label'>
-															Accomodation
-														</span>
-													</a>
-												</li>
-												<li>
-													<a className='dropdown-item' href='#'>
+													<a className='dropdown-item' href='/'>
 														<i className='fi-cafe fs-lg opacity-60 me-2' />
 														<span className='dropdown-item-label'>
 															Food &amp; Drink
@@ -111,7 +82,7 @@ export default function Hero3() {
 													</a>
 												</li>
 												<li>
-													<a className='dropdown-item' href='#'>
+													<a className='dropdown-item' href='/'>
 														<i className='fi-shopping-bag fs-lg opacity-60 me-2' />
 														<span className='dropdown-item-label'>
 															Shopping
@@ -119,7 +90,7 @@ export default function Hero3() {
 													</a>
 												</li>
 												<li>
-													<a className='dropdown-item' href='#'>
+													<a className='dropdown-item' href='/'>
 														<i className='fi-museum fs-lg opacity-60 me-2' />
 														<span className='dropdown-item-label'>
 															Art &amp; History
@@ -127,7 +98,7 @@ export default function Hero3() {
 													</a>
 												</li>
 												<li>
-													<a className='dropdown-item' href='#'>
+													<a className='dropdown-item' href='/'>
 														<i className='fi-entertainment fs-lg opacity-60 me-2' />
 														<span className='dropdown-item-label'>
 															Entertainment
@@ -135,7 +106,7 @@ export default function Hero3() {
 													</a>
 												</li>
 												<li>
-													<a className='dropdown-item' href='#'>
+													<a className='dropdown-item' href='/'>
 														<i className='fi-meds fs-lg opacity-60 me-2' />
 														<span className='dropdown-item-label'>
 															Medicine
@@ -143,13 +114,13 @@ export default function Hero3() {
 													</a>
 												</li>
 												<li>
-													<a className='dropdown-item' href='#'>
+													<a className='dropdown-item' href='/'>
 														<i className='fi-makeup fs-lg opacity-60 me-2' />
 														<span className='dropdown-item-label'>Beauty</span>
 													</a>
 												</li>
 												<li>
-													<a className='dropdown-item' href='#'>
+													<a className='dropdown-item' href='/'>
 														<i className='fi-car fs-lg opacity-60 me-2' />
 														<span className='dropdown-item-label'>
 															Car Rental
@@ -179,6 +150,7 @@ export default function Hero3() {
 			<Clients />
 			<Job />
 			<Testimonial />
+			<Blogs />
 			<Apply />
 			<Footer />
 		</div>

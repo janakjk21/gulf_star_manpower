@@ -1,11 +1,16 @@
 import { Avatar, Box, Typography } from '@material-ui/core';
-import Image_1 from '../Assets/compressjpeg/PENTAGON ENGINEERING TRADING AND CONTRACTING.jpg';
-import Image_2 from '../Assets/compressjpeg/2 al baz.jpg';
-import Image_3 from '../Assets/compressjpeg/MATNA FLEX.jpg';
-import Image_4 from '../Assets/compressjpeg/PEOPLE OUTSOURCE TRADING AND CONTRACTING.jpg';
-import Image_5 from '../Assets/compressjpeg/7 quadrant.jpg';
-import Image_6 from '../Assets/compressjpeg/8 srr.jpg';
-import Image_7 from '../Assets/compressjpeg/season engineering group.jpg';
+import Image_1 from '../Assets/Componey logos/New folder/al_seedawi-removebg-preview.png';
+import Image_2 from '../Assets/Componey logos/New folder/arab_home-removebg-preview.png';
+import Image_3 from '../Assets/Componey logos/New folder/arabin_gulf-removebg-preview.png';
+import Image_4 from '../Assets/Componey logos/New folder/az_satu-removebg-preview.png';
+import Image_5 from '../Assets/Componey logos/New folder/bara_trading-removebg-preview.png';
+import Image_6 from '../Assets/Componey logos/New folder/Darwaja_kuwait_-removebg-preview.png';
+import Image_7 from '../Assets/Componey logos/New folder/dolphine-removebg-preview.png';
+import Image_8 from '../Assets/Componey logos/New folder/falcon_eye-removebg-preview.png';
+
+import Image_9 from '../Assets/Componey logos/New folder/platinum-removebg-preview.png';
+import Image_10 from '../Assets/Componey logos/New folder/serbawangi-removebg-preview.png';
+
 import React from 'react';
 import SwiperCore, { Pagination, Autoplay, Navigation } from 'swiper/core';
 
@@ -69,7 +74,7 @@ export default function Clients(theme) {
 				<SwiperSlide>
 					<div class='single-institute-item'>
 						<div class='logo-wrap'>
-							<img src={Image_2} alt='amity university' />
+							<img src={Image_1} alt='amity university' />
 						</div>
 					</div>
 				</SwiperSlide>
@@ -85,17 +90,42 @@ export default function Clients(theme) {
 				</SwiperSlide>
 				<SwiperSlide>
 					<div class='brand-item'>
-						<img src={Image_2} alt='amity university' />
+						<img src={Image_3} alt='amity university' />
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
 					<div class='brand-item'>
-						<img src={Image_2} alt='amity university' />
+						<img src={Image_4} alt='amity university' />
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
 					<div class='brand-item'>
-						<img src={Image_2} alt='amity university' />
+						<img src={Image_5} alt='amity university' />
+					</div>
+				</SwiperSlide>
+				<SwiperSlide>
+					<div class='brand-item'>
+						<img src={Image_6} alt='amity university' />
+					</div>
+				</SwiperSlide>
+				<SwiperSlide>
+					<div class='brand-item'>
+						<img src={Image_7} alt='amity university' />
+					</div>
+				</SwiperSlide>
+				<SwiperSlide>
+					<div class='brand-item'>
+						<img src={Image_8} alt='amity university' />
+					</div>
+				</SwiperSlide>
+				<SwiperSlide>
+					<div class='brand-item'>
+						<img src={Image_9} alt='amity university' />
+					</div>
+				</SwiperSlide>
+				<SwiperSlide>
+					<div class='brand-item'>
+						<img src={Image_10} alt='amity university' />
 					</div>
 				</SwiperSlide>
 			</Swiper>

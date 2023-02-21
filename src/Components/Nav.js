@@ -180,7 +180,7 @@ export default function Nav() {
 	const displayDesktop = () => {
 		return (
 			<AppBar
-				position='fixed'
+				position='static'
 				style={{ background: 'transparent', boxShadow: 'none' }}>
 				<Toolbar color='none'>
 					<Grid container>

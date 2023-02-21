@@ -47,7 +47,7 @@ export default function Them(props) {
 			<div>
 				<Typography className={classes.Typography}>
 					{' '}
-					<span style={{ color: '#000000' }}> {props.title} </span>
+					<span style={{ color: '#1E1926' }}> {props.title} </span>
 					{props.title1}
 				</Typography>
 			</div>

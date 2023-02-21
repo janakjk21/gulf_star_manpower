@@ -35,6 +35,9 @@ const Testimonial = React.lazy(() => import('./Components/Testimonial'));
 const Contactus = React.lazy(() => import('./Components/contactus/Contactus'));
 
 const Hero3 = React.lazy(() => import('./Components/Herosection/Hero3'));
+const Dashboard = React.lazy(() =>
+	import('./Components/Admin section/dash/index')
+);
 
 function App() {
 	const [isAuth, setAuth] = useState(true);
@@ -50,6 +53,13 @@ function App() {
 					<Route path='/aboutus'>
 						<Nav></Nav>
 						<AboutPage></AboutPage>
+
+						<Footer></Footer>
+					</Route>
+					<Route path='/dashboard'>
+						{/* <Nav></Nav> */}
+						<Dashboard></Dashboard>
+						{/* <AboutPage></AboutPage> */}
 
 						<Footer></Footer>
 					</Route>

@@ -35,15 +35,23 @@ const Headercomponent = () => {
 							<h3 className='content-title'></h3>
 							<h3 className='content-title'>About us</h3>
 							<p className='paragraph'>
-								Eduplan student consultancy is one of the renowned international
-								education consultancy firms which assisting overseas students
+								GulfStar Overseas Pvt. Ltd. is a leading human resource
+								consultancy firm, providing unparalleled services to both
+								clients and candidates. Our firm is registered under the
+								Department of Labor, Government of Nepal with License Number
+								1011/068/069, and we have been reinforced by extensive
+								experience in the Gulf countries, such as UAE, KSA, Qatar,
+								Kuwait, Bahrain, and Malaysia.
 							</p>
 							<p className='paragraph'>
-								The head office of Eduplan is located in India which helps all
-								Indian students to get admission into top-ranked universities
-								from the United Kingdom, USA, Australia, Canada,Germany and
-								Sweden. At the same time, we have a very strong relationship
-								with our partner Malaysian, Cyprus and Chinese Universities.
+								With a passion for successful recruitment, our team is dedicated
+								to understanding and appreciating the unique requirements of
+								both clients and candidates. We validate every candidate and
+								every requirement through a rigorous documentation process,
+								ensuring that we only work with quality candidates and
+								requirements. Our staff is trained to efficiently handle all
+								aspects of manpower mobilization, screening, and documentation,
+								providing a comprehensive and personal recruitment service
 							</p>
 							<div className='icon-box-with-text-wrap'>
 								<ul className='ul icon-box-with-text style-01'>

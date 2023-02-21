@@ -24,28 +24,34 @@ export default function Testimonial() {
 				<span style={{ color: '#000000' }}> Testimonials </span>
 				of Clients
 			</Typography>
-			<div className='row g-5 gallery' data-video='true'>
+			<div
+				className='row  gallery'
+				data-video='true'
+				style={{
+					paddingLeft: '10PX',
+					paddingRight: '10px',
+				}}>
 				{/* Item */}
 				<div className='col-xl-4 col-sm-6'>
-					{/* Testimonial inside card: Compound */}
 					<div
-						className='card border-0 shadow-sm'
+						className='card card-hover border-0 shadow-sm h-100'
 						style={{ backgroundColor: '#ffffff' }}>
-						<blockquote className=' card-body'>
-							<h4 style={{ maxWidth: '20rem' }}>
-								"I will select the best accommodation for you"
-							</h4>
+						<div className=' card-body'>
 							<p>
-								Amet libero morbi venenatis ut est. Iaculis leo ultricies nunc
-								id ante adipiscing. Vel metus odio at faucibus ac. Neque id
-								placerat et id ut. Scelerisque eu mi ullamcorper sit urna. Est
-								volutpat dignissim elementum nec.
+								"I have worked with Gulf Star Overseas Pvt. Ltd. for several
+								years, and I can confidently say that they are one of the most
+								reliable and trustworthy recruitment agencies I have ever worked
+								with. The quality of candidates they provide is exceptional, and
+								their staff is professional, knowledgeable, and always willing
+								to go the extra mile to ensure that our needs are met. I highly
+								recommend Gulf Star Overseas Pvt. Ltd. to anyone looking for
+								high-quality recruitment services."
 							</p>
 							<footer className='d-flex justify-content-between'>
 								<div className='pe-3'>
-									<h6 className='mb-0'>Floyd Miles</h6>
+									<h6 className='mb-0'>John Smith, HR Manager</h6>
 									<div className='text-muted fw-normal fs-sm mb-3'>
-										Imperial Property Group Agent
+										Arab home Group Agent
 									</div>
 									<a
 										href='jk'
@@ -75,107 +81,113 @@ export default function Testimonial() {
 									<div className='text-muted fs-sm mt-1'>45 reviews</div>
 								</div>
 							</footer>
-						</blockquote>
+						</div>
 					</div>
 				</div>
 				<div className='col-xl-4 col-sm-6'>
-					{/* Testimonial inside card: Compound */}
-					<div className='card border-0 shadow-sm'>
-						<blockquote className='blockquote card-body'>
-							<h4 style={{ maxWidth: '20rem' }}>
-								"I will select the best accommodation for you"
-							</h4>
+					<div
+						className='card card-hover border-0 shadow-sm h-100'
+						style={{ backgroundColor: '#ffffff' }}>
+						<div className=' card-body'>
 							<p>
-								Amet libero morbi venenatis ut est. Iaculis leo ultricies nunc
-								id ante adipiscing. Vel metus odio at faucibus ac. Neque id
-								placerat et id ut. Scelerisque eu mi ullamcorper sit urna. Est
-								volutpat dignissim elementum nec.
+								I had the pleasure of working with Gulf Star Overseas Pvt. Ltd.
+								to find a suitable candidate for a high-level position in our
+								organization. The team at Gulf Star Overseas Pvt. Ltd. was
+								professional, responsive, and efficient throughout the entire
+								process. They took the time to understand our unique
+								requirements and provided us with a pool of qualified candidates
+								to choose from. I was impressed with the level of service and
+								the quality of the candidates, and I would not hesitate to work
+								with them again in the future.
 							</p>
 							<footer className='d-flex justify-content-between'>
 								<div className='pe-3'>
-									<h6 className='mb-0'>Floyd Miles</h6>
-									<div className='text-muted fw-normal fs-sm mb-3'>
-										Imperial Property Group Agent
-									</div>
+									<h6 className='mb-0'> Arabin Gulf CONSTRUCTION</h6>
+									{/* <div className='text-muted fw-normal fs-sm mb-3'>
+										Arabin_gulf CONSTRUCTION
+									</div> */}
 									<a
-										href='#'
+										href='/'
 										className='btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2'>
-										<i className='fi-facebook' />
+										<FaFacebook></FaFacebook>
 									</a>
 									<a
-										href='#'
+										href='/'
 										className='btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2'>
-										<i className='fi-twitter' />
+										<ImTwitter />
 									</a>
 									<a
-										href='#'
+										href='/'
 										className='btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2'>
-										<i className='fi-linkedin' />
+										<FaLinkedin></FaLinkedin>
 									</a>
 								</div>
 								<div>
 									<div className='star-rating'>
-										<i className='star-rating-icon fi-star-filled active' />
-										<i className='star-rating-icon fi-star-filled active' />
-										<i className='star-rating-icon fi-star-filled active' />
-										<i className='star-rating-icon fi-star-filled active' />
-										<i className='star-rating-icon fi-star-filled active' />
+										<AiFillStar className='star-rating-icon fi-star-filled active'></AiFillStar>
+										<AiFillStar className='star-rating-icon fi-star-filled active'></AiFillStar>
+										<AiFillStar className='star-rating-icon fi-star-filled active'></AiFillStar>
+										<AiFillStar className='star-rating-icon fi-star-filled active'></AiFillStar>
+
+										<AiFillStar className='star-rating-icon fi-star-filled active'></AiFillStar>
 									</div>
-									<div className='text-muted fs-sm mt-1'>45 reviews</div>
 								</div>
 							</footer>
-						</blockquote>
+						</div>
 					</div>
 				</div>
 				<div className='col-xl-4 col-sm-6'>
-					{/* Testimonial inside card: Compound */}
-					<div className='card border-0 shadow-sm'>
-						<blockquote className='blockquote card-body'>
-							<h4 style={{ maxWidth: '20rem' }}>
-								"I will select the best accommodation for you"
-							</h4>
+					<div className='card card-hover border-0 shadow-sm h-100'>
+						<div className=' card-body'>
 							<p>
-								Amet libero morbi venenatis ut est. Iaculis leo ultricies nunc
-								id ante adipiscing. Vel metus odio at faucibus ac. Neque id
-								placerat et id ut. Scelerisque eu mi ullamcorper sit urna. Est
-								volutpat dignissim elementum nec.
+								I am extremely impressed with the level of service I received
+								from Gulf Star Overseas Pvt. Ltd. I was looking for a job in the
+								Gulf countries, and they were able to find me a position that
+								perfectly matched my skills and experience. The staff at Gulf
+								Star Overseas Pvt. Ltd. was friendly, helpful, and professional,
+								and they made the entire process of finding a job abroad much
+								less daunting. I am grateful to them for their assistance, and I
+								would highly recommend Gulf Star Overseas Pvt. Ltd. to anyone
+								looking for a reliable and efficient recruitment agency
 							</p>
 							<footer className='d-flex justify-content-between'>
 								<div className='pe-3'>
-									<h6 className='mb-0'>Floyd Miles</h6>
+									<h6 className='mb-0'> Rajendra Thapa</h6>
 									<div className='text-muted fw-normal fs-sm mb-3'>
-										Imperial Property Group Agent
+										Job Seeker
 									</div>
 									<a
-										href='#'
+										href='/'
 										className='btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2'>
-										<i className='fi-facebook' />
+										<FaFacebook></FaFacebook>
 									</a>
 									<a
-										href='#'
+										href='/'
 										className='btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2'>
-										<i className='fi-twitter' />
+										<ImTwitter />
 									</a>
 									<a
-										href='#'
+										href='/'
 										className='btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2'>
-										<i className='fi-linkedin' />
+										<FaLinkedin></FaLinkedin>
 									</a>
 								</div>
 								<div>
 									<div className='star-rating'>
-										<i className='star-rating-icon fi-star-filled active' />
-										<i className='star-rating-icon fi-star-filled active' />
-										<i className='star-rating-icon fi-star-filled active' />
-										<i className='star-rating-icon fi-star-filled active' />
-										<i className='star-rating-icon fi-star-filled active' />
+										<AiFillStar className='star-rating-icon fi-star-filled active'></AiFillStar>
+										<AiFillStar className='star-rating-icon fi-star-filled active'></AiFillStar>
+										<AiFillStar className='star-rating-icon fi-star-filled active'></AiFillStar>
+										<AiFillStar className='star-rating-icon fi-star-filled active'></AiFillStar>
+
+										<AiFillStar className='star-rating-icon fi-star-filled active'></AiFillStar>
 									</div>
 									<div className='text-muted fs-sm mt-1'>45 reviews</div>
 								</div>
 							</footer>
-						</blockquote>
+						</div>
 					</div>
 				</div>
+
 				{/* Add as many columns with gallery item inside as you need */}
 			</div>
 		</div>

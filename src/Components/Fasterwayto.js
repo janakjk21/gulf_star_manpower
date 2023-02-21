@@ -16,7 +16,7 @@ export default function Fasterwayto() {
 						</div>
 						<div className='col-lg-5 offset-lg-1'>
 							<div className='theme-section-title'>
-								<Typography
+								{/* <Typography
 									style={{
 										textAlign: 'center',
 										fontSize: '55px',
@@ -29,10 +29,11 @@ export default function Fasterwayto() {
 									{' '}
 									<span style={{ color: '#000000' }}> Top </span>
 									Destinations
-								</Typography>
-								<span className='subtitle'>ADVANTAGE FEATURES</span>
+								</Typography> */}
+								{/* <span className='subtitle'>ADVANTAGE FEATURES</span> */}
 								<h4 className='title'>
-									A faster way for your employees to grow <br /> and upskill
+									Message from Board
+									<br /> of Directors
 									<svg
 										className='title-shape style-03 active'
 										width='255'
@@ -61,19 +62,28 @@ export default function Fasterwayto() {
 									</svg>
 								</h4>
 								<p>
-									Our range of solutions has something to offer all businesses
-									and organizations. Whether you’re a non-profit or a commercial
-									entity, we can tailor a plan for your needs.
+									We are proud to present Gulf Star Overseas Pvt. Ltd., a
+									leading manpower agency in Nepal. Our company has established
+									itself as one of the most reputable and successful recruitment
+									agencies in the country. Our commitment to providing
+									high-quality manpower, who are skilled, dedicated, and
+									experienced, has earned us the trust and respect of our
+									clients.
 								</p>
 								<p>
-									Our range of solutions has something to offer all businesses
-									and organizations. Whether you’re a non-profit or a commercial
-									entity, we can tailor a plan for your needs.
+									As a company, we are dedicated to ensuring that each and every
+									placement is a successful one, and we take great pride in the
+									quality of our service. We believe that our business
+									relationship with our clients is a long-term one, and we are
+									committed to providing the best possible service, now and in
+									the future. Thank you for considering Gulf Star Overseas Pvt.
+									Ltd. for your manpower needs. We look forward to working with
+									you.
 								</p>
 							</div>
 							<div className='btn-wrap margin-top-60'>
-								<a href='https://themeim.com/' className='btn-common fill-btn'>
-									Eduplan for business
+								<a href='/aboutus' className='btn-common fill-btn'>
+									More About us
 								</a>
 							</div>
 						</div>
