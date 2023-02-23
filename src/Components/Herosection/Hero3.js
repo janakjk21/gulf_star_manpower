@@ -2,24 +2,25 @@ import React from 'react';
 import './theme.min.css';
 import img1 from '../../Assets/hero-img.jpg';
 import Loginitem from './Loginitem';
-import Coutry from '../Coutry';
-import img2 from '../../Assets/1-min-min_2.JPG';
-import Director from './Director';
-import Message from '../Message ';
-import Fasterwayto from '../Fasterwayto';
+// import img2 from '../../Assets/1-min-min_2.JPG';
+// import Director from './Director';
+// import Message from '../Message ';
+import Fasterwayto from './Fasterwayto';
 import Testimonial from './Testimonial';
 import Clients from '../Clients';
 import Footer from '../Footer';
-import Contactus from '../contactus/Contactus';
+// import Contactus from '../contactus/Contactus';
 import Job from '../Job';
 import Apply from '../Apply';
 import Blogs from '../Blog/Blogs';
+import Nav from './Nav';
 export default function Hero3() {
 	return (
 		<div>
 			<main
 				className='page-wrapper'
 				style={{ backgroundColor: '/fffff', marginTop: '60px' }}>
+				<Nav></Nav>
 				<section className='container py-5 mt-5 mb-lg-3'>
 					<div className='row align-items-center mt-md-2'>
 						<div className='col-lg-7 order-lg-2 mb-lg-0 mb-4 pb-2 pb-lg-0'>
@@ -81,52 +82,6 @@ export default function Hero3() {
 														</span>
 													</a>
 												</li>
-												<li>
-													<a className='dropdown-item' href='/'>
-														<i className='fi-shopping-bag fs-lg opacity-60 me-2' />
-														<span className='dropdown-item-label'>
-															Shopping
-														</span>
-													</a>
-												</li>
-												<li>
-													<a className='dropdown-item' href='/'>
-														<i className='fi-museum fs-lg opacity-60 me-2' />
-														<span className='dropdown-item-label'>
-															Art &amp; History
-														</span>
-													</a>
-												</li>
-												<li>
-													<a className='dropdown-item' href='/'>
-														<i className='fi-entertainment fs-lg opacity-60 me-2' />
-														<span className='dropdown-item-label'>
-															Entertainment
-														</span>
-													</a>
-												</li>
-												<li>
-													<a className='dropdown-item' href='/'>
-														<i className='fi-meds fs-lg opacity-60 me-2' />
-														<span className='dropdown-item-label'>
-															Medicine
-														</span>
-													</a>
-												</li>
-												<li>
-													<a className='dropdown-item' href='/'>
-														<i className='fi-makeup fs-lg opacity-60 me-2' />
-														<span className='dropdown-item-label'>Beauty</span>
-													</a>
-												</li>
-												<li>
-													<a className='dropdown-item' href='/'>
-														<i className='fi-car fs-lg opacity-60 me-2' />
-														<span className='dropdown-item-label'>
-															Car Rental
-														</span>
-													</a>
-												</li>
 											</ul>
 										</div>
 										<button
@@ -157,105 +112,105 @@ export default function Hero3() {
 	);
 }
 
-const Smallcomponent = () => {
-	return (
-		<section className='container pb-5 mb-md-3 mt-n2 mt-sm-0'>
-			<h2 className='h3 text-center text-sm-start mb-sm-4'>Top companies</h2>
-			<div className='tns-carousel-wrapper tns-nav-outside tns-nav-outside-flush'>
-				<div className='tns-carousel-inner'>
-					<div className='pb-1'>
-						<a className='swap-image' href='job-board-employer-single.html'>
-							<img className='swap-to' src={img2} width={196} alt='Microsoft' />
-							<img
-								className='swap-from'
-								src={img2}
-								width={196}
-								alt='Microsoft'
-							/>
-						</a>
-					</div>
-					<div className='pb-1'>
-						<a className='swap-image' href='job-board-employer-single.html'>
-							<img
-								className='swap-to'
-								src='img/job-board/company/indeed.svg'
-								width={196}
-								alt='Indeed'
-							/>
-							<img
-								className='swap-from'
-								src='img/job-board/company/indeed-g.svg'
-								width={196}
-								alt='Indeed'
-							/>
-						</a>
-					</div>
-					<div className='pb-1'>
-						<a className='swap-image' href='job-board-employer-single.html'>
-							<img
-								className='swap-to'
-								src='img/job-board/company/cocacola.svg'
-								width={196}
-								alt='Coca Cola'
-							/>
-							<img
-								className='swap-from'
-								src='img/job-board/company/cocacola-g.svg'
-								width={196}
-								alt='Coca Cola'
-							/>
-						</a>
-					</div>
-					<div className='pb-1'>
-						<a className='swap-image' href='job-board-employer-single.html'>
-							<img
-								className='swap-to'
-								src='img/job-board/company/slack.svg'
-								width={196}
-								alt='Slack'
-							/>
-							<img
-								className='swap-from'
-								src='img/job-board/company/slack-g.svg'
-								width={196}
-								alt='Slack'
-							/>
-						</a>
-					</div>
-					<div className='pb-1'>
-						<a className='swap-image' href='job-board-employer-single.html'>
-							<img
-								className='swap-to'
-								src='img/job-board/company/walmart.svg'
-								width={196}
-								alt='Walmart'
-							/>
-							<img
-								className='swap-from'
-								src='img/job-board/company/walmart-g.svg'
-								width={196}
-								alt='Walmart'
-							/>
-						</a>
-					</div>
-					<div className='pb-1'>
-						<a className='swap-image' href='job-board-employer-single.html'>
-							<img
-								className='swap-to'
-								src='img/job-board/company/google.svg'
-								width={196}
-								alt='Google'
-							/>
-							<img
-								className='swap-from'
-								src='img/job-board/company/google-g.svg'
-								width={196}
-								alt='Google'
-							/>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-	);
-};
+// const Smallcomponent = () => {
+// 	return (
+// 		<section className='container pb-5 mb-md-3 mt-n2 mt-sm-0'>
+// 			<h2 className='h3 text-center text-sm-start mb-sm-4'>Top companies</h2>
+// 			<div className='tns-carousel-wrapper tns-nav-outside tns-nav-outside-flush'>
+// 				<div className='tns-carousel-inner'>
+// 					<div className='pb-1'>
+// 						<a className='swap-image' href='job-board-employer-single.html'>
+// 							<img className='swap-to' src={img2} width={196} alt='Microsoft' />
+// 							<img
+// 								className='swap-from'
+// 								src={img2}
+// 								width={196}
+// 								alt='Microsoft'
+// 							/>
+// 						</a>
+// 					</div>
+// 					<div className='pb-1'>
+// 						<a className='swap-image' href='job-board-employer-single.html'>
+// 							<img
+// 								className='swap-to'
+// 								src='img/job-board/company/indeed.svg'
+// 								width={196}
+// 								alt='Indeed'
+// 							/>
+// 							<img
+// 								className='swap-from'
+// 								src='img/job-board/company/indeed-g.svg'
+// 								width={196}
+// 								alt='Indeed'
+// 							/>
+// 						</a>
+// 					</div>
+// 					<div className='pb-1'>
+// 						<a className='swap-image' href='job-board-employer-single.html'>
+// 							<img
+// 								className='swap-to'
+// 								src='img/job-board/company/cocacola.svg'
+// 								width={196}
+// 								alt='Coca Cola'
+// 							/>
+// 							<img
+// 								className='swap-from'
+// 								src='img/job-board/company/cocacola-g.svg'
+// 								width={196}
+// 								alt='Coca Cola'
+// 							/>
+// 						</a>
+// 					</div>
+// 					<div className='pb-1'>
+// 						<a className='swap-image' href='job-board-employer-single.html'>
+// 							<img
+// 								className='swap-to'
+// 								src='img/job-board/company/slack.svg'
+// 								width={196}
+// 								alt='Slack'
+// 							/>
+// 							<img
+// 								className='swap-from'
+// 								src='img/job-board/company/slack-g.svg'
+// 								width={196}
+// 								alt='Slack'
+// 							/>
+// 						</a>
+// 					</div>
+// 					<div className='pb-1'>
+// 						<a className='swap-image' href='job-board-employer-single.html'>
+// 							<img
+// 								className='swap-to'
+// 								src='img/job-board/company/walmart.svg'
+// 								width={196}
+// 								alt='Walmart'
+// 							/>
+// 							<img
+// 								className='swap-from'
+// 								src='img/job-board/company/walmart-g.svg'
+// 								width={196}
+// 								alt='Walmart'
+// 							/>
+// 						</a>
+// 					</div>
+// 					<div className='pb-1'>
+// 						<a className='swap-image' href='job-board-employer-single.html'>
+// 							<img
+// 								className='swap-to'
+// 								src='img/job-board/company/google.svg'
+// 								width={196}
+// 								alt='Google'
+// 							/>
+// 							<img
+// 								className='swap-from'
+// 								src='img/job-board/company/google-g.svg'
+// 								width={196}
+// 								alt='Google'
+// 							/>
+// 						</a>
+// 					</div>
+// 				</div>
+// 			</div>
+// 		</section>
+// 	);
+// };

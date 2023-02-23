@@ -1,14 +1,11 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core';
-import img from '../../Assets/DINESH PAUDEL CHHETRI MBC CARD.jpg';
-import Them from '../Them';
-import Testimonial from '../Testimonial';
-import '../style.css';
-import '../responsive.css';
+// import { makeStyles } from '@material-ui/core';
+// import img from '../../Assets/DINESH PAUDEL CHHETRI MBC CARD.jpg';
+// import Them from '../Them';
 import aboutus_img from '../../Assets/1-min-min_2.JPG';
 import employe_1 from '../../Assets/img/sections/client/customer-care.png';
-import Employe from '../Allemployes';
-import Why_us from '../WhyUs';
+// import Employe from '../Allemployes';
+// import Why_us from '../WhyUs';
 import employe_2 from '../../Assets/img/team-details/01.jpg';
 export default function AboutPage() {
 	return (
@@ -20,7 +17,7 @@ export default function AboutPage() {
 			<Lastcomponent />
 
 			{/* <Testimonial /> */}
-			<Why_us></Why_us>
+			{/* <Why_us></Why_us> */}
 		</div>
 	);
 }
@@ -32,7 +29,6 @@ const Headercomponent = () => {
 				<div className='row align-items-center'>
 					<div className='col-lg-6 col-md-12'>
 						<div className='about-content'>
-							<h3 className='content-title'></h3>
 							<h3 className='content-title'>About us</h3>
 							<p className='paragraph'>
 								GulfStar Overseas Pvt. Ltd. is a leading human resource
@@ -96,7 +92,7 @@ const Headercomponent = () => {
 								</ul>
 							</div>
 							<div className='btn-wrap'>
-								<a href='#' className='btn-common btn-new'>
+								<a href='/' className='btn-common btn-new'>
 									Get Free Consultation
 								</a>
 							</div>
@@ -136,11 +132,11 @@ const SecondItem = () => {
 							<div className='col-md-6 col-lg-4'>
 								<div className='single-team-item style-02'>
 									<div className='thumbnail'>
-										<img src={employe_2} alt='team image' />
+										<img src={employe_2} alt='team ' />
 									</div>
 									<div className='content'>
 										<h4 className='title'>
-											<a href='#' tabIndex={-1}>
+											<a href='/' tabIndex={-1}>
 												Arlene McCoy
 											</a>
 										</h4>
@@ -161,7 +157,7 @@ const SecondItem = () => {
 									</div>
 									<div className='hover-content'>
 										<h4 className='title'>
-											<a href='#' tabIndex={-1}>
+											<a href='/' tabIndex={-1}>
 												Arlene McCoy
 											</a>
 										</h4>
@@ -172,22 +168,22 @@ const SecondItem = () => {
 										</p>
 										<ul className='ul social-media-list style-01 color-02'>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-instagram icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-facebook-f icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-youtube icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-linkedin-in icon' />
 												</a>
 											</li>
@@ -198,11 +194,11 @@ const SecondItem = () => {
 							<div className='col-md-6 col-lg-4'>
 								<div className='single-team-item style-02'>
 									<div className='thumbnail'>
-										<img src={employe_2} alt='team image' />
+										<img src={employe_2} alt='team ' />
 									</div>
 									<div className='content'>
 										<h4 className='title'>
-											<a href='#' tabIndex={-1}>
+											<a href='/' tabIndex={-1}>
 												Esther Howard
 											</a>
 										</h4>
@@ -223,7 +219,7 @@ const SecondItem = () => {
 									</div>
 									<div className='hover-content'>
 										<h4 className='title'>
-											<a href='#' tabIndex={-1}>
+											<a href='/' tabIndex={-1}>
 												Esther Howard
 											</a>
 										</h4>
@@ -234,22 +230,22 @@ const SecondItem = () => {
 										</p>
 										<ul className='ul social-media-list style-01 color-02'>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-instagram icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-facebook-f icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-youtube icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-linkedin-in icon' />
 												</a>
 											</li>
@@ -260,11 +256,11 @@ const SecondItem = () => {
 							<div className='col-md-6 col-lg-4'>
 								<div className='single-team-item style-02'>
 									<div className='thumbnail'>
-										<img src={employe_2} alt='team image' />
+										<img src={employe_2} alt='team ' />
 									</div>
 									<div className='content'>
 										<h4 className='title'>
-											<a href='#' tabIndex={-1}>
+											<a href='/' tabIndex={-1}>
 												Robert Fox
 											</a>
 										</h4>
@@ -285,7 +281,7 @@ const SecondItem = () => {
 									</div>
 									<div className='hover-content'>
 										<h4 className='title'>
-											<a href='#' tabIndex={-1}>
+											<a href='/' tabIndex={-1}>
 												Robert Fox
 											</a>
 										</h4>
@@ -296,22 +292,22 @@ const SecondItem = () => {
 										</p>
 										<ul className='ul social-media-list style-01 color-02'>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-instagram icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-facebook-f icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-youtube icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-linkedin-in icon' />
 												</a>
 											</li>
@@ -322,11 +318,11 @@ const SecondItem = () => {
 							<div className='col-md-6 col-lg-4'>
 								<div className='single-team-item style-02'>
 									<div className='thumbnail'>
-										<img src={employe_2} alt='team image' />
+										<img src={employe_2} alt='team ' />
 									</div>
 									<div className='content'>
 										<h4 className='title'>
-											<a href='#' tabIndex={-1}>
+											<a href='/' tabIndex={-1}>
 												Devon Lane
 											</a>
 										</h4>
@@ -347,7 +343,7 @@ const SecondItem = () => {
 									</div>
 									<div className='hover-content'>
 										<h4 className='title'>
-											<a href='#' tabIndex={-1}>
+											<a href='/' tabIndex={-1}>
 												Devon Lane
 											</a>
 										</h4>
@@ -358,22 +354,22 @@ const SecondItem = () => {
 										</p>
 										<ul className='ul social-media-list style-01 color-02'>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-instagram icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-facebook-f icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-youtube icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-linkedin-in icon' />
 												</a>
 											</li>
@@ -384,11 +380,11 @@ const SecondItem = () => {
 							<div className='col-md-6 col-lg-4'>
 								<div className='single-team-item style-02'>
 									<div className='thumbnail'>
-										<img src={employe_2} alt='team image' />
+										<img src={employe_2} alt='team ' />
 									</div>
 									<div className='content'>
 										<h4 className='title'>
-											<a href='#' tabIndex={-1}>
+											<a href='/' tabIndex={-1}>
 												Wade Warren
 											</a>
 										</h4>
@@ -409,7 +405,7 @@ const SecondItem = () => {
 									</div>
 									<div className='hover-content'>
 										<h4 className='title'>
-											<a href='#' tabIndex={-1}>
+											<a href='/' tabIndex={-1}>
 												Wade Warren
 											</a>
 										</h4>
@@ -420,22 +416,22 @@ const SecondItem = () => {
 										</p>
 										<ul className='ul social-media-list style-01 color-02'>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-instagram icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-facebook-f icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-youtube icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-linkedin-in icon' />
 												</a>
 											</li>
@@ -446,11 +442,11 @@ const SecondItem = () => {
 							<div className='col-md-6 col-lg-4'>
 								<div className='single-team-item style-02'>
 									<div className='thumbnail'>
-										<img src={employe_2} alt='team image' />
+										<img src={employe_2} alt='team ' />
 									</div>
 									<div className='content'>
 										<h4 className='title'>
-											<a href='#' tabIndex={-1}>
+											<a href='/' tabIndex={-1}>
 												Esther Howard
 											</a>
 										</h4>
@@ -471,7 +467,7 @@ const SecondItem = () => {
 									</div>
 									<div className='hover-content'>
 										<h4 className='title'>
-											<a href='#' tabIndex={-1}>
+											<a href='/' tabIndex={-1}>
 												Esther Howard
 											</a>
 										</h4>
@@ -482,22 +478,22 @@ const SecondItem = () => {
 										</p>
 										<ul className='ul social-media-list style-01 color-02'>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-instagram icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-facebook-f icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-youtube icon' />
 												</a>
 											</li>
 											<li className='single-social-item'>
-												<a href='#' tabIndex={-1}>
+												<a href='/' tabIndex={-1}>
 													<i className='fa-brands fa-linkedin-in icon' />
 												</a>
 											</li>

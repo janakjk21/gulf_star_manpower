@@ -8,7 +8,7 @@ export default function Director() {
 					<img
 						className='position-relative rounded-3 zindex-5'
 						src='img/city-guide/home/new-1.jpg'
-						alt='Article image'
+						alt='Article '
 					/>
 				</div>
 				<div className='col-md-5'>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Typography, makeStyles, Button } from '@material-ui/core';
 import { getDocs, collection } from 'firebase/firestore';
 import { db } from '../fire';
 import Them from '../Them';
@@ -9,28 +8,8 @@ import Loading from '../Loading';
 import { BiLocationPlus } from 'react-icons/bi';
 import { HiOutlineCurrencyRupee } from 'react-icons/hi';
 import { BsThreeDotsVertical } from 'react-icons/bs';
-const useStyles = makeStyles((theme) => ({
-	Typography: {
-		// textAlign: "center",
-		fontSize: '30px',
-		fontWeight: '900',
-		fontFamily: 'Roboto, sans-serif',
-		color: '#212529',
-		// marginBottom: "30px",
-		// margin: "0 190px 0 190px",
-	},
 
-	[theme.breakpoints.down('sm')]: {
-		Typography: {
-			fontSize: '20px',
-			margin: '0 0 0 0',
-			marginTop: '800px',
-		},
-	},
-}));
 export default function Jobseekerlogin() {
-	const classes = useStyles();
-
 	const [jobs, setJobs] = useState([]);
 	const getjobs = async () => {
 		let newarr = [];

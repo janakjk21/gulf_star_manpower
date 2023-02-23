@@ -1,7 +1,6 @@
 import React from 'react';
 import Iframe from 'react-iframe';
-// import './contatacus.css';
-import '../Herosection/theme.min.css';
+// import './contatacus.css';import '../Herosection/theme.min.css';
 export default function Contactus() {
 	return (
 		<div style={{ marginTop: '200px' }}>
@@ -156,7 +155,7 @@ export default function Contactus() {
 						<div className='col-md-4'>
 							<a
 								className='icon-box card card-body border-0 shadow-sm card-hover h-100 text-center'
-								href='#'>
+								href='/'>
 								<div className='icon-box-media bg-faded-warning text-warning rounded-circle mx-auto mb-3'>
 									<i className='fi-instagram' />
 								</div>

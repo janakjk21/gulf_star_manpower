@@ -2,15 +2,12 @@ import { Typography } from '@material-ui/core';
 import React from 'react';
 import './theme.min.css';
 import { FaFacebook, FaLinkedin } from 'react-icons/fa';
-import { FaYoutube } from 'react-icons/fa';
 import { ImTwitter } from 'react-icons/im';
-import { Link } from 'react-router-dom';
 import { AiFillStar } from 'react-icons/ai';
-import { GrBlockQuote } from 'react-icons/gr';
 
 export default function Testimonial() {
 	return (
-		<div id='portfolio' style={{ paddingBottom: '50px' }}>
+		<section className='container pb-4 pb-md-5 mb-2 mb-md-3'>
 			<Typography
 				style={{
 					textAlign: 'center',
@@ -24,15 +21,9 @@ export default function Testimonial() {
 				<span style={{ color: '#000000' }}> Testimonials </span>
 				of Clients
 			</Typography>
-			<div
-				className='row  gallery'
-				data-video='true'
-				style={{
-					paddingLeft: '10PX',
-					paddingRight: '10px',
-				}}>
+			<div className='row'>
 				{/* Item */}
-				<div className='col-xl-4 col-sm-6'>
+				<div className='col-md-4 mb-4'>
 					<div
 						className='card card-hover border-0 shadow-sm h-100'
 						style={{ backgroundColor: '#ffffff' }}>
@@ -84,7 +75,7 @@ export default function Testimonial() {
 						</div>
 					</div>
 				</div>
-				<div className='col-xl-4 col-sm-6'>
+				<div className='col-md-4 mb-4'>
 					<div
 						className='card card-hover border-0 shadow-sm h-100'
 						style={{ backgroundColor: '#ffffff' }}>
@@ -136,7 +127,7 @@ export default function Testimonial() {
 						</div>
 					</div>
 				</div>
-				<div className='col-xl-4 col-sm-6'>
+				<div className='col-md-4 mb-4'>
 					<div className='card card-hover border-0 shadow-sm h-100'>
 						<div className=' card-body'>
 							<p>
@@ -190,6 +181,6 @@ export default function Testimonial() {
 
 				{/* Add as many columns with gallery item inside as you need */}
 			</div>
-		</div>
+		</section>
 	);
 }

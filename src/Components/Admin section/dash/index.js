@@ -9,43 +9,18 @@ import List from '@mui/material/List';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
-import Badge from '@mui/material/Badge';
+
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import Link from '@mui/material/Link';
-import MenuIcon from '@mui/icons-material/Menu';
-// import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-// import NotificationsIcon from '@mui/icons-material/Notifications';
-import { mainListItems, secondaryListItems } from './listitem';
-import Chart from './Chart';
-import Deposits from './Deposits';
-import Orders from './Orders';
 
-import Table from '../Dashbord/index_component/dashboard/Table';
-import Trophy from '../Dashbord/index_component/dashboard/Trophy';
-import TotalEarning from '../Dashbord/index_component/dashboard/TotalEarning';
-import StatisticsCard from '../Dashbord/index_component/dashboard/StatisticsCard';
-import WeeklyOverview from '../Dashbord/index_component/dashboard/WeeklyOverview';
-import DepositWithdraw from '../Dashbord/index_component/dashboard/DepositWithdraw';
-import SalesByCountries from '../Dashbord/index_component/dashboard/SalesByCountries';
+import { Button } from '@mui/material';
 
-function Copyright(props) {
-	return (
-		<Typography
-			variant='body2'
-			color='text.secondary'
-			align='center'
-			{...props}>
-			{'Copyright © '}
-			<Link color='inherit' href='https://mui.com/'>
-				Your Website
-			</Link>{' '}
-			{new Date().getFullYear()}
-			{'.'}
-		</Typography>
-	);
-}
+//importing pages for admin section
+// import PeopleThatapplied from './Applied';
+// import CreateNews from './CreateNews';
+// import CreateJobs from './Createjob';
+// import JobForm from '../JobForm';
+// import NewsForm from '../NewsForm';
 
 const drawerWidth = 240;
 
@@ -106,21 +81,11 @@ function DashboardContent() {
 			<Box sx={{ display: 'flex' }}>
 				<CssBaseline />
 				<AppBar position='absolute' open={open}>
+					{/* toptoolbar */}
 					<Toolbar
 						sx={{
 							pr: '24px', // keep right padding when drawer closed
 						}}>
-						<IconButton
-							edge='start'
-							color='inherit'
-							aria-label='open drawer'
-							onClick={toggleDrawer}
-							sx={{
-								marginRight: '36px',
-								...(open && { display: 'none' }),
-							}}>
-							<MenuIcon />
-						</IconButton>
 						<Typography
 							component='h1'
 							variant='h6'
@@ -129,11 +94,6 @@ function DashboardContent() {
 							sx={{ flexGrow: 1 }}>
 							Dashboard
 						</Typography>
-						<IconButton color='inherit'>
-							<Badge badgeContent={4} color='secondary'>
-								{/* <NotificationsIcon /> */}
-							</Badge>
-						</IconButton>
 					</Toolbar>
 				</AppBar>
 				<Drawer variant='permanent' open={open}>
@@ -150,9 +110,10 @@ function DashboardContent() {
 					</Toolbar>
 					<Divider />
 					<List component='nav'>
-						{mainListItems}
+						janak
+						<Button>janak</Button>
 						<Divider sx={{ my: 1 }} />
-						{secondaryListItems}
+						sapkota
 					</List>
 				</Drawer>
 				<Box
@@ -169,37 +130,15 @@ function DashboardContent() {
 					<Toolbar />
 					<Container maxWidth='lg' sx={{ mt: 4, mb: 4 }}>
 						<Grid container spacing={3}>
-							{/* Chart */}
 							<Grid item xs={12} md={8} lg={9}>
-								<Paper
-									sx={{
-										p: 2,
-										display: 'flex',
-										flexDirection: 'column',
-										height: 240,
-									}}>
-									<Chart />
-								</Paper>
-							</Grid>
-							{/* Recent Deposits */}
-							<Grid item xs={12} md={4} lg={3}>
-								<Paper
-									sx={{
-										display: 'flex',
-										flexDirection: 'column',
-										height: 240,
-									}}>
-									{/* <Deposits /> */}
-									<TotalEarning />
-								</Paper>
-							</Grid>
-							{/* Recent Orders */}
-							<Grid item xs={12}>
-								<SalesByCountries />
-								{/* <Orders /> */}
+								{/* <PeopleThatapplied></PeopleThatapplied> */}
+								{/* <CreateNews></CreateNews> */}
+								{/* <CreateJobs></CreateJobs> */}
+								{/* <JobForm></JobForm> */}
+								{/* <AppliedJobs></AppliedJobs> */}
+								{/* <NewsForm></NewsForm> */}
 							</Grid>
 						</Grid>
-						<Copyright sx={{ pt: 4 }} />
 					</Container>
 				</Box>
 			</Box>

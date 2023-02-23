@@ -1,4 +1,4 @@
-import { Avatar, Box, Typography } from '@material-ui/core';
+import {  Typography } from '@material-ui/core';
 import Image_1 from '../Assets/Componey logos/New folder/al_seedawi-removebg-preview.png';
 import Image_2 from '../Assets/Componey logos/New folder/arab_home-removebg-preview.png';
 import Image_3 from '../Assets/Componey logos/New folder/arabin_gulf-removebg-preview.png';
@@ -21,7 +21,7 @@ import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
-import './style.css';
+// import './style.css';
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
@@ -29,13 +29,7 @@ SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 export default function Clients(theme) {
 	return (
-		<Box
-			style={{
-				backgroundColor: '#FFFFFF',
-				marginTop: '6vh',
-				marginBottom: '5vh',
-				height: '60vh',
-			}}>
+		<section className='container pb-4 pb-md-5 mb-2 mb-md-3'>
 			<Typography
 				style={{
 					textAlign: 'center',
@@ -129,6 +123,6 @@ export default function Clients(theme) {
 					</div>
 				</SwiperSlide>
 			</Swiper>
-		</Box>
+		</section>
 	);
 }

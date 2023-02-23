@@ -4,7 +4,7 @@ import '../Herosection/tineyslider.css';
 import img from '../../Assets/Blogs/01.jpg';
 import img2 from '../../Assets/Blogs/11.jpg';
 
-import img3 from '../../Assets/Blogs/03.jpg';
+// import img3 from '../../Assets/Blogs/03.jpg';
 import { Typography } from '@material-ui/core';
 
 export default function Blogs() {
@@ -17,11 +17,11 @@ export default function Blogs() {
 						fontSize: '55px',
 						fontWeight: '900',
 						fontFamily: 'Roboto, sans-serif',
-						color: '#0B0861',
+						color: '/0B0861',
 						marginBottom: '30px',
 					}}>
 					{' '}
-					<span style={{ color: '#000000' }}> Latest </span>
+					<span style={{ color: '/000000' }}> Latest </span>
 					News
 				</Typography>
 				<div className='d-sm-flex align-items-center justify-content-between pb-4 mb-sm-2'></div>
@@ -54,7 +54,7 @@ export default function Blogs() {
 							</div>
 							<a
 								className='card-footer d-flex align-items-center text-decoration-none border-top-0 pt-0 mb-1'
-								href='#'>
+								href='/'>
 								<img
 									className='rounded-circle'
 									src={img2}
@@ -104,7 +104,7 @@ export default function Blogs() {
 							</div>
 							<a
 								className='card-footer d-flex align-items-center text-decoration-none border-top-0 pt-0 mb-1'
-								href='#'>
+								href='/'>
 								<img
 									className='rounded-circle'
 									src={img2}

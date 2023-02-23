@@ -4,40 +4,52 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Loading from './Components/Loading';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Fasterwayto from './Components/Fasterwayto';
-const Nav = React.lazy(() => import('./Components/Nav'));
-const Hero = React.lazy(() => import('./Components/Hero'));
-
-const Client = React.lazy(() => import('./Components/Clients'));
-const Job = React.lazy(() => import('./Components/Job'));
-const Ourvalues = React.lazy(() => import('./Components/Ourvalues'));
-const Apply = React.lazy(() => import('./Components/Apply'));
+//components
+const Nav = React.lazy(() => import('./Components/Herosection/Nav'));
 const Footer = React.lazy(() => import('./Components/Footer'));
-const AboutPage = React.lazy(() => import('./Components/Aboutus/AboutPage'));
-const WhyUs = React.lazy(() => import('./Components/WhyUs'));
 
-const Document = React.lazy(() => import('./Components/Document'));
-// const Login from "./Components/Login";
-const AdminLogin = React.lazy(() => import('./Components/AdminLogin'));
-const Adminpannel = React.lazy(() => import('./Components/Adminpannel'));
-const Createjob = React.lazy(() => import('./Components/Createjob'));
+//related to documents of the componey
+const Document = React.lazy(() =>
+	import('./Components/lisence Certificate/Document')
+);
+const Demand = React.lazy(() =>
+	import('./Components/lisence Certificate/Demand')
+);
+
+// this is for the login of the user
+const AdminLogin = React.lazy(() =>
+	import('./Components/loginlogic/AdminLogin')
+);
+
+//this is related to the admin related stuff
+const Adminpannel = React.lazy(() =>
+	import('./Components/Admin section/dash/Adminpannel')
+);
+// const Dashboard = React.lazy(() =>
+// 	import('./Components/Admin section/dash/index')P
+// );
+const AdminDashboard = React.lazy(() =>
+	import('./Components/Admin section/AdminDashboard')
+);
 const Jobseekerlogin = React.lazy(() =>
 	import('./Components/joobseekerlogin/Jobseekerlogin')
 );
-const CreateNews = React.lazy(() => import('./Components/CreateNews'));
-const News = React.lazy(() => import('./Components/News'));
-const Applied = React.lazy(() => import('./Components/Applied'));
-const Applyjob = React.lazy(() => import('./Components/Applyjob'));
-const Demand = React.lazy(() => import('./Components/Demand'));
-const Coutry = React.lazy(() => import('./Components/Coutry'));
+// this are the forms to apply for the job
 
-const Testimonial = React.lazy(() => import('./Components/Testimonial'));
+const Applyjob = React.lazy(() => import('./Components/Recrument/Applyjob'));
+
+// blogs and content related
+const Blogs = React.lazy(() => import('./Components/News'));
+
+//contact us page
 const Contactus = React.lazy(() => import('./Components/contactus/Contactus'));
 
+// Home page
+
 const Hero3 = React.lazy(() => import('./Components/Herosection/Hero3'));
-const Dashboard = React.lazy(() =>
-	import('./Components/Admin section/dash/index')
-);
+
+// this is about us page
+const AboutPage = React.lazy(() => import('./Components/Aboutus/AboutPage'));
 
 function App() {
 	const [isAuth, setAuth] = useState(true);
@@ -50,55 +62,57 @@ function App() {
 			<React.Suspense fallback={<Loading></Loading>}>
 				{' '}
 				<Switch>
+					{/* about us page  */}
 					<Route path='/aboutus'>
 						<Nav></Nav>
 						<AboutPage></AboutPage>
-
 						<Footer></Footer>
 					</Route>
-					<Route path='/dashboard'>
-						{/* <Nav></Nav> */}
-						<Dashboard></Dashboard>
-						{/* <AboutPage></AboutPage> */}
+					{/* Contact us page  */}
+					<Route path='/contactus'>
+						<Nav></Nav>
+						<Contactus />
+						<Footer></Footer>
+					</Route>
+					{/* all the related blog pages  */}
+					<Route path='/news'>
+						<Nav></Nav>
+						<Blogs /> <Footer></Footer>
+					</Route>
 
+					{/* All the documents related page and need some work to do  */}
+					<Route path='/Documents'>
+						<Nav></Nav>
+						<Document />
 						<Footer></Footer>
 					</Route>
 
+					{/* login page for admin  */}
 					<Route path='/login'>
 						<Nav></Nav>
-
 						{isAuth ? (
 							<AdminLogin changeauth={changeauth}></AdminLogin>
 						) : (
 							<Adminpannel changeauth={changeauth}></Adminpannel>
 						)}
-
 						<Footer></Footer>
 					</Route>
-					<Route path='/createjob'>
-						<Nav></Nav>
-						<Createjob></Createjob>
+					{/* All admin related thing here */}
+					<Route path='/dashboard'>
+						{/* <Dashboard></Dashboard> */}
+						<AdminDashboard></AdminDashboard>
+						{/* < Dashboard1></> */}
+						{/* <Footer></Footer> */}
 					</Route>
-					<Route path='/applied'>
-						<Nav></Nav>
-						<Applied></Applied>{' '}
-					</Route>
-
-					<Route path='/createjob'>
-						<Nav></Nav>
-						<Createjob></Createjob>
-					</Route>
-					<Route path='/createnews'>
-						<Nav></Nav>
-						<CreateNews></CreateNews>{' '}
-					</Route>
+					{/* This is for logging the user to fill the form  */}
 					<Route path='/jobseekerlogin'>
 						<Nav></Nav>
 						<Jobseekerlogin></Jobseekerlogin>
 					</Route>
-					<Route path='/contactus'>
+					{/* this is for the demands  */}
+					<Route path='/demand'>
 						<Nav></Nav>
-						<Contactus />
+						<Demand></Demand>
 						<Footer></Footer>
 					</Route>
 					<Route path='/applyjob'>
@@ -106,67 +120,12 @@ function App() {
 						<Applyjob />
 						<Footer></Footer>
 					</Route>
-					<Route path='/news'>
-						<Nav></Nav>
-						<News /> <Footer></Footer>
-					</Route>
-					<Route path='/demand'>
-						<Nav></Nav>
-						<Demand /> <Footer></Footer>
-					</Route>
-					<Route path='/whyus'>
-						<Nav></Nav>
-						<WhyUs />
-						<Footer></Footer>
-					</Route>
 
-					<Route path='/Documents'>
-						<Nav></Nav>
-						<Document />
-						<Footer></Footer>
-					</Route>
-					<Route path='/Team'>
-						<Nav></Nav>
-						<Contactus />
-						{/* <Team></Team> */}
-						<Footer></Footer>
-					</Route>
-					<Route path='/jk'>
-						<Nav></Nav>
-						<Hero3 />
-
-						{/* <Jk></Jk> */}
-						{/* <Coutry></Coutry> */}
-						{/* <Fasterwayto></Fasterwayto> */}
-						{/* <Message></Message> */}
-
-						{/* <Aboutus></Aboutus> */}
-						{/* <Client></Client>
-						<Job />
-
-						<Testimonial></Testimonial>
-
-						<Apply />
-						<Footer /> */}
-					</Route>
+					{/* This is home page  */}
 					<Route path='/'>
 						<div>
 							<Nav></Nav>
 							<Hero3 />
-							{/* <Hero></Hero>
-							<Coutry></Coutry>
-							<Fasterwayto></Fasterwayto> */}
-
-							{/* <Message></Message> */}
-							{/* <Job /> */}
-							{/* <Aboutus></Aboutus> */}
-							{/* <Client></Client>
-
-							<Testimonial></Testimonial>
-
-							<Ourvalues />
-							<Apply />
-							<Footer /> */}
 						</div>
 					</Route>
 				</Switch>

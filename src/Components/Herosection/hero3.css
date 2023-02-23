@@ -559,8 +559,8 @@ button:not(:disabled),
 
 .btn-primary {
     --fi-btn-color: #000;
-    --fi-btn-bg: #fd5631;
-    --fi-btn-border-color: #fd5631;
+    --fi-btn-bg: #07184F;
+    --fi-btn-border-color: #07184F;
     --fi-btn-hover-color: #000;
     --fi-btn-hover-bg: #fd6f50;
     --fi-btn-hover-border-color: #fd6746;
@@ -570,8 +570,8 @@ button:not(:disabled),
     --fi-btn-active-border-color: #fd6746;
     --fi-btn-active-shadow: unset;
     --fi-btn-disabled-color: #000;
-    --fi-btn-disabled-bg: #fd5631;
-    --fi-btn-disabled-border-color: #fd5631;
+    --fi-btn-disabled-bg: #07184F;
+    --fi-btn-disabled-border-color: #07184F;
 }
 
 .btn-link {
@@ -579,9 +579,9 @@ button:not(:disabled),
     --fi-btn-color: #666276;
     --fi-btn-bg: transparent;
     --fi-btn-border-color: transparent;
-    --fi-btn-hover-color: #fd5631;
+    --fi-btn-hover-color: #07184F;
     --fi-btn-hover-border-color: transparent;
-    --fi-btn-active-color: #fd5631;
+    --fi-btn-active-color: #07184F;
     --fi-btn-active-border-color: transparent;
     --fi-btn-disabled-color: #9691a4;
     --fi-btn-disabled-border-color: transparent;
@@ -636,9 +636,9 @@ button:not(:disabled),
     --fi-dropdown-box-shadow: 0 0.125rem 0.125rem -0.125rem rgba(31, 27, 45, 0.08),
         0 0.25rem 0.75rem rgba(31, 27, 45, 0.08);
     --fi-dropdown-link-color: #454056;
-    --fi-dropdown-link-hover-color: #fd5631;
+    --fi-dropdown-link-hover-color: #07184F;
     --fi-dropdown-link-hover-bg: transparent;
-    --fi-dropdown-link-active-color: #fd5631;
+    --fi-dropdown-link-active-color: #07184F;
     --fi-dropdown-link-active-bg: transparent;
     --fi-dropdown-link-disabled-color: #9691a4;
     --fi-dropdown-item-padding-x: 1rem;
@@ -1056,8 +1056,8 @@ ul li {
 
 .btn-link {
     --fi-btn-color: #666276 !important;
-    --fi-btn-hover-color: #fd5631 !important;
-    --fi-btn-active-color: #fd5631 !important;
+    --fi-btn-hover-color: #07184F !important;
+    --fi-btn-active-color: #07184F !important;
     --fi-btn-bg: transparent !important;
     --fi-btn-hover-bg: transparent !important;
     --fi-btn-active-bg: transparent !important;
