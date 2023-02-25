@@ -1,9 +1,9 @@
 import React from 'react';
 
 import aboutus_img from '../../Assets/1-min-min_2.JPG';
-import employe_1 from '../../Assets/img/sections/client/customer-care.png';
+// import employe_1 from '../../Assets/img/sections/client/customer-care.png';
 
-import employe_2 from '../../Assets/img/team-details/01.jpg';
+// import employe_2 from '../../Assets/img/team-details/01.jpg';
 import team1 from '../../Assets/Team/01 (1).jpg';
 import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 

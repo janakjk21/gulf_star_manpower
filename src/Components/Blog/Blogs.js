@@ -25,6 +25,7 @@ export default function Blogs() {
 	useEffect(() => {
 		getnews();
 	}, []);
+	console.log(news);
 	return (
 		<div>
 			<section className='container pb-4 pb-md-5 mb-2 mb-md-3'>
