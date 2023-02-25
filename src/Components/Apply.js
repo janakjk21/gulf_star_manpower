@@ -1,7 +1,6 @@
 import { Button, Typography } from '@material-ui/core';
 import React, { useState } from 'react';
 import { FiPhoneCall, FiMail } from 'react-icons/fi';
-import Iconbar from './Iconbar';
 import Iframe from 'react-iframe';
 import { doc } from 'firebase/firestore';
 import { db } from './fire';
@@ -101,9 +100,7 @@ export default function Apply() {
 									</p>
 								</div>
 							</div>
-							<div className='social-links'>
-								<Iconbar></Iconbar>
-							</div>
+							<div className='social-links'></div>
 						</div>
 						<div className='col-lg-5 col-md-8'>
 							<div className='form'>

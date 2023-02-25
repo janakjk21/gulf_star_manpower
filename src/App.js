@@ -40,6 +40,7 @@ const Applyjob = React.lazy(() => import('./Components/Recrument/Applyjob'));
 
 // blogs and content related
 const Blogs = React.lazy(() => import('./Components/News'));
+const BlogsGrid = React.lazy(() => import('./Components/Blog/BlogGrid'));
 
 //contact us page
 const Contactus = React.lazy(() => import('./Components/contactus/Contactus'));
@@ -121,6 +122,12 @@ function App() {
 						<Footer></Footer>
 					</Route>
 
+					{/* this is blog grind  */}
+					<Route path='/bloggrid'>
+						<Nav></Nav>
+						<BlogsGrid></BlogsGrid>
+						<Footer></Footer>
+					</Route>
 					{/* This is home page  */}
 					<Route path='/'>
 						<div>

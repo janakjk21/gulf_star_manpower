@@ -3,11 +3,28 @@ import '../Herosection/theme.min.css';
 import '../Herosection/tineyslider.css';
 import img from '../../Assets/Blogs/01.jpg';
 import img2 from '../../Assets/Blogs/11.jpg';
-
+import { db } from '../fire';
 // import img3 from '../../Assets/Blogs/03.jpg';
 import { Typography } from '@material-ui/core';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { collection, getDocs } from 'firebase/firestore';
 
 export default function Blogs() {
+	const [news, setNews] = useState([]);
+
+	const getnews = async () => {
+		let newarr = [];
+		const querySnapshot = await getDocs(collection(db, 'createnews'));
+		querySnapshot.forEach((doc) => {
+			let appObj = { ...doc.data() };
+			newarr.push(appObj);
+		});
+		setNews(newarr);
+	};
+	useEffect(() => {
+		getnews();
+	}, []);
 	return (
 		<div>
 			<section className='container pb-4 pb-md-5 mb-2 mb-md-3'>
