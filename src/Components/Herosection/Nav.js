@@ -48,17 +48,17 @@ export default function Nav() {
 									About Nepal
 								</Link>
 							</Dropdown.Item>
-							<Dropdown.Item href='//action-1'>
-								<Link className='dropdown-item' to='/recruimentproces'>
+							<Dropdown.Item>
+								<Link className='dropdown-item' to='/recrumentprocess'>
 									Recruitment process
 								</Link>
 							</Dropdown.Item>
-							<Dropdown.Item href='//action-1'>
-								<Link className='dropdown-item' href='/demand'>
+							<Dropdown.Item>
+								<Link className='dropdown-item' to='/demand'>
 									Demand samples
 								</Link>
 							</Dropdown.Item>
-							<Dropdown.Item href='//action-1'>
+							<Dropdown.Item>
 								<Link className='dropdown-item' to='/documents'>
 									Official Documents
 								</Link>
@@ -112,7 +112,7 @@ export default function Nav() {
 									role='button'
 									aria-expanded='false'>
 									Home
-									<IoIosArrowDropdownCircle></IoIosArrowDropdownCircle>
+									{/* <IoIosArrowDropdownCircle></IoIosArrowDropdownCircle> */}
 									<span
 										className='d-none d-lg-block position-absolute top-50 end-0 translate-middle-y border-end'
 										style={{ width: '1px', height: '30px' }}
@@ -155,23 +155,11 @@ export default function Nav() {
 								</a>
 								<ul className='dropdown-menu'>
 									<li>
-										<Link className='dropdown-item' to='/recruimentproces'>
+										<Link className='dropdown-item' to='/recrumentprocess'>
 											Recruitment process
 										</Link>
 									</li>
 
-									<li>
-										<Link
-											className='dropdown-item'
-											href='city-guide-single-info.html'>
-											Recruitment Category
-										</Link>
-									</li>
-									<li>
-										<Link className='dropdown-item' href='/demand'>
-											Demand samples
-										</Link>
-									</li>
 									<li>
 										<Link className='dropdown-item' to='/documents'>
 											Official Documents
@@ -180,35 +168,35 @@ export default function Nav() {
 								</ul>
 							</li>
 							<li className='nav-item dropdown'>
-								<a
+								<Link
 									className='nav-link'
-									href='/'
+									to='/services'
 									role='button'
 									data-bs-toggle='dropdown'
 									aria-expanded='false'>
 									Services
-									<IoIosArrowDropdownCircle></IoIosArrowDropdownCircle>
-								</a>
+									{/* <IoIosArrowDropdownCircle></IoIosArrowDropdownCircle> */}
+								</Link>
 							</li>
 							<li className='nav-item dropdown'>
-								<a
+								<Link
 									className='nav-link '
-									href='/'
+									to='/jobseekerlogin'
 									role='button'
 									data-bs-toggle='dropdown'
 									aria-expanded='false'>
 									Apply Online
-								</a>
+								</Link>
 							</li>
 							<li className='nav-item dropdown'>
-								<a
+								<Link
 									className='nav-link '
-									href='/'
+									to='/news'
 									role='button'
 									data-bs-toggle='dropdown'
 									aria-expanded='false'>
 									News
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>

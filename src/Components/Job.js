@@ -51,7 +51,7 @@ export default function Job() {
 						<div className='portfolio-wrap'>
 							<img src={img1} className='img-fluid' alt='' />
 							<div className='portfolio-info'>
-								<h5>SECURITY INDUSTRY</h5>
+								{/* <h5>SECURITY INDUSTRY</h5> */}
 								<div className='portfolio-links'>
 									<a
 										href='assets/img/portfolio/portfolio-1.jpg'
@@ -72,7 +72,7 @@ export default function Job() {
 						<div className='portfolio-wrap'>
 							<img src={img2} className='img-fluid' alt='' />
 							<div className='portfolio-info'>
-								<h5>CARE TAKER</h5>
+								{/* <h5>CARE TAKER</h5> */}
 								<div className='portfolio-links'>
 									<a
 										href='assets/img/portfolio/portfolio-2.jpg'
@@ -93,7 +93,7 @@ export default function Job() {
 						<div className='portfolio-wrap'>
 							<img src={img3} className='img-fluid' alt='' />
 							<div className='portfolio-info'>
-								<h5>CONSTRUCTION INDUSTRY</h5>
+								{/* <h5>CONSTRUCTION INDUSTRY</h5> */}
 								<div className='portfolio-links'>
 									<a
 										href={img2}
@@ -114,7 +114,7 @@ export default function Job() {
 						<div className='portfolio-wrap'>
 							<img src={img4} className='img-fluid' alt='' />
 							<div className='portfolio-info'>
-								<h5>RESTAURANT / FAST FOOD</h5>
+								{/* <h5>RESTAURANT / FAST FOOD</h5> */}
 								<div className='portfolio-links'>
 									<a
 										href='assets/img/portfolio/portfolio-4.jpg'
@@ -135,7 +135,7 @@ export default function Job() {
 						<div className='portfolio-wrap'>
 							<img src={img5} className='img-fluid' alt='' />
 							<div className='portfolio-info'>
-								<h5> CLEANING INDUSTRY</h5>
+								{/* <h5> CLEANING INDUSTRY</h5> */}
 								<div className='portfolio-links'>
 									<a
 										href='assets/img/portfolio/portfolio-5.jpg'
@@ -156,7 +156,7 @@ export default function Job() {
 						<div className='portfolio-wrap'>
 							<img src={img6} className='img-fluid' alt='' />
 							<div className='portfolio-info'>
-								<h5>CONSTRUCTION SERVICES</h5>
+								{/* <h5>CONSTRUCTION SERVICES</h5> */}
 
 								<div className='portfolio-links'>
 									<a

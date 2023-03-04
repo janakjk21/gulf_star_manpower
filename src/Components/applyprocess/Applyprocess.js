@@ -1,140 +1,200 @@
 import React from 'react';
+import Them from '../Them';
 
 export default function Applyprocess() {
 	return (
 		<div>
-			<section
-				className='position-relative bg-white rounded-xxl-4 mb-5 pb-1 py-md-3 zindex-5'
-				style={{ marginTop: '-30px' }}>
-				<div className='container pt-5 mb-4 mb-md-5'>
-					<h2 className='text-center'>The values we live by</h2>
-					<p
-						className='mb-4 pb-2 mx-auto fs-lg text-center'
-						style={{ maxWidth: '616px' }}>
-						Travelers across the globe use our platform to discover where to
-						stay, what to do and where to eat in any part of the world.
-					</p>
-					{/* Features grid*/}
-					<div className='row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 g-4 justify-content-center'>
-						{/* Feature item*/}
-						<div className='col'>
-							<div className='card border-0 shadow-sm card-hover h-100'>
-								<div className='card-body icon-box'>
-									<div className='icon-box-media bg-faded-accent text-accent rounded-circle mb-3'>
-										<i className='fi-bed' />
-									</div>
-									<h3 className='h5 card-title'>Safety is our priority</h3>
-									<p className='card-text fs-sm'>
-										Vel et aliquet diam vulputate hendrerit lorem eget amet
-										adipiscing. At ut ut consectetur in sed.
-									</p>
-								</div>
+			{/* How it works*/}
+			<Them title='Apply' title1='process'></Them>
+
+			<section className='container mb-5 pb-2 pb-lg-5'>
+				<h2 className='h3 mb-4 pb-sm-2'>How it works</h2>
+				{/* Grid card*/}
+				<div className='row row-cols-lg-4 row-cols-sm-2 row-cols-1 gy-sm-5 gy-3'>
+					{/* Card item*/}
+					<div className='col'>
+						<div className='card border-0 shadow-sm position-relative h-100'>
+							<div className='card-body'>
+								<div className='h2 mb-2 text-primary'>01</div>
+								<h3 className='h5 card-title mb-2'>Create an account</h3>
+								<p className='card-text fs-sm'>
+									In volutpat lacus orci volutpat nulla tristique eu.
+									Ullamcorper in est lectus cras arcu sed felis.
+								</p>
+							</div>
+							{/* Arrow*/}
+							<svg
+								className='position-absolute top-0 end-0 mt-n2 d-sm-block d-none'
+								xmlns='http://www.w3.org/2000/svg'
+								width={78}
+								height={30}
+								fill='none'
+								style={{ transform: 'translateY(-100%) translateX(70%)' }}>
+								<path
+									d='M77.955 14.396c.128-2.86 0-4.67-.576-4.745s-1.279 1.607-2.11 4.378l-1.279 4.897-.563 2.683c-.612-1.434-1.352-2.81-2.212-4.113-2.718-4.072-6.226-7.569-10.321-10.288C54.205 2.687 46.332.186 38.233.008c-8.823-.165-17.491 2.305-24.874 7.087C6.581 11.549 2.118 17.395.66 22.191.033 24.057-.15 26.04.123 27.987c.243 1.367.627 2.037.755 2.012.396 0-.396-3.025 1.522-7.264s6.394-9.339 12.789-13.123c6.905-4.018 14.838-5.974 22.841-5.631 3.811.182 7.574.924 11.164 2.202 7.323 2.623 13.717 7.296 18.403 13.452 1.061 1.417 1.816 2.531 2.404 3.417l-1.637-.278-5.295-1.012c-3.031-.569-4.988-.848-5.179-.392s1.419 1.544 4.335 2.759a47.66 47.66 0 0 0 5.269 1.772c1.023.278 2.097.544 3.21.772.588.127 1.1.228 1.765.342.541.152 1.109.184 1.663.094a3.86 3.86 0 0 0 1.547-.613 2.76 2.76 0 0 0 .934-1.265c.088-.252.156-.51.205-.772l.09-.595.23-1.544.384-2.949c.217-1.873.371-3.569.435-5.062'
+									fill='#fd5631'
+								/>
+							</svg>
+						</div>
+					</div>
+					{/* Card item*/}
+					<div className='col'>
+						<div className='card border-0 shadow-sm position-relative h-100'>
+							<div className='card-body'>
+								<div className='h2 mb-2 text-primary'>02</div>
+								<h3 className='h5 card-title mb-2'>Create a job / resume</h3>
+								<p className='card-text fs-sm'>
+									Convallis suspendisse libero integer duis luctus laoreet
+									pellentesque. Aenean eget.
+								</p>
+							</div>
+							{/* Arrow*/}
+							<svg
+								className='position-absolute top-0 end-0 mt-n2 d-lg-block d-none'
+								xmlns='http://www.w3.org/2000/svg'
+								width={78}
+								height={30}
+								fill='none'
+								style={{ transform: 'translateY(-100%) translateX(70%)' }}>
+								<path
+									d='M77.955 14.396c.128-2.86 0-4.67-.576-4.745s-1.279 1.607-2.11 4.378l-1.279 4.897-.563 2.683c-.612-1.434-1.352-2.81-2.212-4.113-2.718-4.072-6.226-7.569-10.321-10.288C54.205 2.687 46.332.186 38.233.008c-8.823-.165-17.491 2.305-24.874 7.087C6.581 11.549 2.118 17.395.66 22.191.033 24.057-.15 26.04.123 27.987c.243 1.367.627 2.037.755 2.012.396 0-.396-3.025 1.522-7.264s6.394-9.339 12.789-13.123c6.905-4.018 14.838-5.974 22.841-5.631 3.811.182 7.574.924 11.164 2.202 7.323 2.623 13.717 7.296 18.403 13.452 1.061 1.417 1.816 2.531 2.404 3.417l-1.637-.278-5.295-1.012c-3.031-.569-4.988-.848-5.179-.392s1.419 1.544 4.335 2.759a47.66 47.66 0 0 0 5.269 1.772c1.023.278 2.097.544 3.21.772.588.127 1.1.228 1.765.342.541.152 1.109.184 1.663.094a3.86 3.86 0 0 0 1.547-.613 2.76 2.76 0 0 0 .934-1.265c.088-.252.156-.51.205-.772l.09-.595.23-1.544.384-2.949c.217-1.873.371-3.569.435-5.062'
+									fill='#fd5631'
+								/>
+							</svg>
+						</div>
+					</div>
+					{/* Card item*/}
+					<div className='col'>
+						<div className='card border-0 shadow-sm position-relative h-100'>
+							<div className='card-body'>
+								<div className='h2 mb-2 text-primary'>03</div>
+								<h3 className='h5 card-title mb-2'>Select a pricing plan</h3>
+								<p className='card-text fs-sm'>
+									Cursus duis ridiculus purus eget velit mattis id vel. Semper
+									aliquet auctor cras dui odio ege.
+								</p>
+							</div>
+							{/* Arrow*/}
+							<svg
+								className='position-absolute top-0 end-0 mt-n2 d-sm-block d-none'
+								xmlns='http://www.w3.org/2000/svg'
+								width={78}
+								height={30}
+								fill='none'
+								style={{ transform: 'translateY(-100%) translateX(70%)' }}>
+								<path
+									d='M77.955 14.396c.128-2.86 0-4.67-.576-4.745s-1.279 1.607-2.11 4.378l-1.279 4.897-.563 2.683c-.612-1.434-1.352-2.81-2.212-4.113-2.718-4.072-6.226-7.569-10.321-10.288C54.205 2.687 46.332.186 38.233.008c-8.823-.165-17.491 2.305-24.874 7.087C6.581 11.549 2.118 17.395.66 22.191.033 24.057-.15 26.04.123 27.987c.243 1.367.627 2.037.755 2.012.396 0-.396-3.025 1.522-7.264s6.394-9.339 12.789-13.123c6.905-4.018 14.838-5.974 22.841-5.631 3.811.182 7.574.924 11.164 2.202 7.323 2.623 13.717 7.296 18.403 13.452 1.061 1.417 1.816 2.531 2.404 3.417l-1.637-.278-5.295-1.012c-3.031-.569-4.988-.848-5.179-.392s1.419 1.544 4.335 2.759a47.66 47.66 0 0 0 5.269 1.772c1.023.278 2.097.544 3.21.772.588.127 1.1.228 1.765.342.541.152 1.109.184 1.663.094a3.86 3.86 0 0 0 1.547-.613 2.76 2.76 0 0 0 .934-1.265c.088-.252.156-.51.205-.772l.09-.595.23-1.544.384-2.949c.217-1.873.371-3.569.435-5.062'
+									fill='#fd5631'
+								/>
+							</svg>
+						</div>
+					</div>
+					{/* Card item*/}
+					<div className='col'>
+						<div className='card border-0 shadow-sm position-relative h-100'>
+							<div className='card-body'>
+								<div className='h2 mb-2 text-primary'>04</div>
+								<h3 className='h5 card-title mb-2'>Post your job / resume</h3>
+								<p className='card-text fs-sm'>
+									Sit auctor aliquam leo duis. Praesent ut&nbsp;penatibus
+									faucibus nibh arcu tempor adipiscing.
+								</p>
 							</div>
 						</div>
-						{/* Feature item*/}
-						<div className='col'>
-							<div className='card border-0 shadow-sm card-hover h-100'>
-								<div className='card-body icon-box'>
-									<div className='icon-box-media bg-faded-warning text-warning rounded-circle mb-3'>
-										<i className='fi-cash' />
-									</div>
-									<h3 className='h5 card-title'>Fair price</h3>
-									<p className='card-text fs-sm'>
-										Tincidunt mauris sit eu, lacinia pharetra, lorem neque dui.
-										Maecenas ultricies laoreet facilisis fusce amet.
-									</p>
-								</div>
+					</div>
+				</div>
+			</section>
+			<section className='container mb-5 pb-2 pb-lg-5'>
+				{/* Grid card*/}
+				<div className='row row-cols-lg-4 row-cols-sm-2 row-cols-1 gy-sm-5 gy-3'>
+					{/* Card item*/}
+					<div className='col'>
+						<div className='card border-0 shadow-sm position-relative h-100'>
+							<div className='card-body'>
+								<div className='h2 mb-2 text-primary'>01</div>
+								<h3 className='h5 card-title mb-2'>Create an account</h3>
+								<p className='card-text fs-sm'>
+									In volutpat lacus orci volutpat nulla tristique eu.
+									Ullamcorper in est lectus cras arcu sed felis.
+								</p>
 							</div>
+							{/* Arrow*/}
+							<svg
+								className='position-absolute top-0 end-0 mt-n2 d-sm-block d-none'
+								xmlns='http://www.w3.org/2000/svg'
+								width={78}
+								height={30}
+								fill='none'
+								style={{ transform: 'translateY(-100%) translateX(70%)' }}>
+								<path
+									d='M77.955 14.396c.128-2.86 0-4.67-.576-4.745s-1.279 1.607-2.11 4.378l-1.279 4.897-.563 2.683c-.612-1.434-1.352-2.81-2.212-4.113-2.718-4.072-6.226-7.569-10.321-10.288C54.205 2.687 46.332.186 38.233.008c-8.823-.165-17.491 2.305-24.874 7.087C6.581 11.549 2.118 17.395.66 22.191.033 24.057-.15 26.04.123 27.987c.243 1.367.627 2.037.755 2.012.396 0-.396-3.025 1.522-7.264s6.394-9.339 12.789-13.123c6.905-4.018 14.838-5.974 22.841-5.631 3.811.182 7.574.924 11.164 2.202 7.323 2.623 13.717 7.296 18.403 13.452 1.061 1.417 1.816 2.531 2.404 3.417l-1.637-.278-5.295-1.012c-3.031-.569-4.988-.848-5.179-.392s1.419 1.544 4.335 2.759a47.66 47.66 0 0 0 5.269 1.772c1.023.278 2.097.544 3.21.772.588.127 1.1.228 1.765.342.541.152 1.109.184 1.663.094a3.86 3.86 0 0 0 1.547-.613 2.76 2.76 0 0 0 .934-1.265c.088-.252.156-.51.205-.772l.09-.595.23-1.544.384-2.949c.217-1.873.371-3.569.435-5.062'
+									fill='#fd5631'
+								/>
+							</svg>
 						</div>
-						{/* Feature item*/}
-						<div className='col'>
-							<div className='card border-0 shadow-sm card-hover h-100'>
-								<div className='card-body icon-box'>
-									<div className='icon-box-media bg-faded-primary text-primary rounded-circle mb-3'>
-										<i className='fi-heart' />
-									</div>
-									<h3 className='h5 card-title'>Empathy</h3>
-									<p className='card-text fs-sm'>
-										Id velit, dui condimentum dictumst sapien quis a elementum
-										dignissim. Dignissim ultrices scelerisque.
-									</p>
-								</div>
+					</div>
+					{/* Card item*/}
+					<div className='col'>
+						<div className='card border-0 shadow-sm position-relative h-100'>
+							<div className='card-body'>
+								<div className='h2 mb-2 text-primary'>02</div>
+								<h3 className='h5 card-title mb-2'>Create a job / resume</h3>
+								<p className='card-text fs-sm'>
+									Convallis suspendisse libero integer duis luctus laoreet
+									pellentesque. Aenean eget.
+								</p>
 							</div>
+							{/* Arrow*/}
+							<svg
+								className='position-absolute top-0 end-0 mt-n2 d-lg-block d-none'
+								xmlns='http://www.w3.org/2000/svg'
+								width={78}
+								height={30}
+								fill='none'
+								style={{ transform: 'translateY(-100%) translateX(70%)' }}>
+								<path
+									d='M77.955 14.396c.128-2.86 0-4.67-.576-4.745s-1.279 1.607-2.11 4.378l-1.279 4.897-.563 2.683c-.612-1.434-1.352-2.81-2.212-4.113-2.718-4.072-6.226-7.569-10.321-10.288C54.205 2.687 46.332.186 38.233.008c-8.823-.165-17.491 2.305-24.874 7.087C6.581 11.549 2.118 17.395.66 22.191.033 24.057-.15 26.04.123 27.987c.243 1.367.627 2.037.755 2.012.396 0-.396-3.025 1.522-7.264s6.394-9.339 12.789-13.123c6.905-4.018 14.838-5.974 22.841-5.631 3.811.182 7.574.924 11.164 2.202 7.323 2.623 13.717 7.296 18.403 13.452 1.061 1.417 1.816 2.531 2.404 3.417l-1.637-.278-5.295-1.012c-3.031-.569-4.988-.848-5.179-.392s1.419 1.544 4.335 2.759a47.66 47.66 0 0 0 5.269 1.772c1.023.278 2.097.544 3.21.772.588.127 1.1.228 1.765.342.541.152 1.109.184 1.663.094a3.86 3.86 0 0 0 1.547-.613 2.76 2.76 0 0 0 .934-1.265c.088-.252.156-.51.205-.772l.09-.595.23-1.544.384-2.949c.217-1.873.371-3.569.435-5.062'
+									fill='#fd5631'
+								/>
+							</svg>
 						</div>
-						{/* Feature item*/}
-						<div className='col'>
-							<div className='card border-0 shadow-sm card-hover h-100'>
-								<div className='card-body icon-box'>
-									<div className='icon-box-media bg-faded-success text-success rounded-circle mb-3'>
-										<i className='fi-users' />
-									</div>
-									<h3 className='h5 card-title'>Results-driven team</h3>
-									<p className='card-text fs-sm'>
-										Tincidunt mauris sit eu, lacinia pharetra, lorem neque dui.
-										Maecenas ultricies laoreet facilisis fusce amet.
-									</p>
-								</div>
+					</div>
+					{/* Card item*/}
+					<div className='col'>
+						<div className='card border-0 shadow-sm position-relative h-100'>
+							<div className='card-body'>
+								<div className='h2 mb-2 text-primary'>03</div>
+								<h3 className='h5 card-title mb-2'>Select a pricing plan</h3>
+								<p className='card-text fs-sm'>
+									Cursus duis ridiculus purus eget velit mattis id vel. Semper
+									aliquet auctor cras dui odio ege.
+								</p>
 							</div>
+							{/* Arrow*/}
+							<svg
+								className='position-absolute top-0 end-0 mt-n2 d-sm-block d-none'
+								xmlns='http://www.w3.org/2000/svg'
+								width={78}
+								height={30}
+								fill='none'
+								style={{ transform: 'translateY(-100%) translateX(70%)' }}>
+								<path
+									d='M77.955 14.396c.128-2.86 0-4.67-.576-4.745s-1.279 1.607-2.11 4.378l-1.279 4.897-.563 2.683c-.612-1.434-1.352-2.81-2.212-4.113-2.718-4.072-6.226-7.569-10.321-10.288C54.205 2.687 46.332.186 38.233.008c-8.823-.165-17.491 2.305-24.874 7.087C6.581 11.549 2.118 17.395.66 22.191.033 24.057-.15 26.04.123 27.987c.243 1.367.627 2.037.755 2.012.396 0-.396-3.025 1.522-7.264s6.394-9.339 12.789-13.123c6.905-4.018 14.838-5.974 22.841-5.631 3.811.182 7.574.924 11.164 2.202 7.323 2.623 13.717 7.296 18.403 13.452 1.061 1.417 1.816 2.531 2.404 3.417l-1.637-.278-5.295-1.012c-3.031-.569-4.988-.848-5.179-.392s1.419 1.544 4.335 2.759a47.66 47.66 0 0 0 5.269 1.772c1.023.278 2.097.544 3.21.772.588.127 1.1.228 1.765.342.541.152 1.109.184 1.663.094a3.86 3.86 0 0 0 1.547-.613 2.76 2.76 0 0 0 .934-1.265c.088-.252.156-.51.205-.772l.09-.595.23-1.544.384-2.949c.217-1.873.371-3.569.435-5.062'
+									fill='#fd5631'
+								/>
+							</svg>
 						</div>
-						{/* Feature item*/}
-						<div className='col'>
-							<div className='card border-0 shadow-sm card-hover h-100'>
-								<div className='card-body icon-box'>
-									<div className='icon-box-media bg-faded-primary text-primary rounded-circle mb-3'>
-										<i className='fi-briefcase' />
-									</div>
-									<h3 className='h5 card-title'>Daily hard work</h3>
-									<p className='card-text fs-sm'>
-										Elementum quisque cursus sagittis purus mauris. Ultrices ut
-										eu egestas at tristique malesuada.
-									</p>
-								</div>
-							</div>
-						</div>
-						{/* Feature item*/}
-						<div className='col'>
-							<div className='card border-0 shadow-sm card-hover h-100'>
-								<div className='card-body icon-box'>
-									<div className='icon-box-media bg-faded-success text-success rounded-circle mb-3'>
-										<i className='fi-chat-left' />
-									</div>
-									<h3 className='h5 card-title'>Communication</h3>
-									<p className='card-text fs-sm'>
-										Faucibus sollicitudin id vitae pharetra tristique cursus id.
-										Blandit at proin purus cursus id sem.
-									</p>
-								</div>
-							</div>
-						</div>
-						{/* Feature item*/}
-						<div className='col'>
-							<div className='card border-0 shadow-sm card-hover h-100'>
-								<div className='card-body icon-box'>
-									<div className='icon-box-media bg-faded-info text-info rounded-circle mb-3'>
-										<i className='fi-like' />
-									</div>
-									<h3 className='h5 card-title'>Passion &amp; enthusiasm</h3>
-									<p className='card-text fs-sm'>
-										Cras aliquam fringilla sollicitudin quis potenti lacinia
-										volutpat nisl amet. Felis gravida sed sit nec nulla id
-										morbi.
-									</p>
-								</div>
-							</div>
-						</div>
-						{/* Feature item*/}
-						<div className='col'>
-							<div className='card border-0 shadow-sm card-hover h-100'>
-								<div className='card-body icon-box'>
-									<div className='icon-box-media bg-faded-warning text-warning rounded-circle mb-3'>
-										<i className='fi-checkbox-checked-alt' />
-									</div>
-									<h3 className='h5 card-title'>Simple solutions</h3>
-									<p className='card-text fs-sm'>
-										Porta vulputate commodo ut pulvinar. Fames augue dui
-										faucibus porttitor dis duis id faucibus.
-									</p>
-								</div>
+					</div>
+					{/* Card item*/}
+					<div className='col'>
+						<div className='card border-0 shadow-sm position-relative h-100'>
+							<div className='card-body'>
+								<div className='h2 mb-2 text-primary'>04</div>
+								<h3 className='h5 card-title mb-2'>Post your job / resume</h3>
+								<p className='card-text fs-sm'>
+									Sit auctor aliquam leo duis. Praesent ut&nbsp;penatibus
+									faucibus nibh arcu tempor adipiscing.
+								</p>
 							</div>
 						</div>
 					</div>

@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Loading from './Components/Loading';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Applyprocess from './Components/applyprocess/Applyprocess';
+import Services from './Components/Services/Services';
 //components
 const Nav = React.lazy(() => import('./Components/Herosection/Nav'));
 const Footer = React.lazy(() => import('./Components/Footer'));
@@ -41,6 +43,7 @@ const Applyjob = React.lazy(() => import('./Components/Recrument/Applyjob'));
 // blogs and content related
 const Blogs = React.lazy(() => import('./Components/News'));
 const BlogsGrid = React.lazy(() => import('./Components/Blog/BlogGrid'));
+const BlogSingle = React.lazy(() => import('./Components/Blog/Blogsingle'));
 
 //contact us page
 const Contactus = React.lazy(() => import('./Components/contactus/Contactus'));
@@ -75,16 +78,26 @@ function App() {
 						<Contactus />
 						<Footer></Footer>
 					</Route>
+					<Route path='/recrumentprocess'>
+						<Nav></Nav>
+						<Applyprocess />
+						<Footer></Footer>
+					</Route>
 					{/* all the related blog pages  */}
 					<Route path='/news'>
 						<Nav></Nav>
-						<Blogs /> <Footer></Footer>
+						<BlogsGrid /> <Footer></Footer>
+					</Route>
+					{/* // this is for the servieces  */}
+					<Route path='/services'>
+						<Nav></Nav>
+						<Services /> <Footer></Footer>
 					</Route>
 
 					{/* All the documents related page and need some work to do  */}
 					<Route path='/Documents'>
 						<Nav></Nav>
-						<Document />
+						<Demand />
 						<Footer></Footer>
 					</Route>
 

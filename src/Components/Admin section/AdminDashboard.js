@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import AppliedJobs from './AppliedJobs';
 import Contactingpeople from './Contactingpeople';
+import BlogPostForm from './Blogpostform';
 // import JobForm from './JobForm';
 const AdminDashboard = () => {
 	return (
@@ -35,8 +36,9 @@ const AdminDashboard = () => {
 					<Col md={10} className='p-4'>
 						<h2>Welcome to the Admin Dashboard</h2>
 						{/* <JobForm></JobForm> */}
-						<Contactingpeople></Contactingpeople>
-						<AppliedJobs></AppliedJobs>
+						{/* <Contactingpeople></Contactingpeople> */}
+						{/* <AppliedJobs></AppliedJobs> */}
+						<BlogPostForm></BlogPostForm>
 					</Col>
 				</Row>
 			</Container>
