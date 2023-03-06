@@ -2,7 +2,7 @@ import React from 'react';
 import '../Herosection/theme.min.css';
 import '../Herosection/tineyslider.css';
 import img from '../../Assets/Blogs/01.jpg';
-import img2 from '../../Assets/Blogs/11.jpg';
+// import img2 from '../../Assets/Blogs/11.jpg';
 import { db } from '../fire';
 // import img3 from '../../Assets/Blogs/03.jpg';
 import { Typography } from '@material-ui/core';

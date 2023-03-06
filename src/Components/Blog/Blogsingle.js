@@ -105,7 +105,7 @@ const Blogpost = ({ data }) => {
 							</a>
 						</div>
 						{/* Post content*/}
-						<h6></h6>
+						{/* <h6></h6> */}
 						<p>{data.content}</p>
 
 						<footer className='fs-base'>— Annette Black</footer>

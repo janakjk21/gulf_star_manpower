@@ -12,9 +12,6 @@ import 'react-medium-image-zoom/dist/styles.css';
 import './documents.css';
 import Them from '../Them';
 
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-import Image from 'react-bootstrap/Image';
 import '../Herosection/jk.css';
 
 export default function Demand() {
@@ -33,7 +30,7 @@ export default function Demand() {
 						</div>
 						<div className='row column-gap-50'>
 							<div className='col-md-6 col-lg-4'>
-								<Singleemploye image={img2} title={'licence'}></Singleemploye>
+								<Singleemploye image={img1} title={'licence'}></Singleemploye>
 							</div>
 							<div className='col-md-6 col-lg-4'>
 								<Singleemploye image={img2} title={'licence'}></Singleemploye>
@@ -44,9 +41,9 @@ export default function Demand() {
 							<div className='col-md-6 col-lg-4'>
 								<Singleemploye image={img4} title={'licence'}></Singleemploye>
 							</div>
-							<div className='col-md-6 col-lg-4'>
+							{/* <div className='col-md-6 col-lg-4'>
 								<Singleemploye image={img2} title={'licence'}></Singleemploye>
-							</div>
+							</div> */}
 							<div className='col-md-6 col-lg-4'></div>
 						</div>
 					</div>

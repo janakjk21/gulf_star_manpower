@@ -11,9 +11,9 @@ const Nav = React.lazy(() => import('./Components/Herosection/Nav'));
 const Footer = React.lazy(() => import('./Components/Footer'));
 
 //related to documents of the componey
-const Document = React.lazy(() =>
-	import('./Components/lisence Certificate/Document')
-);
+// const Document = React.lazy(() =>
+// 	import('./Components/lisence Certificate/Document')
+// );
 const Demand = React.lazy(() =>
 	import('./Components/lisence Certificate/Demand')
 );
@@ -41,9 +41,9 @@ const Jobseekerlogin = React.lazy(() =>
 const Applyjob = React.lazy(() => import('./Components/Recrument/Applyjob'));
 
 // blogs and content related
-const Blogs = React.lazy(() => import('./Components/News'));
+// const Blogs = React.lazy(() => import('./Components/News'));
 const BlogsGrid = React.lazy(() => import('./Components/Blog/BlogGrid'));
-const BlogSingle = React.lazy(() => import('./Components/Blog/Blogsingle'));
+// const BlogSingle = React.lazy(() => import('./Components/Blog/Blogsingle'));
 
 //contact us page
 const Contactus = React.lazy(() => import('./Components/contactus/Contactus'));

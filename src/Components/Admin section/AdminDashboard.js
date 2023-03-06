@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import AppliedJobs from './AppliedJobs';
-import Contactingpeople from './Contactingpeople';
+// import AppliedJobs from './AppliedJobs';
+// import Contactingpeople from './Contactingpeople';
 import BlogPostForm from './Blogpostform';
 // import JobForm from './JobForm';
 const AdminDashboard = () => {

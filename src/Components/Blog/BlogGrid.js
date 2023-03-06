@@ -2,7 +2,7 @@ import React from 'react';
 import '../Herosection/theme.min.css';
 import blogimg from '../../Assets/Blogs/01.jpg';
 import bigblog from '../../Assets/01.jpg';
-import Author from '../../Assets/Team/01 (1).jpg';
+// import Author from '../../Assets/Team/01 (1).jpg';
 export default function BlogGrid() {
 	return (
 		<main className='page-wrapper'>
