@@ -31,29 +31,28 @@ export default function Jobseekerlogin() {
 		<div>
 			<Them title='Jobs' title1='Available'></Them>
 			<div
-				class='row g-4 gallery'
+				class='row g-4 gallery bg-secondary'
 				data-video='true'
 				style={{ padding: '20px' }}>
 				{jobs.length > 0 ? (
 					jobs.map((item, id) => {
 						return (
 							<div class='col-xl-4 col-sm-6' key={item._id}>
-								<div className='card bg-secondary card-hover'>
+								<div className='card  card-hover'>
 									<div className='card-body'>
 										<div className='d-flex justify-content-between align-items-start mb-2'>
 											<div className='d-flex align-items-center'>
-												{/* <img
-													className='me-2'
-													src='path-to-image'
-													width={24}
-													alt='IT Pro TV'
-												/> */}
-												<span className='fs-sm text-dark opacity-80 px-1'>
-													Company: {item.Company}
-												</span>
-												<span className='badge bg-faded-accent rounded-pill fs-sm ms-2'>
-													featured
-												</span>
+												<h3 className='h6 card-title pt-1 mb-3'>
+													Job Title:
+													<span className='fs-md text-dark opacity-100 px-1'>
+														{item.jobTitle}
+													</span>{' '}
+												</h3>
+												<h3 className='h6 card-title pt-1 mb-3'>
+													<span className='fs-md text-dark opacity-80 px-1'>
+														Company: {item.company}
+													</span>
+												</h3>
 											</div>
 											<div className='dropdown content-overlay'>
 												<button
@@ -66,18 +65,23 @@ export default function Jobseekerlogin() {
 												</button>
 											</div>
 										</div>
-										<h3 className='h6 card-title pt-1 mb-3'>{item.Category}</h3>
-										<div className='fs-sm'>
-											<span className='text-nowrap me-3'>
-												<BiLocationPlus></BiLocationPlus>
-												{item.Location}
-											</span>
+										<span className='fs-md text-info opacity-90 px-1 rounded-pill bg-faded-info badge'>
+											Job Category:{item.category}
+										</span>
+										<span className='text-nowrap me-3 rounded-pill bg-faded-success badge'>
+											<BiLocationPlus></BiLocationPlus>Location:
+											{item.location}
+										</span>
+										<div className='fs-sm mt-3'>
 											<span className='text-nowrap me-3'>
 												<HiOutlineCurrencyRupee className='fi-cash fs-base text-muted me-1'></HiOutlineCurrencyRupee>
-												Salary:{item.Salary}
+												Salary:{item.salary}
+											</span>
+											<span className='badge bg-faded-accent rounded-pill fs-sm ms-2'>
+												closingDate:{item.closingDate}
 											</span>
 										</div>{' '}
-										<button className='btn btn-primary btn-lg rounded-pill ms-sm-auto'>
+										<button className='btn btn-primary btn-lg rounded-pill ms-sm-auto mt-5'>
 											<Link to='/applyjob' style={{ color: 'ButtonFace' }}>
 												apply
 											</Link>
@@ -88,7 +92,9 @@ export default function Jobseekerlogin() {
 						);
 					})
 				) : (
-					<Loading />
+					<>
+						<h1> No Jobs Available</h1>
+					</>
 				)}
 			</div>
 		</div>

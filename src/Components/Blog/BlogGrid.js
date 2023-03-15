@@ -2,8 +2,45 @@ import React from 'react';
 import '../Herosection/theme.min.css';
 import blogimg from '../../Assets/Blogs/01.jpg';
 import bigblog from '../../Assets/01.jpg';
+import { useState } from 'react';
+import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
+import { useEffect } from 'react';
+import { db } from '../fire';
+import { Link } from 'react-router-dom';
 // import Author from '../../Assets/Team/01 (1).jpg';
 export default function BlogGrid() {
+	const [article, setArticle] = useState([]);
+	const [deletealert, setdeletealert] = useState(false);
+	const [advertisement, setAdvertisement] = useState([]);
+	const getjobs = async () => {
+		let newarr = [];
+		const querySnapshot = await getDocs(collection(db, 'createnews'));
+		querySnapshot.forEach((doc) => {
+			console.log(doc.id);
+			let docid = doc.id;
+			let appObj = { docid, ...doc.data() };
+			newarr.push(appObj);
+		});
+		setArticle(newarr);
+	};
+	useEffect(() => {
+		getjobs();
+		firstArticle();
+	}, []);
+
+	const firstArticle = async () => {
+		let newarr = [];
+		const querySnapshot = await getDocs(collection(db, 'jobAdvertisement'));
+		querySnapshot.forEach((doc) => {
+			console.log(doc.id);
+			let docid = doc.id;
+			let appObj = { docid, ...doc.data() };
+			newarr.push(appObj);
+		});
+		setAdvertisement(newarr);
+	};
+
+	console.log(advertisement[0], 'this is advertisement');
 	return (
 		<main className='page-wrapper'>
 			<div className='container pt-5 pb-lg-4 my-5'>
@@ -76,10 +113,18 @@ export default function BlogGrid() {
 
 				{/* Latest articles (3 columns)*/}
 				<div className='row row-cols-1 row-cols-sm-2 row-cols-lg-3 gx-3 gx-md-4 gy-md-5 gy-4 mb-lg-5 mb-4'>
-					<SingleAricle></SingleAricle>
-					<SingleAricle></SingleAricle>
-					<SingleAricle></SingleAricle>
-					<SingleAricle></SingleAricle>
+					{article.length > 0 ? (
+						article.map((item) => {
+							return (
+								<>
+									{' '}
+									<SingleAricle item={item}></SingleAricle>
+								</>
+							);
+						})
+					) : (
+						<div> no news</div>
+					)}
 				</div>
 				{/* Pagination*/}
 			</div>
@@ -87,27 +132,32 @@ export default function BlogGrid() {
 	);
 }
 
-const SingleAricle = () => {
+const SingleAricle = ({ item }) => {
+	console.log(item, 'item');
 	return (
-		<article className='col pb-2 pb-md-1'>
-			<a
-				className='d-block position-relative mb-3'
-				href='car-finder-blog-single.html'>
-				<img className='d-block rounded-3' src={blogimg} alt='Post ' />
-			</a>
-			<a className='fs-xs text-uppercase text-decoration-none' href='/'>
-				Reviews
-			</a>
-			<h3 className='fs-base text-dark pt-1'>
-				<a className='nav-link' href='car-finder-blog-single.html'>
-					All New Aston Martin Superleggera
+		<>
+			<article className='col pb-2 pb-md-1'>
+				<Link
+					className='d-block position-relative mb-3'
+					to={`bloggrind/${item.docid}`}>
+					<img className='d-block rounded-3' src={item.imgUrl} alt='Post ' />
+				</Link>
+				<a className='fs-xs text-uppercase text-decoration-none' href='/'>
+					Reviews
 				</a>
-			</h3>
-			<a className='d-flex align-items-center text-decoration-none' href='/'>
-				<div className='ps-2'>
-					<h6 className='fs-sm text-dark lh-base mb-1'>Dinesh Chettri </h6>
-				</div>
-			</a>
-		</article>
+				<h3 className='fs-base text-dark pt-1'>
+					<a className='nav-link' href='car-finder-blog-single.html'>
+						{item.blogPost.title}
+					</a>
+				</h3>
+				<a className='d-flex align-items-center text-decoration-none' href='/'>
+					<div className='ps-2'>
+						<h6 className='fs-sm text-dark lh-base mb-1'>
+							{item.blogPost.author.name}
+						</h6>
+					</div>
+				</a>
+			</article>
+		</>
 	);
 };

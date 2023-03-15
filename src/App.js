@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import otheroutes from './Components/Admin section/Adminroutes';
 import Loading from './Components/Loading';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -43,7 +44,7 @@ const Applyjob = React.lazy(() => import('./Components/Recrument/Applyjob'));
 // blogs and content related
 // const Blogs = React.lazy(() => import('./Components/News'));
 const BlogsGrid = React.lazy(() => import('./Components/Blog/BlogGrid'));
-// const BlogSingle = React.lazy(() => import('./Components/Blog/Blogsingle'));
+const BlogSingle = React.lazy(() => import('./Components/Blog/Blogsingle'));
 
 //contact us page
 const Contactus = React.lazy(() => import('./Components/contactus/Contactus'));
@@ -54,6 +55,8 @@ const Hero3 = React.lazy(() => import('./Components/Herosection/Hero3'));
 
 // this is about us page
 const AboutPage = React.lazy(() => import('./Components/Aboutus/AboutPage'));
+
+// this is the page to show the news article of the newspaper
 
 function App() {
 	const [isAuth, setAuth] = useState(true);
@@ -78,6 +81,7 @@ function App() {
 						<Contactus />
 						<Footer></Footer>
 					</Route>
+					{otheroutes}
 					<Route path='/recrumentprocess'>
 						<Nav></Nav>
 						<Applyprocess />
@@ -113,6 +117,7 @@ function App() {
 					</Route>
 					{/* All admin related thing here */}
 					<Route path='/dashboard'>
+						<Nav></Nav>
 						{/* <Dashboard></Dashboard> */}
 						<AdminDashboard></AdminDashboard>
 						{/* < Dashboard1></> */}
@@ -138,7 +143,7 @@ function App() {
 					{/* this is blog grind  */}
 					<Route path='/bloggrid'>
 						<Nav></Nav>
-						<BlogsGrid></BlogsGrid>
+						<BlogSingle></BlogSingle>
 						<Footer></Footer>
 					</Route>
 					{/* This is home page  */}

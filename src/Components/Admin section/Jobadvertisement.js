@@ -20,7 +20,7 @@ import { Alert } from 'react-bootstrap';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { BiLocationPlus } from 'react-icons/bi';
 import { HiOutlineCurrencyRupee } from 'react-icons/hi';
-function BlogPostForm() {
+function Jobadvertisement() {
 	const [blogPost, setBlogPost] = useState({
 		title: '',
 		author: {
@@ -58,7 +58,7 @@ function BlogPostForm() {
 		e.preventDefault();
 
 		try {
-			const docRef = await addDoc(collection(db, 'createnews'), {
+			const docRef = await addDoc(collection(db, 'jobAdvertisement'), {
 				blogPost,
 				imgUrl,
 			}).then(setShowAlert(true));
@@ -170,7 +170,7 @@ function BlogPostForm() {
 				</Button>
 				{showAlert && (
 					<Alert variant='success' onClose={() => showAlert(false)} dismissible>
-						Job has been Delete
+						Advertisment created successfully
 					</Alert>
 				)}
 			</Form>
@@ -179,14 +179,14 @@ function BlogPostForm() {
 	);
 }
 
-export default BlogPostForm;
+export default Jobadvertisement;
 
 const DeleteJobs = () => {
 	const [jobs, setJobs] = useState([]);
 	const [deletealert, setdeletealert] = useState(false);
 	const getjobs = async () => {
 		let newarr = [];
-		const querySnapshot = await getDocs(collection(db, 'createnews'));
+		const querySnapshot = await getDocs(collection(db, 'jobAdvertisement'));
 		querySnapshot.forEach((doc) => {
 			console.log(doc.id);
 			let docid = doc.id;
@@ -201,7 +201,7 @@ const DeleteJobs = () => {
 
 	const deletedata = (id, e) => {
 		e.preventDefault();
-		const docRef = doc(db, 'createnews', id);
+		const docRef = doc(db, 'jobAdvertisement', id);
 		deleteDoc(docRef)
 			.then(() => {
 				setdeletealert(true);
