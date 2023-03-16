@@ -1,10 +1,10 @@
 import React from 'react';
-import { Container, Row, Col, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Row, Col, Nav } from 'react-bootstrap';
 import AppliedJobs from './AppliedJobs';
 import Contactingpeople from './Contactingpeople';
 import BlogPostForm from './Blogpostform';
 import JobAdvertisement from './Jobadvertisement';
-import Jobform from './JobForm';
+// import Jobform from './JobForm';
 import { useLocation } from 'react-router-dom';
 import {
 	FaAccusoft,

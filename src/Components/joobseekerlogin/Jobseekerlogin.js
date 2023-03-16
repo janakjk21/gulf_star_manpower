@@ -4,7 +4,6 @@ import { db } from '../fire';
 import Them from '../Them';
 import '../Herosection/theme.min.css';
 import { Link } from 'react-router-dom';
-import Loading from '../Loading';
 import { BiLocationPlus } from 'react-icons/bi';
 import { HiOutlineCurrencyRupee } from 'react-icons/hi';
 import { BsThreeDotsVertical } from 'react-icons/bs';

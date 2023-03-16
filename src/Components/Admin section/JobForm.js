@@ -5,7 +5,6 @@ import { collection, addDoc, getDocs } from 'firebase/firestore';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { BiLocationPlus } from 'react-icons/bi';
 import { HiOutlineCurrencyRupee } from 'react-icons/hi';
-import { Link } from 'react-router-dom';
 import { doc, deleteDoc } from 'firebase/firestore';
 
 const JobForm = () => {

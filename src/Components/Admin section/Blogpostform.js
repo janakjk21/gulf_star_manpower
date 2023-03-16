@@ -9,17 +9,10 @@ import {
 	getDocs,
 } from 'firebase/firestore';
 import { db, storage } from '../fire';
-import {
-	getDownloadURL,
-	getStorage,
-	ref,
-	uploadBytes,
-	uploadBytesResumable,
-} from 'firebase/storage';
+import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
 import { Alert } from 'react-bootstrap';
 import { BsThreeDotsVertical } from 'react-icons/bs';
-import { BiLocationPlus } from 'react-icons/bi';
-import { HiOutlineCurrencyRupee } from 'react-icons/hi';
+
 function BlogPostForm() {
 	const [blogPost, setBlogPost] = useState({
 		title: '',
@@ -31,7 +24,7 @@ function BlogPostForm() {
 		content: '',
 	});
 	const [showAlert, setShowAlert] = useState(false);
-	const [selectedFile, setSelectedFile] = useState(null);
+
 	const [imgUrl, setImgUrl] = useState(null);
 	const [progresspercent, setProgresspercent] = useState(0);
 	const handleInputChange = (event) => {
@@ -151,6 +144,7 @@ function BlogPostForm() {
 					/>
 				</Form.Group>
 				<Form.Group controlId='formFileSm' className='mb-3'>
+					{progresspercent}
 					<Form.Label>Choose a image to upload </Form.Label>
 					<Form.Control
 						type='file'
