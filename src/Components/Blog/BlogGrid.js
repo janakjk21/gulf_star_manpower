@@ -57,7 +57,7 @@ export default function BlogGrid() {
 					</ol>
 				</nav>
 				{/* Page title*/}
-				<h1 className='text-dark mb-4'>News &amp; reviews</h1>
+				<h1 className='text-dark mb-4'> New Jobs &amp; reviews</h1>
 				{/* Sorting, filters and search*/}
 				<div className='d-lg-flex pt-1 pb-4 mb-3'>
 					<div className='d-flex mb-3 mb-lg-0 pe-lg-2'></div>

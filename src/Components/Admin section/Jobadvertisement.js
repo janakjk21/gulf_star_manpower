@@ -249,6 +249,7 @@ const DeleteJobs = () => {
 										<span className=' text-info  fs-sm ms-2'>
 											{' '}
 											<p> {item.blogPost.content}</p>
+											<img src={item.blogPost.imgUrl} alt='ads image'></img>
 										</span>
 									</div>{' '}
 									<button

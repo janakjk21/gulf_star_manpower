@@ -13,6 +13,7 @@ import Footer from '../Footer';
 import Job from '../Job';
 import Apply from '../Apply';
 import Blogs from '../Blog/Blogs';
+import ModalE from './ModalE';
 import Nav from './Nav';
 export default function Hero3() {
 	return (
@@ -97,15 +98,15 @@ export default function Hero3() {
 				</section>
 				{/* <Smallcomponent /> */}
 			</main>
-			{/* <Coutry /> */}
+
 			<Loginitem />
 			<Fasterwayto />
-
+			<ModalE></ModalE>
 			{/* <Message /> */}
 			<Clients />
 			<Job />
 			<Testimonial />
-			<Blogs />
+			{/* <Blogs /> */}
 			<Apply />
 			<Footer />
 		</div>

@@ -4,7 +4,7 @@ import aboutus_img from '../../Assets/1-min-min_2.JPG';
 // import employe_1 from '../../Assets/img/sections/client/customer-care.png';
 
 // import employe_2 from '../../Assets/img/team-details/01.jpg';
-import team1 from '../../Assets/Team/01 (1).jpg';
+import team1 from '../../Assets/Team/final photo.jpg';
 import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export default function AboutPage() {
@@ -88,11 +88,7 @@ const Headercomponent = () => {
 									</li>
 								</ul>
 							</div>
-							<div className='btn-wrap'>
-								<a href='/' className='btn-common btn-new'>
-									Get Free Consultation
-								</a>
-							</div>
+							<div className='btn-wrap'></div>
 						</div>
 					</div>
 					<div className='col-lg-6 col-md-12'>
@@ -117,16 +113,19 @@ const SecondItem = () => {
 						<div className='row justify-content-center'>
 							<div className='col-lg-6'>
 								<div className='section-title-wrapper text-center'>
-									<h1 className='section-title'>Meet Experts</h1>
-									<p className='description'>
-										87% of people learning for professional development report
-										career benefits
-									</p>
+									<h1 className='section-title'>Our Team</h1>
+									<p className='description'></p>
 								</div>
 							</div>
 						</div>
 						<div className='row column-gap-50'>
 							<div className='col-md-6 col-lg-4'>
+								<Singleemploye
+									name={'Dinesh Chhetri'}
+									post={'Managing Director '}
+									imageurl={team1}></Singleemploye>
+							</div>
+							{/* <div className='col-md-6 col-lg-4'>
 								<Singleemploye></Singleemploye>
 							</div>
 							<div className='col-md-6 col-lg-4'>
@@ -140,10 +139,7 @@ const SecondItem = () => {
 							</div>
 							<div className='col-md-6 col-lg-4'>
 								<Singleemploye></Singleemploye>
-							</div>
-							<div className='col-md-6 col-lg-4'>
-								<Singleemploye></Singleemploye>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>
@@ -156,14 +152,14 @@ const Lastcomponent = () => {
 	return <div> </div>;
 };
 
-const Singleemploye = () => {
+const Singleemploye = ({ name, post, imageurl }) => {
 	return (
 		<div className='col' style={{ margin: '4px' }}>
 			<div className='card border-0 shadow-sm'>
-				<img className='card-img-top' src={team1} alt='Devon Lane' />
+				<img className='card-img-top' src={imageurl} alt='Devon Lane' />
 				<div className='card-body text-center'>
-					<h3 className='h5 card-title mb-2'>Devon Lane</h3>
-					<span className='d-inline-block mb-3 fs-sm'>President &amp; CEO</span>
+					<h3 className='h5 card-title mb-2'>{name}</h3>
+					<span className='d-inline-block mb-3 fs-sm'>{post}</span>
 					<div className='pt-1'>
 						<a
 							className='btn btn-icon btn-light-primary btn-xs rounded-circle shadow-sm mx-2'

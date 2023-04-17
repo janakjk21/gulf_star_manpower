@@ -1,5 +1,6 @@
 {
 	"name": "gulf_star_manpower",
+	"homepage":"http://gulfstaroverseas.com/",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
@@ -22,6 +23,7 @@
 		"react-icons": "^4.2.0",
 		"react-iframe": "^1.8.0",
 		"react-medium-image-zoom": "^4.3.5",
+		"react-modal": "^3.16.1",
 		"react-router-dom": "^5.3.0",
 		"react-scripts": "4.0.3",
 		"swiper": "^6.8.4",
@@ -52,6 +54,7 @@
 		]
 	},
 	"devDependencies": {
-		"sass": "^1.39.0"
+		"sass": "^1.39.0",
+		"webpack-cli": "^5.0.1"
 	}
 }
