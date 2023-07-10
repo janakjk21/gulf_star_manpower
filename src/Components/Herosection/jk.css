@@ -52,7 +52,7 @@
 #hero h1 {
     font-size: 80px;
     margin-bottom: 24px;
-    color: #0b0861;
+    color: #219ebc;
 }
 
 #hero h2 {
@@ -83,7 +83,7 @@
 }
 
 #hero .icon-box .title a {
-    color: #124265;
+    color: #219ebc;
     transition: 0.3s;
 }
 

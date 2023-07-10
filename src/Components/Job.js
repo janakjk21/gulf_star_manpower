@@ -1,10 +1,10 @@
 import React from 'react';
 import './Jobs.css';
-import img1 from '../Assets/Jobs/8375991968-Hour-Annual-In-Service-Security-Guard-Training.jpg';
-import img2 from '../Assets/Jobs/2020740560196810551blog_332_1.jpg';
-import img3 from '../Assets/Jobs/2064220603312941304992346home-img-01-442-280.jpg';
-import img4 from '../Assets/Jobs/126101094hotel.jpeg';
-import img5 from '../Assets/Jobs/cleaning-home-table-sanitizing-kitchen-260nw-1695842029_1_350x250.webp';
+import img1 from '../Assets/Jobs/security.jpg';
+import img2 from '../Assets/Jobs/construciton.jpg';
+import img3 from '../Assets/Jobs/home care.jpg';
+import img4 from '../Assets/Jobs/hotels.jpeg';
+import img5 from '../Assets/Jobs/clenaing.jpg';
 import img6 from '../Assets/Jobs/m1.jpg';
 import { Typography, makeStyles } from '@material-ui/core';
 
@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 		fontSize: '55px',
 		fontWeight: '900',
 		fontFamily: 'Roboto, sans-serif',
-		color: '#0B0861',
+		color: '#219ebc',
 		marginBottom: '30px',
 	},
 	[theme.breakpoints.down('sm')]: {
@@ -49,7 +49,12 @@ export default function Job() {
 					data-aos-delay='300'>
 					<div className='col-lg-4 col-md-6 portfolio-item filter-app'>
 						<div className='portfolio-wrap'>
-							<img src={img1} className='img-fluid' alt='' />
+							<img
+								src={img1}
+								className='img-fluid'
+								alt=''
+								style={{ borderRadius: '10px' }}
+							/>
 							<div className='portfolio-info'>
 								{/* <h5>SECURITY INDUSTRY</h5> */}
 								<div className='portfolio-links'>
@@ -70,7 +75,12 @@ export default function Job() {
 
 					<div className='col-lg-4 col-md-6 portfolio-item filter-web'>
 						<div className='portfolio-wrap'>
-							<img src={img2} className='img-fluid' alt='' />
+							<img
+								src={img2}
+								className='img-fluid'
+								alt=''
+								style={{ borderRadius: '10px' }}
+							/>
 							<div className='portfolio-info'>
 								{/* <h5>CARE TAKER</h5> */}
 								<div className='portfolio-links'>
@@ -91,7 +101,12 @@ export default function Job() {
 
 					<div className='col-lg-4 col-md-6 portfolio-item filter-app'>
 						<div className='portfolio-wrap'>
-							<img src={img3} className='img-fluid' alt='' />
+							<img
+								src={img3}
+								className='img-fluid'
+								alt=''
+								style={{ borderRadius: '10px' }}
+							/>
 							<div className='portfolio-info'>
 								{/* <h5>CONSTRUCTION INDUSTRY</h5> */}
 								<div className='portfolio-links'>
@@ -133,7 +148,12 @@ export default function Job() {
 
 					<div className='col-lg-4 col-md-6 portfolio-item filter-web'>
 						<div className='portfolio-wrap'>
-							<img src={img5} className='img-fluid' alt='' />
+							<img
+								src={img5}
+								className='img-fluid'
+								alt=''
+								style={{ borderRadius: '10px' }}
+							/>
 							<div className='portfolio-info'>
 								{/* <h5> CLEANING INDUSTRY</h5> */}
 								<div className='portfolio-links'>
@@ -154,7 +174,12 @@ export default function Job() {
 
 					<div className='col-lg-4 col-md-6 portfolio-item filter-app'>
 						<div className='portfolio-wrap'>
-							<img src={img6} className='img-fluid' alt='' />
+							<img
+								src={img6}
+								className='img-fluid'
+								alt=''
+								style={{ borderRadius: '10px' }}
+							/>
 							<div className='portfolio-info'>
 								{/* <h5>CONSTRUCTION SERVICES</h5> */}
 

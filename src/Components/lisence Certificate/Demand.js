@@ -2,7 +2,9 @@ import React from 'react';
 import img1 from '../../Assets/officedocuments/iso new.jpg';
 import img2 from '../../Assets/officedocuments/jitco.jpg';
 import img3 from '../../Assets/officedocuments/Pan.jpg';
-import img4 from '../../Assets/officedocuments/कम्पनि दर्ताको प्रमाण पत्र.jpg';
+import img4 from '../../Assets/officedocuments/componey darta.jpg';
+import img5 from '../../Assets/officedocuments/ijajat patra.jpg';
+import img6 from '../../Assets/officedocuments/RBA.bmp';
 // import img5 from '../../Assets/Demand/page0005.jpg';
 
 import AOS from 'aos';
@@ -40,6 +42,12 @@ export default function Demand() {
 							</div>
 							<div className='col-md-6 col-lg-4'>
 								<Singleemploye image={img4} title={'licence'}></Singleemploye>
+							</div>
+							<div className='col-md-6 col-lg-4'>
+								<Singleemploye image={img6} title={'licence'}></Singleemploye>
+							</div>
+							<div className='col-md-6 col-lg-4'>
+								<Singleemploye image={img5} title={'licence'}></Singleemploye>
 							</div>
 							{/* <div className='col-md-6 col-lg-4'>
 								<Singleemploye image={img2} title={'licence'}></Singleemploye>

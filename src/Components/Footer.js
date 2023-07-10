@@ -1,9 +1,9 @@
-import React from "react";
-import "./footer.css";
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { ImTwitter } from "react-icons/im";
-import { Link } from "react-router-dom";
+import React from 'react';
+import './footer.css';
+import { FaFacebook, FaLinkedin } from 'react-icons/fa';
+import { FaYoutube } from 'react-icons/fa';
+import { ImTwitter } from 'react-icons/im';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
 	return (
@@ -32,11 +32,11 @@ export default function Footer() {
 										<FaYoutube />
 									</Link>
 									<Link href='#' className='instagram'>
-										<ImTwitter></ImTwitter>{" "}
+										<ImTwitter></ImTwitter>{' '}
 									</Link>
 
 									<Link href='#' className='linkedin'>
-										<FaLinkedin></FaLinkedin>{" "}
+										<FaLinkedin></FaLinkedin>{' '}
 									</Link>
 								</div>
 							</div>
@@ -46,29 +46,29 @@ export default function Footer() {
 							<h4>Useful Links</h4>
 							<ul>
 								<li>
-									<i className='bx bx-chevron-right'></i>{" "}
+									<i className='bx bx-chevron-right'></i>{' '}
 									<Link to='/'>Home</Link>
 								</li>
 								<li>
-									<i className='bx bx-chevron-right'></i>{" "}
-									<Link to='/aboutus' style={{ textDecoration: "none" }}>
-										{" "}
+									<i className='bx bx-chevron-right'></i>{' '}
+									<Link to='/aboutus' style={{ textDecoration: 'none' }}>
+										{' '}
 										ABOUT US
-									</Link>{" "}
+									</Link>{' '}
 								</li>
 								<li>
-									<Link style={{ textDecoration: "none" }} to='/documents'>
+									<Link style={{ textDecoration: 'none' }} to='/documents'>
 										Documents
 									</Link>
 								</li>
 								<li>
-									<Link to='/News' style={{ textDecoration: "none" }}>
-										{" "}
+									<Link to='/News' style={{ textDecoration: 'none' }}>
+										{' '}
 										News
 									</Link>
 								</li>
 								<li>
-									<Link style={{ textDecoration: "none" }} to='/contactus'>
+									<Link style={{ textDecoration: 'none' }} to='/contactus'>
 										contact Us
 									</Link>
 								</li>
@@ -112,7 +112,7 @@ export default function Footer() {
 
 			<div className='container'>
 				<div className='copyright'>
-					&copy; Copyright{" "}
+					&copy; Copyright{' '}
 					<strong>
 						<span>Janak_sapkota</span>
 					</strong>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import img from '../../Assets/Blogs/single.jpg';
-import Author from '../../Assets/Team/01 (1).jpg';
+import Author from '../../Assets/Team/dinesh paudel chettri.jpg';
 
 export default function Blogsingle() {
 	const data = {

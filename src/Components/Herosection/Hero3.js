@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './theme.min.css';
 import img1 from '../../Assets/hero-img.jpg';
 import Loginitem from './Loginitem';
@@ -12,92 +12,118 @@ import Footer from '../Footer';
 // import Contactus from '../contactus/Contactus';
 import Job from '../Job';
 import Apply from '../Apply';
-import Blogs from '../Blog/Blogs';
+// import Blogs from '../Blog/Blogs';
 import ModalE from './ModalE';
 import Nav from './Nav';
+import Aos from 'aos';
 export default function Hero3() {
+	useEffect(() => {
+		const img = new Image();
+		img.src = img1;
+
+		// Optional: Add a listener for the 'load' event to know when the image has finished loading
+		img.addEventListener('load', () => {
+			// Image has been loaded
+			console.log('Image loaded');
+		});
+
+		// Optional: Add a listener for the 'error' event to handle any loading errors
+		img.addEventListener('error', () => {
+			// Error occurred while loading the image
+			console.log('Error loading image');
+		});
+
+		// Cleanup function to remove event listeners (optional)
+		return () => {
+			img.removeEventListener('load', () => {});
+			img.removeEventListener('error', () => {});
+		};
+	}, []);
+
+	Aos.init();
 	return (
-		<div>
-			<main
-				className='page-wrapper'
-				style={{ backgroundColor: '/fffff', marginTop: '60px' }}>
-				<Nav></Nav>
-				<section className='container py-5 mt-5 mb-lg-3'>
-					<div className='row align-items-center mt-md-2'>
-						<div className='col-lg-7 order-lg-2 mb-lg-0 mb-4 pb-2 pb-lg-0'>
-							<img
-								className='d-block mx-auto'
-								src={img1}
-								width={746}
-								alt='Hero'
-							/>
-						</div>
-						<div className='col-lg-5 order-lg-1 pe-lg-0'>
-							<h1 className='display-5 mb-4 me-lg-n5 text-lg-start text-center mb-4'>
-								Gulf Star
-								<span className='dropdown d-inline-block'>
-									<a
-										className=' text-decoration-none'
-										href='/'
-										aria-expanded='false'>
-										overseas
-									</a>
-								</span>
-							</h1>
-							<p className='text-lg-start text-center mb-4 mb-lg-5 fs-lg'>
-								Rely on a trusted manpower agency with a proven track record of
-								delivering top-notch employees from Nepal to Gulf, Malaysia, and
-								other parts of the world
-							</p>
-							{/* Search form*/}
-							<div className='me-lg-n5'>
-								<form className='form-group d-block d-md-flex position-relative rounded-md-pill me-lg-n5'>
-									<div className='input-group input-group-lg border-end-md'>
-										<span className='input-group-text text-muted rounded-pill ps-3'>
-											{/* <i className='fi-search' /> */}
-										</span>
-										<input
-											className='form-control'
-											type='text'
-											placeholder='What are you looking for?'
-										/>
-									</div>
-									<hr className='d-md-none my-2' />
-									<div className='d-sm-flex'>
-										<div
-											className=' w-100 mb-sm-0 mb-3'
-											data-bs-toggle='select'>
-											<button
-												className='btn btn-link btn-lg ps-2 ps-sm-3'
-												type='button'>
-												<i className='fi-list me-2' />
-												<span className='dropdown-toggle-label'></span>
-											</button>
-											<input type='hidden' />
-											<ul className='dropdown-menu'>
-												<li>
-													<a className='dropdown-item' href='/'>
-														<i className='fi-cafe fs-lg opacity-60 me-2' />
-														<span className='dropdown-item-label'>
-															Food &amp; Drink
-														</span>
-													</a>
-												</li>
-											</ul>
+		<>
+			<React.Suspense fallback={<div>Loading...</div>}>
+				<main className='page-wrapper ' style={{ marginTop: '60px' }}>
+					<Nav></Nav>
+					<section className='container py-5 mt-5 mb-lg-3 '>
+						<div className='row align-items-center mt-md-2'>
+							<div className='col-lg-7 order-lg-2 mb-lg-0 mb-4 pb-2 pb-lg-0'>
+								<img
+									data-aos='zoom-in-up'
+									className='d-block mx-auto'
+									src={img1}
+									width={746}
+									alt='Hero'
+								/>
+							</div>
+							<div className='col-lg-5 order-lg-1 pe-lg-0 '>
+								<h1 className='display-5 mb-4 me-lg-n5 text-lg-start text-center mb-4'>
+									Gulf Star
+									<span className='dropdown d-inline-block'>
+										<a
+											className=' text-decoration-none'
+											href='/'
+											aria-expanded='false'>
+											Overseas
+										</a>
+									</span>
+								</h1>
+								<p className='text-lg-start text-center mb-4 mb-lg-5 fs-lg'>
+									Rely on a trusted manpower agency with a proven track record
+									of delivering top-notch employees from Nepal to Gulf,
+									Malaysia, and other parts of the world
+								</p>
+								{/* Search form*/}
+								<div className='me-lg-n5'>
+									<form className='form-group d-block d-md-flex position-relative rounded-md-pill me-lg-n5'>
+										<div className='input-group input-group-lg border-end-md'>
+											<span className='input-group-text text-muted rounded-pill ps-3'>
+												{/* <i className='fi-search' /> */}
+											</span>
+											<input
+												className='form-control'
+												type='text'
+												placeholder='What are you looking for?'
+											/>
 										</div>
-										<button
-											className='btn btn-primary btn-lg rounded-pill w-100 w-md-auto ms-sm-3'
-											type='button'>
-											Search
-										</button>
-									</div>
-								</form>
+										<hr className='d-md-none my-2' />
+										<div className='d-sm-flex'>
+											<div
+												className=' w-100 mb-sm-0 mb-3'
+												data-bs-toggle='select'>
+												<button
+													className='btn btn-link btn-lg ps-2 ps-sm-3'
+													type='button'>
+													<i className='fi-list me-2' />
+													<span className='dropdown-toggle-label'></span>
+												</button>
+												<input type='hidden' />
+												<ul className='dropdown-menu'>
+													<li>
+														<a className='dropdown-item' href='/'>
+															<i className='fi-cafe fs-lg opacity-60 me-2' />
+															<span className='dropdown-item-label'>
+																Food &amp; Drink
+															</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+											<button
+												className='btn btn-primary btn-lg rounded-pill w-100 w-md-auto ms-sm-3'
+												type='button'>
+												Search
+											</button>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div>
-					</div>
-				</section>
-				{/* <Smallcomponent /> */}
-			</main>
+					</section>
+					{/* <Smallcomponent /> */}
+				</main>
+			</React.Suspense>
 
 			<Loginitem />
 			<Fasterwayto />
@@ -109,7 +135,7 @@ export default function Hero3() {
 			{/* <Blogs /> */}
 			<Apply />
 			<Footer />
-		</div>
+		</>
 	);
 }
 

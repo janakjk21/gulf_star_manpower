@@ -36,7 +36,7 @@ export default function Blogs() {
 						fontSize: '55px',
 						fontWeight: '900',
 						fontFamily: 'Roboto, sans-serif',
-						color: '/0B0861',
+						color: '/219ebc',
 						marginBottom: '30px',
 					}}>
 					{' '}

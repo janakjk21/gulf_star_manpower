@@ -5,6 +5,7 @@ import otheroutes from './Components/Admin section/Adminroutes';
 import Loading from './Components/Loading';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AdminDashboard from './Components/Admin section/AdminDashboard';
 import Applyprocess from './Components/applyprocess/Applyprocess';
 import Services from './Components/Services/Services';
 //components
@@ -25,15 +26,13 @@ const AdminLogin = React.lazy(() =>
 );
 
 //this is related to the admin related stuff
-const Adminpannel = React.lazy(() =>
-	import('./Components/Admin section/dash/Adminpannel')
-);
+// const Adminpannel = React.lazy(() =>
+// 	import('./Components/Admin section/dash/Adminpannel')
+// );
 // const Dashboard = React.lazy(() =>
 // 	import('./Components/Admin section/dash/index')P
 // );
-const AdminDashboard = React.lazy(() =>
-	import('./Components/Admin section/AdminDashboard')
-);
+
 const Jobseekerlogin = React.lazy(() =>
 	import('./Components/joobseekerlogin/Jobseekerlogin')
 );
@@ -111,18 +110,12 @@ function App() {
 						{isAuth ? (
 							<AdminLogin changeauth={changeauth}></AdminLogin>
 						) : (
-							<Adminpannel changeauth={changeauth}></Adminpannel>
+							<AdminDashboard changeauth={changeauth}></AdminDashboard>
 						)}
 						<Footer></Footer>
 					</Route>
 					{/* All admin related thing here */}
-					<Route path='/dashboard'>
-						<Nav></Nav>
-						{/* <Dashboard></Dashboard> */}
-						<AdminDashboard></AdminDashboard>
-						{/* < Dashboard1></> */}
-						{/* <Footer></Footer> */}
-					</Route>
+
 					{/* This is for logging the user to fill the form  */}
 					<Route path='/jobseekerlogin'>
 						<Nav></Nav>
@@ -146,6 +139,48 @@ function App() {
 						<BlogSingle></BlogSingle>
 						<Footer></Footer>
 					</Route>
+
+					<Route path='/dashboard/blogform'>
+						<Nav></Nav>
+
+						<AdminDashboard data={'/dashboard/blogform'}></AdminDashboard>
+					</Route>
+					<Route path='/dashboard/appliedjobs'>
+						<Nav></Nav>
+
+						<AdminDashboard data={'/dashboard/appliedjobs'}></AdminDashboard>
+					</Route>
+					<Route path='/dashboard/jobform'>
+						<Nav></Nav>
+						{/* <Dashboard></Dashboard> */}
+						<AdminDashboard data={'/dashboard/jobform'}></AdminDashboard>
+						{/* < Dashboard1></> */}
+						{/* <Footer></Footer> */}
+					</Route>
+					<Route path='/dashboard/contactingpeople'>
+						<Nav></Nav>
+						{/* <Dashboard></Dashboard> */}
+						<AdminDashboard
+							data={'/dashboard/contactingpeople'}></AdminDashboard>
+						{/* < Dashboard1></> */}
+						{/* <Footer></Footer> */}
+					</Route>
+					<Route path='/dashboard/Jobadvertisement'>
+						<Nav></Nav>
+						{/* <Dashboard></Dashboard> */}
+						<AdminDashboard
+							data={'/dashboard/Jobadvertisement'}></AdminDashboard>
+						{/* < Dashboard1></> */}
+						{/* <Footer></Footer> */}
+					</Route>
+					<Route path='/dashboard'>
+						<Nav></Nav>
+						{/* <Dashboard></Dashboard> */}
+						<AdminDashboard></AdminDashboard>
+						{/* < Dashboard1></> */}
+						{/* <Footer></Footer> */}
+					</Route>
+
 					{/* This is home page  */}
 					<Route path='/'>
 						<div>

@@ -1,19 +1,22 @@
 import React from 'react';
 import './theme.min.css';
-import conferance from '../../Assets/IMG-0249.jpg';
+import conferance from '../../Assets/Team/directiors.JPG';
 
 import { Typography } from '@material-ui/core';
+import Aos from 'aos';
 export default function Fasterwayto() {
+	Aos.init();
 	return (
 		<div>
 			<section className='features-section style-01 margin-top-110 home-two'>
 				<Typography
+					data-aos='zoom-in-up'
 					style={{
 						textAlign: 'center',
 						fontSize: '55px',
 						fontWeight: '900',
 						fontFamily: 'Roboto, sans-serif',
-						color: '#0B0861',
+						color: '#219ebc',
 						marginBottom: '30px',
 						paddingBottom: '40px',
 					}}>
@@ -24,11 +27,15 @@ export default function Fasterwayto() {
 				<div className='container custom-container-01'>
 					<div className='row align-items-center row-reverse'>
 						<div className='col-lg-6'>
-							<div className='thumbnail'>
-								<img src={conferance} alt='' />
+							<div className='thumbnail' data-aos='zoom-in-up'>
+								<img
+									src={conferance}
+									alt='directors of the compony'
+									style={{ borderRadius: '10px' }}
+								/>
 							</div>
 						</div>
-						<div className='col-lg-5 offset-lg-1'>
+						<div className='col-lg-5 offset-lg-1' data-aos='zoom-in-up'>
 							<div className='theme-section-title'>
 								{/* <Typography
 									style={{
@@ -36,7 +43,7 @@ export default function Fasterwayto() {
 										fontSize: '55px',
 										fontWeight: '900',
 										fontFamily: 'Roboto, sans-serif',
-										color: '#0B0861',
+										color: '#219ebc',
 										marginBottom: '30px',
 									}}
 									data-aos='fade-up'>

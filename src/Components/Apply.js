@@ -6,6 +6,7 @@ import { doc } from 'firebase/firestore';
 import { db } from './fire';
 import { collection, setDoc } from 'firebase/firestore';
 import { FaFax } from 'react-icons/fa/';
+import Aos from 'aos';
 export default function Apply() {
 	const [name, setName] = useState();
 	const [email, setEmail] = useState();
@@ -41,15 +42,17 @@ export default function Apply() {
 			console.error('Error adding document: ', e);
 		}
 	};
+	Aos.init();
 	return (
 		<div>
 			<Typography
+				data-aos='zoom-in-up'
 				style={{
 					textAlign: 'center',
 					fontSize: '55px',
 					fontWeight: '900',
 					fontFamily: 'Roboto, sans-serif',
-					color: '#0B0861',
+					color: '#219ebc',
 					marginBottom: '30px',
 				}}>
 				{' '}
@@ -67,7 +70,7 @@ export default function Apply() {
 					position='relative'
 				/>
 
-				<div className='container mt-5'>
+				<div className='container mt-5' data-aos='zoom-in-up'>
 					{' '}
 					<div className='row justify-content-center'>
 						<div className='col-lg-3 col-md-4'>

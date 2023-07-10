@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
 		fontSize: '55px',
 		fontWeight: '900',
 		fontFamily: 'Roboto, sans-serif',
-		color: '#0B0861',
+		color: '#219ebc',
 		marginBottom: '30px',
 		margin: '0 190px 0 190px',
 	},

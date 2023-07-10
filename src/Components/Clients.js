@@ -1,4 +1,4 @@
-import {  Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import Image_1 from '../Assets/Componey logos/New folder/al_seedawi-removebg-preview.png';
 import Image_2 from '../Assets/Componey logos/New folder/arab_home-removebg-preview.png';
 import Image_3 from '../Assets/Componey logos/New folder/arabin_gulf-removebg-preview.png';
@@ -21,6 +21,7 @@ import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
+import Aos from 'aos';
 // import './style.css';
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
@@ -28,25 +29,33 @@ SwiperCore.use([Autoplay, Pagination, Navigation]);
 // import Swiper from "react-id-swiper";
 
 export default function Clients(theme) {
+	Aos.init();
 	return (
-		<section className='container pb-4 pb-md-5 mb-2 mb-md-3'>
-			<Typography
+		<section
+			className='container pb-4 pb-md-5 mb-2 mb-md-3'
+			style={{
+				backgroundColor: '#FFF7EF',
+				borderRadius: '30px',
+				marginTop: '40px',
+			}}>
+			{/* <Typography
 				style={{
 					textAlign: 'center',
 					fontSize: '55px',
 					fontWeight: '900',
 					fontFamily: 'Roboto, sans-serif',
-					color: '#0B0861',
+					color: '#219ebc',
 					marginBottom: '30px',
 					paddingBottom: '40px',
 				}}>
-				{' '}
 				<span style={{ color: '#000000' }}> Our </span>
 				Clients
-			</Typography>
+			</Typography> */}
 			<Swiper
+				data-aos='zoom-in-up'
 				loop={true}
 				centeredSlides={true}
+				autoplay={true}
 				pagination={{
 					clickable: true,
 				}}

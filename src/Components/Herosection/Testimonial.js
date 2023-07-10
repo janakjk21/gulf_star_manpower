@@ -4,26 +4,29 @@ import './theme.min.css';
 import { FaFacebook, FaLinkedin } from 'react-icons/fa';
 import { ImTwitter } from 'react-icons/im';
 import { AiFillStar } from 'react-icons/ai';
+import Aos from 'aos';
 
 export default function Testimonial() {
+	Aos.init();
 	return (
-		<section className='container pb-4 pb-md-5 mb-2 mb-md-3'>
+		<section
+			className='container pb-4 pb-md-5 mb-2 mb-md-3'
+			style={{ backgroundColor: '#FFF7EF', borderRadius: '20px' }}>
 			<Typography
 				style={{
 					textAlign: 'center',
 					fontSize: '55px',
 					fontWeight: '900',
 					fontFamily: 'Roboto, sans-serif',
-					color: '#0B0861',
+					color: '#219ebc',
 					marginBottom: '30px',
 				}}>
-				{' '}
 				<span style={{ color: '#000000' }}> Testimonials </span>
 				of Clients
 			</Typography>
 			<div className='row'>
 				{/* Item */}
-				<div className='col-md-4 mb-4'>
+				<div className='col-md-4 mb-4' data-aos='zoom-in-up'>
 					<div
 						className='card card-hover border-0 shadow-sm h-100'
 						style={{ backgroundColor: '#ffffff' }}>
@@ -75,7 +78,7 @@ export default function Testimonial() {
 						</div>
 					</div>
 				</div>
-				<div className='col-md-4 mb-4'>
+				<div className='col-md-4 mb-4' data-aos='zoom-in-up'>
 					<div
 						className='card card-hover border-0 shadow-sm h-100'
 						style={{ backgroundColor: '#ffffff' }}>
@@ -127,7 +130,7 @@ export default function Testimonial() {
 						</div>
 					</div>
 				</div>
-				<div className='col-md-4 mb-4'>
+				<div className='col-md-4 mb-4' data-aos='zoom-in-up'>
 					<div className='card card-hover border-0 shadow-sm h-100'>
 						<div className=' card-body'>
 							<p>

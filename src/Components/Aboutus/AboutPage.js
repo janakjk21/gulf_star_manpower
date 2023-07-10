@@ -1,10 +1,18 @@
 import React from 'react';
 
 import aboutus_img from '../../Assets/1-min-min_2.JPG';
-// import employe_1 from '../../Assets/img/sections/client/customer-care.png';
 
-// import employe_2 from '../../Assets/img/team-details/01.jpg';
-import team1 from '../../Assets/Team/final photo.jpg';
+import team1 from '../../Assets/Team/dinesh paudel chettri.jpg';
+import team2 from '../../Assets/Team/krishnapandey.jpg';
+import team3 from '../../Assets/Team/Gopal Khatri -.jpg';
+import team4 from '../../Assets/Team/Laxami Gurung - Flight.jpg';
+import team5 from '../../Assets/Team/dhan singh gharti -manager.jpg';
+import team6 from '../../Assets/Team/Bikash pariyar -Pro.JPG';
+import team7 from '../../Assets/Team/Nisha khatri -recption.JPG';
+import team8 from '../../Assets/Team/Sabina bhandari -office assistance.JPG';
+import team9 from '../../Assets/Team/Urmila thing-.JPG';
+
+// import team from '../../Assets/Team/';
 import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export default function AboutPage() {
@@ -121,25 +129,58 @@ const SecondItem = () => {
 						<div className='row column-gap-50'>
 							<div className='col-md-6 col-lg-4'>
 								<Singleemploye
-									name={'Dinesh Chhetri'}
+									name={'Dinesh Paudel Chhetri'}
 									post={'Managing Director '}
 									imageurl={team1}></Singleemploye>
 							</div>
+							<div className='col-md-6 col-lg-4'>
+								<Singleemploye
+									name={'Krishna Pandey'}
+									post={'Executing Director '}
+									imageurl={team2}></Singleemploye>
+							</div>
 							{/* <div className='col-md-6 col-lg-4'>
-								<Singleemploye></Singleemploye>
-							</div>
-							<div className='col-md-6 col-lg-4'>
-								<Singleemploye></Singleemploye>
-							</div>
-							<div className='col-md-6 col-lg-4'>
-								<Singleemploye></Singleemploye>
-							</div>
-							<div className='col-md-6 col-lg-4'>
-								<Singleemploye></Singleemploye>
-							</div>
-							<div className='col-md-6 col-lg-4'>
-								<Singleemploye></Singleemploye>
+								<Singleemploye
+									name={'Dinesh Chhetri'}
+									post={'Managing Director '}
+									imageurl={team3}></Singleemploye>
 							</div> */}
+							<div className='col-md-6 col-lg-4'>
+								<Singleemploye
+									name={'Laxmi Gurung '}
+									post={'Flight Officer'}
+									imageurl={team4}></Singleemploye>
+							</div>
+							<div className='col-md-6 col-lg-4'>
+								<Singleemploye
+									name={'Dhansing Gharti'}
+									post={'Manager'}
+									imageurl={team5}></Singleemploye>
+							</div>
+							<div className='col-md-6 col-lg-4'>
+								<Singleemploye
+									name={'Bikash Bahadur Pariyar'}
+									post={'Marketing Officer '}
+									imageurl={team6}></Singleemploye>
+							</div>
+							<div className='col-md-6 col-lg-4'>
+								<Singleemploye
+									name={'Urmila Thing'}
+									post={'Admin Officer'}
+									imageurl={team9}></Singleemploye>
+							</div>
+							<div className='col-md-6 col-lg-4'>
+								<Singleemploye
+									name={'Nirmala Khatri'}
+									post={'Receptionist'}
+									imageurl={team7}></Singleemploye>
+							</div>
+							<div className='col-md-6 col-lg-4'>
+								<Singleemploye
+									name={'Sabina Bhandari '}
+									post={'Office Assistant '}
+									imageurl={team8}></Singleemploye>
+							</div>
 						</div>
 					</div>
 				</div>

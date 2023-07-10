@@ -6,21 +6,23 @@ import icon2 from '../../Assets/icons/employee (1).png';
 import icon3 from '../../Assets/icons/lock.png';
 import icon4 from '../../Assets/icons/suitcase-black-shape.png';
 import './jk.css';
+import Aos from 'aos';
 export default function Loginitem() {
+	Aos.init();
 	return (
-		<div>
+		<>
 			<section id='hero' className='d-flex align-items-center'>
 				<div
 					className='container'
-					data-aos='fade-up'
+					data-aos='zoom-in-up'
 					data-aos-delay='300'
-					style={{ borderRadius: '52px' }}>
+					style={{ borderRadius: '52px', backgroundColor: '#F5F2EB' }}>
 					<div className='row icon-boxes'>
 						<div
 							className='col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0'
 							data-aos='zoom-in'
 							data-aos-delay='200'>
-							<div className='icon-box'>
+							<div className='icon-box' style={{ backgroundColor: '#F0FAF8' }}>
 								<div className='icon'>
 									<img src={icon1} style={{ height: '75px' }} alt='icon1'></img>
 								</div>
@@ -38,7 +40,7 @@ export default function Loginitem() {
 							className='col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0'
 							data-aos='zoom-in'
 							data-aos-delay='200'>
-							<div className='icon-box'>
+							<div className='icon-box' style={{ backgroundColor: '#FEF2F4' }}>
 								<div className='icon'>
 									<img src={icon2} style={{ height: '75px' }} alt='icon2'></img>
 								</div>
@@ -57,7 +59,7 @@ export default function Loginitem() {
 							className='col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0'
 							data-aos='zoom-in'
 							data-aos-delay='200'>
-							<div className='icon-box'>
+							<div className='icon-box' style={{ backgroundColor: '#F2F4FD' }}>
 								<div className='icon'>
 									<img src={icon3} style={{ height: '75px' }} alt='icon'></img>
 								</div>
@@ -76,7 +78,7 @@ export default function Loginitem() {
 							className='col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0'
 							data-aos='zoom-in'
 							data-aos-delay='200'>
-							<div className='icon-box'>
+							<div className='icon-box' style={{ backgroundColor: '#FFF7EF' }}>
 								<div className='icon'>
 									<img src={icon4} style={{ height: '75px' }} alt='icon'></img>
 								</div>
@@ -91,6 +93,6 @@ export default function Loginitem() {
 					</div>
 				</div>
 			</section>
-		</div>
+		</>
 	);
 }

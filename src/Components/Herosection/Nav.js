@@ -24,7 +24,8 @@ export default function Nav() {
 					<Dropdown>
 						<Dropdown.Toggle
 							id='dropdown-basic'
-							className='navbar-toggler ms-auto'>
+							className='navbar-toggler ms-auto'
+							style={{ backgroundColor: 'none' }}>
 							<button
 								className='navbar-toggler ms-auto'
 								type='button'
@@ -203,12 +204,12 @@ export default function Nav() {
 					<a
 						className='btn btn-primary btn-sm rounded-pill ms-2 order-lg-3 collapse navbar-collapse '
 						href='city-guide-add-business.html'>
-						<span className='d-none d-sm-inline'>+9848767600</span>
+						<span className='d-none d-sm-inline'>+01-4970001</span>
 					</a>
 					<a
 						className='btn btn-primary btn-sm rounded-pill ms-2 order-lg-3 collapse navbar-collapse'
 						href='city-guide-add-business.html'>
-						<span className='d-none d-sm-inline'>+9848767600</span>
+						<span className='d-none d-sm-inline'>+01-4970002</span>
 					</a>
 				</div>
 			</header>

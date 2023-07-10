@@ -2,7 +2,8 @@ import React from 'react';
 import img1 from '../../Assets/officedocuments/iso new.jpg';
 import img2 from '../../Assets/officedocuments/jitco.jpg';
 import img3 from '../../Assets/officedocuments/Pan.jpg';
-import img4 from '../../Assets/officedocuments/कम्पनि दर्ताको प्रमाण पत्र.jpg';
+import img4 from '../../Assets/officedocuments/componey darta.jpg';
+
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -58,6 +59,15 @@ export default function Document() {
 									</div>
 								</div>
 							</div>
+							<div className='col-lg-3 col-md-6'>
+								<div className='member' data-aos='fade-up' data-aos-delay='300'>
+									<div className='pic'>
+										<Zoom>
+											<img src={img2} alt='' className='img1' />
+										</Zoom>{' '}
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -65,4 +75,3 @@ export default function Document() {
 		</div>
 	);
 }
-
