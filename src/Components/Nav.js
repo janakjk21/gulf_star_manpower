@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 	typography3: {
 		fontWeight: '800',
 		fontSize: '15px',
-		color: '#000000',
+		color: '#181818',
 
 		[theme.breakpoints.down('sm')]: {
 			paddingTop: '10px',
@@ -78,7 +78,10 @@ export default function Nav() {
 	};
 	const displayMobile = () => {
 		return (
-			<AppBar style={{ background: 'transparent', boxShadow: 'none' }}>
+			<AppBar
+				style={{
+					backgroundColor: '#ffffff',
+				}}>
 				<Grid container style={{ paddingLeft: '10px' }}>
 					<Grid item xs={12} md={4}>
 						<img src={logo_png} alt='logo' className={classes.logo} />
@@ -216,7 +219,7 @@ export default function Nav() {
 								variant='contained'
 								style={{
 									padding: '3px',
-									// background: 'linear-gradient(to bottom, #000000, #000000)',
+									// background: 'linear-gradient(to bottom, #181818, #181818)',
 								}}>
 								<FiPhoneCall fontSize='small' />
 								<a
@@ -234,7 +237,7 @@ export default function Nav() {
 								variant='contained'
 								style={{
 									padding: '3px',
-									// background: 'linear-gradient(to bottom, #000000, #000000)',
+									// background: 'linear-gradient(to bottom, #181818, #181818)',
 								}}>
 								<FiPhoneCall fontSize='small' />
 								<a

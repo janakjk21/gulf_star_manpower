@@ -202,13 +202,23 @@ export default function Nav() {
 						</ul>
 					</div>
 					<a
-						className='btn btn-primary btn-sm rounded-pill ms-2 order-lg-3 collapse navbar-collapse '
-						href='city-guide-add-business.html'>
+						className='btn btn-primary btn-lg  ms-2 order-lg-3 collapse navbar-collapse '
+						href='city-guide-add-business.html'
+						style={{
+							background:
+								'-webkit-linear-gradient(right, #31b978 0%, #1ab69d 100%) !important',
+							background: 'linear-gradient(-90deg, #31b978 0%, #1ab69d)',
+						}}>
 						<span className='d-none d-sm-inline'>+01-4970001</span>
 					</a>
 					<a
-						className='btn btn-primary btn-sm rounded-pill ms-2 order-lg-3 collapse navbar-collapse'
-						href='city-guide-add-business.html'>
+						className='btn btn-primary btn-lg  ms-2 order-lg-3 collapse navbar-collapse'
+						href='city-guide-add-business.html'
+						style={{
+							background:
+								'-webkit-linear-gradient(right, #31b978 0%, #1ab69d 100%) !important',
+							background: 'linear-gradient(-90deg, #31b978 0%, #1ab69d)',
+						}}>
 						<span className='d-none d-sm-inline'>+01-4970002</span>
 					</a>
 				</div>

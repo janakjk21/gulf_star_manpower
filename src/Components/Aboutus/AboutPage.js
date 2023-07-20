@@ -147,16 +147,17 @@ const SecondItem = () => {
 							</div> */}
 							<div className='col-md-6 col-lg-4'>
 								<Singleemploye
-									name={'Laxmi Gurung '}
-									post={'Flight Officer'}
-									imageurl={team4}></Singleemploye>
-							</div>
-							<div className='col-md-6 col-lg-4'>
-								<Singleemploye
 									name={'Dhansing Gharti'}
 									post={'Manager'}
 									imageurl={team5}></Singleemploye>
 							</div>
+							<div className='col-md-6 col-lg-4'>
+								<Singleemploye
+									name={'Laxmi Gurung '}
+									post={'Flight Officer'}
+									imageurl={team4}></Singleemploye>
+							</div>
+
 							<div className='col-md-6 col-lg-4'>
 								<Singleemploye
 									name={'Bikash Bahadur Pariyar'}

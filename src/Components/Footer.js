@@ -15,7 +15,7 @@ export default function Footer() {
 							<div className='footer-info'>
 								<h3>Gulf Star Overseas</h3>
 								<p>
-									Samakhushi 14 <br />
+									Samakhushi 10 <br />
 									Kathmandu 44600
 									<br />
 									<br />

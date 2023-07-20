@@ -95,7 +95,7 @@
 	--fi-border-radius-xl: 1.875rem;
 	--fi-border-radius-2xl: 2rem;
 	--fi-border-radius-pill: 50rem;
-	--fi-link-color: #219ebc;
+	--fi-link-color: linear-gradient(-90deg, #31b978 0%, #1ab69d);
 	--fi-link-hover-color: #fd3509;
 	--fi-code-color: #e3116c;
 	--fi-highlight-bg: #fff3cd;
@@ -2729,6 +2729,8 @@ textarea.form-control-lg {
 .form-check-input:checked {
 	background-color: rgba(0, 0, 0, 0);
 	border-color: #219ebc;
+	background: -webkit-linear-gradient(right, #31b978 0%, #1ab69d 100%) !important;
+	background: linear-gradient(-90deg, #31b978 0%, #1ab69d);
 }
 
 .form-check-input:checked[type='checkbox'] {
@@ -2740,8 +2742,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input[type='checkbox']:indeterminate {
-	background-color: #219ebc;
-	border-color: #219ebc;
+	background: -webkit-linear-gradient(right, #31b978 0%, #1ab69d 100%) !important;
+	background: linear-gradient(-90deg, #31b978 0%, #1ab69d);
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 

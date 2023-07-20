@@ -9,11 +9,11 @@ const useStyles = makeStyles((theme) => ({
 	Typography: {
 		textAlign: 'left',
 		fontSize: '80px',
-		fontWeight: '900',
+		fontWeight: '500',
 		fontFamily: 'Roboto, sans-serif',
 	},
 	wrapper: {
-		backgroundImage: `url(${image1})`,
+		// backgroundImage: `url(${image1})`,
 		// background:
 		// 	"linear-gradient(90deg, rgba(27,255,255,1) 0%, rgba(46,49,146,1) 100%)",
 		padding: '50px',
@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
 		backgroundRepeat: 'no-repeat',
 		display: 'flex',
 		justifyContent: 'space-between',
+		background:
+			'-webkit-linear-gradient(right, #31b978 0%, #1ab69d 100%) !important',
+		background: 'linear-gradient(-90deg, #31b978 0%, #1ab69d)',
 	},
 	[theme.breakpoints.down('sm')]: {
 		Typography: {
@@ -33,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
 	typography2: {
 		fontWeight: '800',
 		fontSize: '15px',
-		color: '#000',
+		color: '#000000',
 		[theme.breakpoints.down('sm')]: {
 			fontWeight: '400',
 		},
@@ -47,7 +50,7 @@ export default function Them(props) {
 			<div>
 				<Typography className={classes.Typography}>
 					{' '}
-					<span style={{ color: '#1E1926' }}> {props.title} </span>
+					<span style={{ color: '#181818' }}> {props.title} </span>
 					{props.title1}
 				</Typography>
 			</div>

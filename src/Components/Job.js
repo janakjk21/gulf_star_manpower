@@ -15,9 +15,9 @@ const useStyles = makeStyles((theme) => ({
 	Typography: {
 		textAlign: 'center',
 		fontSize: '55px',
-		fontWeight: '900',
+
 		fontFamily: 'Roboto, sans-serif',
-		color: '#219ebc',
+		color: '#181818',
 		marginBottom: '30px',
 	},
 	[theme.breakpoints.down('sm')]: {
@@ -37,8 +37,7 @@ export default function Job() {
 			<div className='container' data-aos='fade-up'>
 				<div className='section-title'>
 					<Typography className={classes.Typography}>
-						{' '}
-						<span style={{ color: '#000000' }}> Job</span>
+						<span style={{ color: '#1ab69d' }}> Job</span>
 						Categories
 					</Typography>
 				</div>

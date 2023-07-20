@@ -21,7 +21,7 @@ export default function Testimonial() {
 					color: '#219ebc',
 					marginBottom: '30px',
 				}}>
-				<span style={{ color: '#000000' }}> Testimonials </span>
+				<span style={{ color: '#181818' }}> Testimonials </span>
 				of Clients
 			</Typography>
 			<div className='row'>

@@ -50,13 +50,13 @@ export default function Apply() {
 				style={{
 					textAlign: 'center',
 					fontSize: '55px',
-					fontWeight: '900',
+					fontWeight: '500',
 					fontFamily: 'Roboto, sans-serif',
-					color: '#219ebc',
+					color: '#181818',
 					marginBottom: '30px',
 				}}>
 				{' '}
-				<span style={{ color: '#000000' }}> Get </span>
+				<span style={{ color: '#1ab69d' }}> Get </span>
 				Your Free Consultation
 			</Typography>
 			<section id='contact'>
@@ -78,7 +78,7 @@ export default function Apply() {
 								<div>
 									<i className='bi bi-geo-alt'></i>
 									<p>
-										Samakhushi 14,
+										Samakhushi 10,
 										<br />
 										Kathmandu 44600, Nepal{' '}
 									</p>
@@ -166,7 +166,7 @@ export default function Apply() {
 										<Button
 											style={{
 												background:
-													'linear-gradient(to bottom, #000000, #000000)',
+													'linear-gradient(to bottom, #181818, #181818)',
 												marginBottom: '20px',
 												color: '#fff',
 											}}

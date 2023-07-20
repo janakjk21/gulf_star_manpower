@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../fire';
+
 export default function ModalE() {
 	const [show, setShow] = useState(false);
 	const [advertisement, setAdvertisement] = useState([]);
@@ -23,8 +24,14 @@ export default function ModalE() {
 
 		firstArticle();
 		setTimeout(() => {
-			setShow(true);
+			if (advertisement.length > 0) {
+				setShow(true);
+			} else {
+				setShow(false);
+			}
 		}, 2000);
+
+		console.log(advertisement.length, 'this is lentho fo array');
 	}, []);
 
 	return (

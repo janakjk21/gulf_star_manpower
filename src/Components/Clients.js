@@ -48,7 +48,7 @@ export default function Clients(theme) {
 					marginBottom: '30px',
 					paddingBottom: '40px',
 				}}>
-				<span style={{ color: '#000000' }}> Our </span>
+				<span style={{ color: '#181818' }}> Our </span>
 				Clients
 			</Typography> */}
 			<Swiper
