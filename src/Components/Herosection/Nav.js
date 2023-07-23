@@ -196,7 +196,7 @@ export default function Nav() {
 									role='button'
 									data-bs-toggle='dropdown'
 									aria-expanded='false'>
-									News
+									Advertisement
 								</Link>
 							</li>
 						</ul>
@@ -205,8 +205,6 @@ export default function Nav() {
 						className='btn btn-primary btn-lg  ms-2 order-lg-3 collapse navbar-collapse '
 						href='city-guide-add-business.html'
 						style={{
-							background:
-								'-webkit-linear-gradient(right, #31b978 0%, #1ab69d 100%) !important',
 							background: 'linear-gradient(-90deg, #31b978 0%, #1ab69d)',
 						}}>
 						<span className='d-none d-sm-inline'>+01-4970001</span>
@@ -215,8 +213,6 @@ export default function Nav() {
 						className='btn btn-primary btn-lg  ms-2 order-lg-3 collapse navbar-collapse'
 						href='city-guide-add-business.html'
 						style={{
-							background:
-								'-webkit-linear-gradient(right, #31b978 0%, #1ab69d 100%) !important',
 							background: 'linear-gradient(-90deg, #31b978 0%, #1ab69d)',
 						}}>
 						<span className='d-none d-sm-inline'>+01-4970002</span>

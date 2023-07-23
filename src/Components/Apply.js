@@ -104,7 +104,35 @@ export default function Apply() {
 								</div>
 							</div>
 							<div className='social-links'></div>
+							<div className='info' style={{ marginTop: '50px' }}>
+								<div>
+									<i className='bi bi-geo-alt'></i>
+									<p style={{ color: '#27B889' }}>
+										Malaysia office
+										<br />
+										APPLIED Value Management
+									</p>
+									<p> C-02-01,First Floor ,Garden Shopee </p>
+								</div>
+								<div>
+									<i className='bi bi-envelope'></i>
+									<p>
+										<FiMail />
+										appliedvalue@yahoo.com
+									</p>
+								</div>
+								<div>
+									<p> </p>
+								</div>
+								<div>
+									<p>
+										{' '}
+										<FaFax></FaFax>+603-8011 0990
+									</p>
+								</div>
+							</div>
 						</div>
+
 						<div className='col-lg-5 col-md-8'>
 							<div className='form'>
 								{' '}

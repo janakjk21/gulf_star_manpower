@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Container, Row, Col, Nav, Button } from 'react-bootstrap';
 import AppliedJobs from './AppliedJobs';
 import Contactingpeople from './Contactingpeople';
@@ -18,30 +18,29 @@ import { BiLogOut } from 'react-icons/bi';
 
 // import JobForm from './JobForm';
 const AdminDashboard = (props) => {
-	
 	const { data } = props;
 	console.log(props, 'this is props ');
 	let content;
-switch (data) {
-	case '/dashboard/blogform':
-		content = <BlogPostForm />;
-		break;
-	case '/dashboard/appliedjobs':
-		content = <AppliedJobs />;
-		break;
-	case '/dashboard/contactingpeople':
-		content = <Contactingpeople />;
-		break;
-	case '/dashboard/jobform':
-		content = <JobForm />;
-		break;
-	case '/dashboard/Jobadvertisement':
-		content = <JobAdvertisement />;
-		break;
-	default:
-		content = <Contactingpeople />;
-		break;
-}
+	switch (data) {
+		case '/dashboard/blogform':
+			content = <BlogPostForm />;
+			break;
+		case '/dashboard/appliedjobs':
+			content = <AppliedJobs />;
+			break;
+		case '/dashboard/contactingpeople':
+			content = <Contactingpeople />;
+			break;
+		case '/dashboard/jobform':
+			content = <JobForm />;
+			break;
+		case '/dashboard/Jobadvertisement':
+			content = <JobAdvertisement />;
+			break;
+		default:
+			content = <Contactingpeople />;
+			break;
+	}
 
 	// sign out function
 	const signOutfunction = (e) => {

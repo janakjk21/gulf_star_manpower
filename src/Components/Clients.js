@@ -1,4 +1,3 @@
-import { Typography } from '@material-ui/core';
 import Image_1 from '../Assets/Componey logos/New folder/al_seedawi-removebg-preview.png';
 import Image_2 from '../Assets/Componey logos/New folder/arab_home-removebg-preview.png';
 import Image_3 from '../Assets/Componey logos/New folder/arabin_gulf-removebg-preview.png';
@@ -21,7 +20,7 @@ import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
-import Aos from 'aos';
+
 // import './style.css';
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
@@ -29,7 +28,6 @@ SwiperCore.use([Autoplay, Pagination, Navigation]);
 // import Swiper from "react-id-swiper";
 
 export default function Clients(theme) {
-	Aos.init();
 	return (
 		<section
 			className='container pb-4 pb-md-5 mb-2 mb-md-3'
@@ -77,14 +75,14 @@ export default function Clients(theme) {
 				<SwiperSlide>
 					<div class='single-institute-item'>
 						<div class='logo-wrap'>
-							<img src={Image_1} alt='amity university' />
+							<img src={Image_1} alt='amity university' loading='lazy' />
 						</div>
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
 					<div class='single-institute-item'>
 						<div class='logo-wrap'>
-							<img src={Image_2} alt='amity university' />
+							<img src={Image_2} alt='amity university' loading='lazy' />
 						</div>
 					</div>
 					{/* <div class='brand-item'>
@@ -93,42 +91,42 @@ export default function Clients(theme) {
 				</SwiperSlide>
 				<SwiperSlide>
 					<div class='brand-item'>
-						<img src={Image_3} alt='amity university' />
+						<img src={Image_3} alt='amity university' loading='lazy' />
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
 					<div class='brand-item'>
-						<img src={Image_4} alt='amity university' />
+						<img src={Image_4} alt='amity university' loading='lazy' />
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
 					<div class='brand-item'>
-						<img src={Image_5} alt='amity university' />
+						<img src={Image_5} alt='amity university' loading='lazy' />
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
 					<div class='brand-item'>
-						<img src={Image_6} alt='amity university' />
+						<img src={Image_6} alt='amity university' loading='lazy' />
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
 					<div class='brand-item'>
-						<img src={Image_7} alt='amity university' />
+						<img src={Image_7} alt='amity university' loading='lazy' />
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
 					<div class='brand-item'>
-						<img src={Image_8} alt='amity university' />
+						<img src={Image_8} alt='amity university' loading='lazy' />
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
 					<div class='brand-item'>
-						<img src={Image_9} alt='amity university' />
+						<img src={Image_9} alt='amity university' loading='lazy' />
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
 					<div class='brand-item'>
-						<img src={Image_10} alt='amity university' />
+						<img src={Image_10} alt='amity university' loading='lazy' />
 					</div>
 				</SwiperSlide>
 			</Swiper>

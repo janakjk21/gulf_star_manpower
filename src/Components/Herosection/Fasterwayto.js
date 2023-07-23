@@ -58,8 +58,6 @@ export default function Fasterwayto() {
 								href='/aboutus'
 								className='btn btn-primary btn-sm rounded-pill ms-2 order-lg-3'
 								style={{
-									background:
-										'-webkit-linear-gradient(right, #31b978 0%, #1ab69d 100%) !important',
 									background: 'linear-gradient(-90deg, #31b978 0%, #1ab69d)',
 								}}>
 								More About us

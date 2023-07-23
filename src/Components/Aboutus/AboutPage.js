@@ -4,13 +4,14 @@ import aboutus_img from '../../Assets/1-min-min_2.JPG';
 
 import team1 from '../../Assets/Team/dinesh paudel chettri.jpg';
 import team2 from '../../Assets/Team/krishnapandey.jpg';
-import team3 from '../../Assets/Team/Gopal Khatri -.jpg';
+// import team3 from '../../Assets/Team/Gopal Khatri -.jpg';
 import team4 from '../../Assets/Team/Laxami Gurung - Flight.jpg';
 import team5 from '../../Assets/Team/dhan singh gharti -manager.jpg';
 import team6 from '../../Assets/Team/Bikash pariyar -Pro.JPG';
 import team7 from '../../Assets/Team/Nisha khatri -recption.JPG';
 import team8 from '../../Assets/Team/Sabina bhandari -office assistance.JPG';
 import team9 from '../../Assets/Team/Urmila thing-.JPG';
+import team10 from '../../Assets/Team/suman karki.jpg';
 
 // import team from '../../Assets/Team/';
 import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
@@ -126,7 +127,7 @@ const SecondItem = () => {
 								</div>
 							</div>
 						</div>
-						<div className='row column-gap-50'>
+						<div className='row column-gap-50 justify-content-center'>
 							<div className='col-md-6 col-lg-4'>
 								<Singleemploye
 									name={'Dinesh Paudel Chhetri'}
@@ -139,25 +140,21 @@ const SecondItem = () => {
 									post={'Executing Director '}
 									imageurl={team2}></Singleemploye>
 							</div>
+						</div>
+						<div className='row column-gap-50'>
 							{/* <div className='col-md-6 col-lg-4'>
 								<Singleemploye
-									name={'Dinesh Chhetri'}
-									post={'Managing Director '}
-									imageurl={team3}></Singleemploye>
+									name={'suman karki'}
+									post={'Marketing Director '}
+									imageurl={team10}></Singleemploye>
 							</div> */}
+
 							<div className='col-md-6 col-lg-4'>
 								<Singleemploye
 									name={'Dhansing Gharti'}
 									post={'Manager'}
 									imageurl={team5}></Singleemploye>
 							</div>
-							<div className='col-md-6 col-lg-4'>
-								<Singleemploye
-									name={'Laxmi Gurung '}
-									post={'Flight Officer'}
-									imageurl={team4}></Singleemploye>
-							</div>
-
 							<div className='col-md-6 col-lg-4'>
 								<Singleemploye
 									name={'Bikash Bahadur Pariyar'}
@@ -170,6 +167,13 @@ const SecondItem = () => {
 									post={'Admin Officer'}
 									imageurl={team9}></Singleemploye>
 							</div>
+							<div className='col-md-6 col-lg-4'>
+								<Singleemploye
+									name={'Laxmi Gurung '}
+									post={'Flight Officer'}
+									imageurl={team4}></Singleemploye>
+							</div>
+
 							<div className='col-md-6 col-lg-4'>
 								<Singleemploye
 									name={'Nirmala Khatri'}

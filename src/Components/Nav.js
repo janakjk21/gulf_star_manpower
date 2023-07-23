@@ -167,7 +167,9 @@ export default function Nav() {
 
 							<MenuItem onClick={handleClose}>
 								<Link style={{ textDecoration: 'none' }} to='/news'>
-									<Typography className={classes.typography3}> News</Typography>
+									<Typography className={classes.typography3}>
+										Advertisement
+									</Typography>
 								</Link>
 							</MenuItem>
 						</Menu>
@@ -183,7 +185,7 @@ export default function Nav() {
 	const displayDesktop = () => {
 		return (
 			<AppBar
-				position='relative'
+				position='sticky'
 				style={{ background: 'transparent', boxShadow: 'none' }}>
 				<Toolbar color='none'>
 					<Grid container>

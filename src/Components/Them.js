@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, makeStyles } from '@material-ui/core';
-import image1 from '../Assets/cool-background.png';
+// import image1 from '../Assets/cool-background.png';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -24,8 +24,7 @@ const useStyles = makeStyles((theme) => ({
 		backgroundRepeat: 'no-repeat',
 		display: 'flex',
 		justifyContent: 'space-between',
-		background:
-			'-webkit-linear-gradient(right, #31b978 0%, #1ab69d 100%) !important',
+
 		background: 'linear-gradient(-90deg, #31b978 0%, #1ab69d)',
 	},
 	[theme.breakpoints.down('sm')]: {
