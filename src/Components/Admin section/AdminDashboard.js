@@ -63,7 +63,7 @@ const AdminDashboard = (props) => {
 						<Nav className='flex-column pt-2'>
 							<Nav.Link href='/dashboard/blogform'>
 								{' '}
-								<FaNewspaper></FaNewspaper> Create News
+								<FaNewspaper></FaNewspaper> Advertisement long term
 							</Nav.Link>
 							<Nav.Link href='/dashboard/appliedjobs'>
 								<FaBriefcase></FaBriefcase>

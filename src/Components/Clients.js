@@ -1,14 +1,14 @@
-import Image_1 from '../Assets/Componey logos/New folder/al_seedawi-removebg-preview.png';
-import Image_2 from '../Assets/Componey logos/New folder/arab_home-removebg-preview.png';
-import Image_3 from '../Assets/Componey logos/New folder/arabin_gulf-removebg-preview.png';
-import Image_4 from '../Assets/Componey logos/New folder/az_satu-removebg-preview.png';
-import Image_5 from '../Assets/Componey logos/New folder/bara_trading-removebg-preview.png';
-import Image_6 from '../Assets/Componey logos/New folder/Darwaja_kuwait_-removebg-preview.png';
-import Image_7 from '../Assets/Componey logos/New folder/dolphine-removebg-preview.png';
-import Image_8 from '../Assets/Componey logos/New folder/falcon_eye-removebg-preview.png';
+import Image_1 from '../Assets/Componey logos/logo 12 (2).jpg';
+import Image_2 from '../Assets/Componey logos/logo 2.jpg';
+import Image_3 from '../Assets/Componey logos/logo 12.jpg';
+import Image_4 from '../Assets/Componey logos/logo 4.jpg';
+import Image_5 from '../Assets/Componey logos/logo 5.jpg';
+import Image_6 from '../Assets/Componey logos/logo 7.jpg';
+import Image_7 from '../Assets/Componey logos/logo 6.jpg';
+import Image_8 from '../Assets/Componey logos/logo 8.jpg';
 
-import Image_9 from '../Assets/Componey logos/New folder/platinum-removebg-preview.png';
-import Image_10 from '../Assets/Componey logos/New folder/serbawangi-removebg-preview.png';
+import Image_9 from '../Assets/Componey logos/logo 9.jpg';
+import Image_10 from '../Assets/Componey logos/logo 14.jpg';
 
 import React from 'react';
 import SwiperCore, { Pagination, Autoplay, Navigation } from 'swiper/core';
@@ -36,19 +36,6 @@ export default function Clients(theme) {
 				borderRadius: '30px',
 				marginTop: '40px',
 			}}>
-			{/* <Typography
-				style={{
-					textAlign: 'center',
-					fontSize: '55px',
-					fontWeight: '900',
-					fontFamily: 'Roboto, sans-serif',
-					color: '#219ebc',
-					marginBottom: '30px',
-					paddingBottom: '40px',
-				}}>
-				<span style={{ color: '#181818' }}> Our </span>
-				Clients
-			</Typography> */}
 			<Swiper
 				data-aos='zoom-in-up'
 				loop={true}
@@ -82,7 +69,7 @@ export default function Clients(theme) {
 				<SwiperSlide>
 					<div class='single-institute-item'>
 						<div class='logo-wrap'>
-							<img src={Image_2} alt='amity university' loading='lazy' />
+							<img src={Image_1} alt='amity university' loading='lazy' />
 						</div>
 					</div>
 					{/* <div class='brand-item'>

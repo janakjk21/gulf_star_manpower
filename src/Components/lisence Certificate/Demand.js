@@ -4,7 +4,7 @@ import img2 from '../../Assets/officedocuments/jitco.jpg';
 import img3 from '../../Assets/officedocuments/Pan.jpg';
 import img4 from '../../Assets/officedocuments/componey darta.jpg';
 import img5 from '../../Assets/officedocuments/ijajat patra.jpg';
-import img6 from '../../Assets/officedocuments/RBA.bmp';
+import img6 from '../../Assets/officedocuments/RBA.jpg';
 // import img5 from '../../Assets/Demand/page0005.jpg';
 
 import AOS from 'aos';

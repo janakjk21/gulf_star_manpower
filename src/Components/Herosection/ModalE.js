@@ -10,29 +10,28 @@ export default function ModalE() {
 	const handleClose = () => setShow(false);
 	// const handleShow = () => setShow(true);
 	useEffect(() => {
-		const firstArticle = async () => {
-			let newarr = [];
+		const fetchAdvertisement = async () => {
 			const querySnapshot = await getDocs(collection(db, 'jobAdvertisement'));
-			querySnapshot.forEach((doc) => {
-				console.log(doc.id);
-				let docid = doc.id;
-				let appObj = { docid, ...doc.data() };
-				newarr.push(appObj);
-			});
+			let newarr = querySnapshot.docs.map((doc) => ({
+				docid: doc.id,
+				...doc.data(),
+			}));
 			setAdvertisement(newarr);
 		};
 
-		firstArticle();
-		setTimeout(() => {
+		fetchAdvertisement();
+	}, []);
+	useEffect(() => {
+		const timer = setTimeout(() => {
 			if (advertisement.length > 0) {
 				setShow(true);
 			} else {
 				setShow(false);
 			}
-		}, 2000);
+		}, 1000); // 10 seconds
 
-		console.log(advertisement.length, 'this is lentho fo array');
-	}, []);
+		return () => clearTimeout(timer);
+	}, [advertisement]);
 
 	return (
 		<>

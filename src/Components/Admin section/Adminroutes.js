@@ -1,8 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import Blogpostform from './Blogpostform';
-// import AppliedJobs from './AppliedJobs';
-// import { Container, Row, Col, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+
 import AdminDashboard from './AdminDashboard';
 
 // eslint-disable-next-line import/no-anonymous-default-export

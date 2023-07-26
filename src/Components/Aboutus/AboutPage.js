@@ -15,6 +15,7 @@ import team10 from '../../Assets/Team/suman karki.jpg';
 
 // import team from '../../Assets/Team/';
 import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { Helmet } from 'react-helmet';
 
 export default function AboutPage() {
 	return (
@@ -31,6 +32,17 @@ export default function AboutPage() {
 const Headercomponent = () => {
 	return (
 		<section className='about-section-area section-bottom-space'>
+			<Helmet>
+				<title>About Us | Gulf Star Overseas</title>
+				<meta
+					name='keywords'
+					content='best manpower in nepal, manpower recruitment, about us, gulfstaroverseas, gulf countries, human resource consultancy, manpower mobilization, screening, documentation'
+				/>
+				<meta
+					name='description'
+					content='Gulf Star Overseas is a leading human resource consultancy firm in Nepal, providing unparalleled services to both clients and candidates. We are registered under the Department of Labor, Government of Nepal, and have extensive experience in the Gulf countries. Our team is dedicated to understanding and appreciating the unique requirements of both clients and candidates, and we validate every candidate and every requirement through a rigorous documentation process. We are committed to providing our clients with the best possible service and helping them find the perfect job for their needs.'
+				/>
+			</Helmet>
 			<div className='container custom-container-01'>
 				<div className='row align-items-center'>
 					<div className='col-lg-6 col-md-12'>
@@ -142,12 +154,12 @@ const SecondItem = () => {
 							</div>
 						</div>
 						<div className='row column-gap-50'>
-							{/* <div className='col-md-6 col-lg-4'>
+							<div className='col-md-6 col-lg-4'>
 								<Singleemploye
 									name={'suman karki'}
 									post={'Marketing Director '}
 									imageurl={team10}></Singleemploye>
-							</div> */}
+							</div>
 
 							<div className='col-md-6 col-lg-4'>
 								<Singleemploye
@@ -202,7 +214,12 @@ const Singleemploye = ({ name, post, imageurl }) => {
 	return (
 		<div className='col' style={{ margin: '4px' }}>
 			<div className='card border-0 shadow-sm'>
-				<img className='card-img-top' src={imageurl} alt='Devon Lane' />
+				<img
+					className='card-img-top'
+					src={imageurl}
+					alt='Devon Lane'
+					style={{ maxHeight: '350px' }}
+				/>
 				<div className='card-body text-center'>
 					<h3 className='h5 card-title mb-2'>{name}</h3>
 					<span className='d-inline-block mb-3 fs-sm'>{post}</span>

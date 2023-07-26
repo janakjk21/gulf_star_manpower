@@ -30,7 +30,7 @@ export default function BlogGrid() {
 
 	const firstArticle = async () => {
 		let newarr = [];
-		const querySnapshot = await getDocs(collection(db, 'jobAdvertisement'));
+		const querySnapshot = await getDocs(collection(db, 'createnews'));
 		querySnapshot.forEach((doc) => {
 			console.log(doc.id);
 			let docid = doc.id;
@@ -52,7 +52,7 @@ export default function BlogGrid() {
 							<a href='car-finder-home.html'>Home</a>
 						</li>
 						<li className='breadcrumb-item active' aria-current='page'>
-							News &amp; reviews
+							Advertisement&amp; For JObs
 						</li>
 					</ol>
 				</nav>
@@ -71,7 +71,7 @@ export default function BlogGrid() {
 					</div>
 				</div>
 				{/* Featured article*/}
-				{advertisement.map((item) => {
+				{advertisement.reverse().map((item) => {
 					return (
 						<>
 							<article className='row pb-2 pb-md-1 mb-4 mb-md-5'>

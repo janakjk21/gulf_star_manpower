@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/          # Disallow crawling of the /admin/ directory
+Disallow: /private/        # Disallow crawling of the /private/ directory
+Disallow: /secret-page.html    # Disallow crawling of a specific page
+Allow: /public/           # Allow crawling of the /public/ directory

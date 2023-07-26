@@ -1,11 +1,12 @@
 import React, { Suspense, useEffect } from 'react';
 import Aos from 'aos';
 import './theme.min.css';
-import img1 from '../../Assets/hero-img-removebg.png';
+import img1 from '../../Assets/hero-img-removebg.webp';
 import { lazy } from 'react'; // Import the 'lazy' function
+import { Helmet } from 'react-helmet';
 const Loginitem = lazy(() => import('./Loginitem'));
 const Fasterwayto = lazy(() => import('./Fasterwayto'));
-const Testimonial = lazy(() => import('./Testimonial'));
+
 const Clients = lazy(() => import('../Clients'));
 const Footer = lazy(() => import('../Footer'));
 const Job = lazy(() => import('../Job'));
@@ -40,10 +41,20 @@ export default function Hero3() {
 	Aos.init();
 	return (
 		<>
+			<Helmet>
+				<title>Gulf Star Overseas</title>
+				<meta
+					name='keywords'
+					content='best manpower in nepal, manpower recruitment, jobs in the middle east, nepali job seekers, gulfstaroverseas'
+				/>
+				<meta
+					name='description'
+					content='Gulf Star Overseas is the best manpower recruitment agency in Nepal. We offer recruitment services for jobs in the Middle East, Europe, and other countries. We are dedicated to providing our clients with the best possible service and helping them find the perfect job for their needs.'
+				/>
+			</Helmet>
 			<section id='hero' className='d-flex align-items-center'>
-				{' '}
+				<Nav></Nav>{' '}
 				<main className='page-wrapper ' style={{ marginTop: '60px' }}>
-					<Nav></Nav>
 					<section className='container py-5 mt-5 mb-lg-3 '>
 						<div className='row align-items-center mt-md-2'>
 							<div className='col-lg-7 order-lg-2 mb-lg-0 mb-4 pb-2 pb-lg-0'>

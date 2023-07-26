@@ -50,17 +50,22 @@ function Jobadvertisement() {
 	const handleFormSubmit = async (e) => {
 		e.preventDefault();
 
+		// Check if imgUrl is null
+		if (!imgUrl) {
+			alert('Please upload an image before submitting the form.');
+			return; // Return early to prevent further form submission
+		}
+
 		try {
 			const docRef = await addDoc(collection(db, 'jobAdvertisement'), {
 				blogPost,
 				imgUrl,
-			}).then(setShowAlert(true));
+			});
+			setShowAlert(true);
 			console.log('Document written with ID: ', docRef.id);
 		} catch (e) {
 			console.error('Error adding document: ', e);
 		}
-
-		// do something with the selected file
 	};
 
 	const uploadimage = (e) => {
@@ -93,7 +98,7 @@ function Jobadvertisement() {
 			}
 		);
 	};
-	console.log(blogPost, imgUrl, 'this is where the image is ');
+
 	return (
 		<>
 			<Form>
@@ -144,8 +149,8 @@ function Jobadvertisement() {
 					/>
 				</Form.Group>
 				<Form.Group controlId='formFileSm' className='mb-3'>
-					{progresspercent}
 					<Form.Label>Choose a image to upload </Form.Label>
+					{progresspercent > 0 && <div>{progresspercent}% uploaded</div>}
 					<Form.Control
 						type='file'
 						size='sm'

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/</loc>
+  </url>
+
+  <!-- About Us page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/aboutus</loc>
+  </url>
+
+  <!-- Contact Us page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/contactus</loc>
+  </url>
+
+  <!-- Services page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/services</loc>
+  </url>
+
+  <!-- Recruitment Process page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/recrumentprocess</loc>
+  </url>
+
+  <!-- News page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/news</loc>
+  </url>
+
+  <!-- Blog Grid page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/bloggrid</loc>
+  </url>
+
+  <!-- Blog Single (Dynamic route for individual blog posts) -->
+  <!-- Note: Replace :id with an actual blog post ID -->
+  <url>
+    <loc>http://gulfstaroverseas.com/bloggrid/:id</loc>
+  </url>
+
+  <!-- Documents page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/Documents</loc>
+  </url>
+
+  <!-- Demand page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/demand</loc>
+  </url>
+
+  <!-- Login page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/login</loc>
+  </url>
+
+  <!-- Jobseeker Login page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/jobseekerlogin</loc>
+  </url>
+
+  <!-- Apply for a Job page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/applyjob</loc>
+  </url>
+
+  <!-- Admin Dashboard page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/dashboard</loc>
+  </url>
+
+  <!-- Blog Form page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/dashboard/blogform</loc>
+  </url>
+
+  <!-- Applied Jobs page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/dashboard/appliedjobs</loc>
+  </url>
+
+  <!-- Job Form page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/dashboard/jobform</loc>
+  </url>
+
+  <!-- Contacting People page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/dashboard/contactingpeople</loc>
+  </url>
+
+  <!-- Job Advertisement page -->
+  <url>
+    <loc>http://gulfstaroverseas.com/dashboard/Jobadvertisement</loc>
+  </url>
+
+</urlset>
