@@ -20534,19 +20534,24 @@ _:-ms-lang(x),
 	opacity: 1;
 }
 
-/*# sourceMappingURL=theme.min.css.map */
+/* Add this CSS to your existing styles */
+.logo-wrap img {
+	/* Set a fixed height and width for the logos */
+	height: 200px;
+	/* Adjust this value as needed */
+	width: 200px;
+	/* Adjust this value as needed */
 
-.hero-banner {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: url(../../Assets/bg-image-1.svg);
-	-webkit-filter: brightness(0) saturate(100%) invert(97%) sepia(7%) saturate(503%) hue-rotate(316deg) brightness(103%) contrast(92%);
-	filter: brightness(0) saturate(100%) invert(97%) sepia(7%) saturate(503%) hue-rotate(316deg) brightness(103%) contrast(92%);
-	background-size: cover;
-	background-position: center;
-	z-index: -1;
+	/* Add additional styles for positioning or styling the logos */
+	/* For example, you can add margin or padding to create spacing between logos */
+
+}
+
+.brand-item img {
+	height: 200px;
+	/* Adjust this value as needed */
+	width: 200px;
+
+
+
 }

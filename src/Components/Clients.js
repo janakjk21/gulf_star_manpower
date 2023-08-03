@@ -46,35 +46,28 @@ export default function Clients(theme) {
 				}}
 				breakpoints={{
 					640: {
-						slidesPerView: 2,
+						slidesPerView: 4,
 						spaceBetween: 20,
 					},
 					768: {
-						slidesPerView: 3,
-						spaceBetween: 40,
+						slidesPerView: 4,
+						spaceBetween: 20,
 					},
 					1024: {
 						slidesPerView: 4,
-						spaceBetween: 50,
+						spaceBetween: 20,
 					},
 				}}
 				className='mySwiper'>
 				<SwiperSlide>
-					<div class='single-institute-item'>
-						<div class='logo-wrap'>
-							<img src={Image_1} alt='amity university' loading='lazy' />
-						</div>
+					<div class='brand-item'>
+						<img src={Image_1} alt='amity university' loading='lazy' />
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
-					<div class='single-institute-item'>
-						<div class='logo-wrap'>
-							<img src={Image_1} alt='amity university' loading='lazy' />
-						</div>
+					<div class='brand-item'>
+						<img src={Image_2} alt='amity university' loading='lazy' />
 					</div>
-					{/* <div class='brand-item'>
-						<img src={Image_2} alt='amity university' />
-					</div> */}
 				</SwiperSlide>
 				<SwiperSlide>
 					<div class='brand-item'>

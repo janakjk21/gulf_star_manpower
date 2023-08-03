@@ -100,7 +100,7 @@ export default function Footer() {
 
 						<div className='col-lg-4 col-md-6 footer-newsletter'>
 							<h4>Our Slogans</h4>
-							<p>Find Your Dream Job. Move Up Today</p>
+							<p>your career partner</p>
 							<form action='' method='post'>
 								<input type='email' name='email' />
 								<input type='submit' value='Submit' />

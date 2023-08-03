@@ -4,9 +4,10 @@ import componey_logo from '../../Assets/logo3 FINAL.jpg';
 import { IoIosArrowDropdownCircle } from 'react-icons/io';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { Link } from 'react-router-dom';
+import { AiFillCaretDown } from 'react-icons/ai';
 export default function Nav() {
 	return (
-		<div>
+		<div style={{ maxWidth: '100vw', height: 'auto' }}>
 			<header
 				className='navbar navbar-expand-lg navbar-light fixed-top'
 				data-scroll-header>
@@ -25,7 +26,9 @@ export default function Nav() {
 						<Dropdown.Toggle
 							id='dropdown-basic'
 							className='navbar-toggler ms-auto'
-							style={{ backgroundColor: 'none' }}>
+							style={{
+								background: 'linear-gradient(-90deg, #31b978 0%, #1ab69d)',
+							}}>
 							<button
 								className='navbar-toggler ms-auto'
 								type='button'

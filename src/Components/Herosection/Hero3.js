@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect } from 'react';
 import Aos from 'aos';
-import './theme.min.css';
+// import './theme.min.css';
 import img1 from '../../Assets/hero-img-removebg.webp';
 import { lazy } from 'react'; // Import the 'lazy' function
 import { Helmet } from 'react-helmet';
@@ -43,6 +43,9 @@ export default function Hero3() {
 		<>
 			<Helmet>
 				<title>Gulf Star Overseas</title>
+
+				<meta charset='utf-8' />
+				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 				<meta
 					name='keywords'
 					content='best manpower in nepal, manpower recruitment, jobs in the middle east, nepali job seekers, gulfstaroverseas'
@@ -52,18 +55,18 @@ export default function Hero3() {
 					content='Gulf Star Overseas is the best manpower recruitment agency in Nepal. We offer recruitment services for jobs in the Middle East, Europe, and other countries. We are dedicated to providing our clients with the best possible service and helping them find the perfect job for their needs.'
 				/>
 			</Helmet>
-			<section id='hero' className='d-flex align-items-center'>
-				<Nav></Nav>{' '}
+			<section className=' align-items-center'>
 				<main className='page-wrapper ' style={{ marginTop: '60px' }}>
-					<section className='container py-5 mt-5 mb-lg-3 '>
+					<section className='container py-5 mt-5  '>
 						<div className='row align-items-center mt-md-2'>
 							<div className='col-lg-7 order-lg-2 mb-lg-0 mb-4 pb-2 pb-lg-0'>
 								<img
 									data-aos='zoom-in-up'
-									className='d-block mx-auto'
+									className='img-fluid custom-responsive-image'
 									src={img1}
 									width={746}
 									alt='Hero'
+									style={{ maxWidth: '100vw', height: 'auto' }}
 								/>
 							</div>
 							<div className='col-lg-5 order-lg-1 pe-lg-0 '>
@@ -147,117 +150,13 @@ export default function Hero3() {
 				<Loginitem />
 				<Fasterwayto />
 				<ModalE></ModalE>
-				{/* <Message /> */}
+
 				<Clients />
 				<Job />
-				{/* <Testimonial /> */}
-				{/* <Blogs /> */}
+
 				<Apply />
 				<Footer />
 			</Suspense>
 		</>
 	);
 }
-
-// const Smallcomponent = () => {
-// 	return (
-// 		<section className='container pb-5 mb-md-3 mt-n2 mt-sm-0'>
-// 			<h2 className='h3 text-center text-sm-start mb-sm-4'>Top companies</h2>
-// 			<div className='tns-carousel-wrapper tns-nav-outside tns-nav-outside-flush'>
-// 				<div className='tns-carousel-inner'>
-// 					<div className='pb-1'>
-// 						<a className='swap-image' href='job-board-employer-single.html'>
-// 							<img className='swap-to' src={img2} width={196} alt='Microsoft' />
-// 							<img
-// 								className='swap-from'
-// 								src={img2}
-// 								width={196}
-// 								alt='Microsoft'
-// 							/>
-// 						</a>
-// 					</div>
-// 					<div className='pb-1'>
-// 						<a className='swap-image' href='job-board-employer-single.html'>
-// 							<img
-// 								className='swap-to'
-// 								src='img/job-board/company/indeed.svg'
-// 								width={196}
-// 								alt='Indeed'
-// 							/>
-// 							<img
-// 								className='swap-from'
-// 								src='img/job-board/company/indeed-g.svg'
-// 								width={196}
-// 								alt='Indeed'
-// 							/>
-// 						</a>
-// 					</div>
-// 					<div className='pb-1'>
-// 						<a className='swap-image' href='job-board-employer-single.html'>
-// 							<img
-// 								className='swap-to'
-// 								src='img/job-board/company/cocacola.svg'
-// 								width={196}
-// 								alt='Coca Cola'
-// 							/>
-// 							<img
-// 								className='swap-from'
-// 								src='img/job-board/company/cocacola-g.svg'
-// 								width={196}
-// 								alt='Coca Cola'
-// 							/>
-// 						</a>
-// 					</div>
-// 					<div className='pb-1'>
-// 						<a className='swap-image' href='job-board-employer-single.html'>
-// 							<img
-// 								className='swap-to'
-// 								src='img/job-board/company/slack.svg'
-// 								width={196}
-// 								alt='Slack'
-// 							/>
-// 							<img
-// 								className='swap-from'
-// 								src='img/job-board/company/slack-g.svg'
-// 								width={196}
-// 								alt='Slack'
-// 							/>
-// 						</a>
-// 					</div>
-// 					<div className='pb-1'>
-// 						<a className='swap-image' href='job-board-employer-single.html'>
-// 							<img
-// 								className='swap-to'
-// 								src='img/job-board/company/walmart.svg'
-// 								width={196}
-// 								alt='Walmart'
-// 							/>
-// 							<img
-// 								className='swap-from'
-// 								src='img/job-board/company/walmart-g.svg'
-// 								width={196}
-// 								alt='Walmart'
-// 							/>
-// 						</a>
-// 					</div>
-// 					<div className='pb-1'>
-// 						<a className='swap-image' href='job-board-employer-single.html'>
-// 							<img
-// 								className='swap-to'
-// 								src='img/job-board/company/google.svg'
-// 								width={196}
-// 								alt='Google'
-// 							/>
-// 							<img
-// 								className='swap-from'
-// 								src='img/job-board/company/google-g.svg'
-// 								width={196}
-// 								alt='Google'
-// 							/>
-// 						</a>
-// 					</div>
-// 				</div>
-// 			</div>
-// 		</section>
-// 	);
-// };

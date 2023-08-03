@@ -7,6 +7,7 @@ import { db } from './fire';
 import { collection, setDoc } from 'firebase/firestore';
 import { FaFax } from 'react-icons/fa/';
 import Aos from 'aos';
+const IframeWrapper = React.lazy(() => import('./IframeWrapper'));
 export default function Apply() {
 	const [name, setName] = useState();
 	const [email, setEmail] = useState();
@@ -60,15 +61,7 @@ export default function Apply() {
 				Your Free Consultation
 			</Typography>
 			<section id='contact'>
-				<Iframe
-					url='https://maps.google.com/maps?q=gulfstar%20overseas&t=&z=13&ie=UTF8&iwloc=&output=embed'
-					width='100%'
-					height='200px'
-					id='gmap_canvas'
-					className='myclassNamename'
-					display='initial'
-					position='relative'
-				/>
+				<IframeWrapper />
 
 				<div className='container mt-5' data-aos='zoom-in-up'>
 					{' '}

@@ -11,7 +11,7 @@ export default function Loginitem() {
 	Aos.init();
 	return (
 		<>
-			<section id='hero' className='d-flex align-items-center'>
+			<section id='hero1' className='d-flex align-items-center'>
 				<div
 					className='container'
 					data-aos='zoom-in-up'

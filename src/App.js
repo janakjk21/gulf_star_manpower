@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import otheroutes from './Components/Admin section/Adminroutes';
 import Loading from './Components/Loading';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import AdminDashboard from './Components/Admin section/AdminDashboard';
 import Applyprocess from './Components/applyprocess/Applyprocess';
 import Services from './Components/Services/Services';

@@ -14,8 +14,6 @@ import 'react-medium-image-zoom/dist/styles.css';
 import './documents.css';
 import Them from '../Them';
 
-import '../Herosection/jk.css';
-
 export default function Demand() {
 	AOS.init();
 	return (
